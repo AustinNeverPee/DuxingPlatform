@@ -1,0 +1,25 @@
+#accordion .log{
+	margin-bottom: 20px;
+	/*background-color: #e77919;*/
+	padding: 5px;
+}
+/*
+.logTitle{
+	color: #ffffff;
+}*/
+
+#accordion .logMain{
+  text-align: left;
+  background-color: #ffffff;
+}
+
+h3{
+	margin-top: 0px;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+
+.logMain {
+    padding: 5px;
+    border-radius: 10px;
+    border: double 3px rgba(157, 142, 142, 0.5);
+}

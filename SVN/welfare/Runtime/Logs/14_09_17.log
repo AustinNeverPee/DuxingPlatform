@@ -1,0 +1,3361 @@
+[ 2014-09-17T09:02:40+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.112108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.085578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.085733s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015961s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010373s ]
+
+[ 2014-09-17T09:02:40+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002573s ]
+
+[ 2014-09-17T09:05:00+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2014-09-17T09:05:00+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2014-09-17T09:05:03+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.152514s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.012740s ]
+SQL: SHOW COLUMNS FROM `iamge` [ RunTime:0.011052s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `iamge`
+SQL: SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000445s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1  
+
+[ 2014-09-17T09:17:50+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+ERR: 非法操作:MainNavigation
+
+[ 2014-09-17T09:18:35+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001609s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.001374s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001451s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'zhangsan' ) AND ( `password` = 'zhangsan' ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SELECT * FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000077s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `image` WHERE ( iid= ) LIMIT 1  
+NOTIC: [8] Undefined variable: uid D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 73 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 78 行.
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 3 ) AND ( `msgstate` = 0 )  [ RunTime:0.000200s ]
+
+[ 2014-09-17T09:19:07+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001968s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.001371s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001639s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'zhangsan' ) AND ( `password` = 'zhangsan' ) LIMIT 1   [ RunTime:0.000194s ]
+SQL: SELECT * FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000100s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `image` WHERE ( iid= ) LIMIT 1  
+NOTIC: [8] Undefined variable: uid D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 73 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 78 行.
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 3 ) AND ( `msgstate` = 0 )  [ RunTime:0.000148s ]
+
+[ 2014-09-17T09:21:32+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002003s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `iamge` [ RunTime:0.001247s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `iamge`
+SQL: SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000189s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1  
+
+[ 2014-09-17T09:22:12+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002117s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `iamge` [ RunTime:0.001578s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `iamge`
+SQL: SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000287s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1  
+
+[ 2014-09-17T09:22:14+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001951s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `iamge` [ RunTime:0.001172s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `iamge`
+SQL: SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000230s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1  
+
+[ 2014-09-17T09:28:32+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002121s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `iamge` [ RunTime:0.001201s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `iamge`
+SQL: SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000188s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1  
+
+[ 2014-09-17T09:28:35+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001978s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `iamge` [ RunTime:0.001437s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `iamge`
+SQL: SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000229s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1  
+
+[ 2014-09-17T09:38:45+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+ERR: 非法操作:MainNavigation
+
+[ 2014-09-17T09:42:13+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002331s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `iamge` [ RunTime:0.001578s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `iamge`
+SQL: SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000250s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1  
+
+[ 2014-09-17T09:42:16+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001875s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SHOW COLUMNS FROM `iamge` [ RunTime:0.001191s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `iamge`
+SQL: SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000215s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1  
+
+[ 2014-09-17T09:44:20+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.027417s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `iamge` [ RunTime:0.005231s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `iamge`
+SQL: SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000722s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1  
+
+[ 2014-09-17T09:53:42+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002263s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `iamge` [ RunTime:0.001788s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `iamge`
+SQL: SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000352s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `iamge` WHERE ( iid= ) LIMIT 1  
+
+[ 2014-09-17T09:55:00+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001437s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `iamge` [ RunTime:0.001326s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `iamge`
+SQL: SELECT `imgpath` FROM `iamge` WHERE ( iid=3 ) LIMIT 1   [ RunTime:0.000353s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SELECT `imgpath` FROM `iamge` WHERE ( iid=3 ) LIMIT 1  
+
+[ 2014-09-17T09:59:42+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002015s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `iamge` [ RunTime:0.001510s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `iamge`
+SQL: SELECT `imgpath` FROM `iamge` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000420s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SELECT `imgpath` FROM `iamge` WHERE ( iid=1 ) LIMIT 1  
+
+[ 2014-09-17T10:02:14+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002317s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002965s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `iamge` [ RunTime:0.001829s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `iamge`
+SQL: SELECT `imgpath` FROM `iamge` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000384s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SELECT `imgpath` FROM `iamge` WHERE ( iid=1 ) LIMIT 1  
+
+[ 2014-09-17T10:03:28+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001995s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `iamge` [ RunTime:0.001392s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `iamge`
+SQL: SELECT * FROM `iamge` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000298s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `iamge` WHERE ( iid=1 ) LIMIT 1  
+
+[ 2014-09-17T10:04:40+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001959s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `iamge` [ RunTime:0.001546s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `iamge`
+SQL: SELECT * FROM `iamge` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000307s ]
+ERR: 1146:Table 'welfare.iamge' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `iamge` WHERE ( iid=1 ) LIMIT 1  
+
+[ 2014-09-17T10:06:25+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002218s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003666s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002875s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000826s ]
+NOTIC: [8] Undefined variable: imagesrcc D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 57 行.
+
+[ 2014-09-17T10:10:21+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001899s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001466s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000455s ]
+
+[ 2014-09-17T10:12:04+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002026s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001272s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000361s ]
+
+[ 2014-09-17T10:14:21+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002304s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001388s ]
+
+[ 2014-09-17T10:14:21+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001205s ]
+
+[ 2014-09-17T10:14:23+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.133126s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001621s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000404s ]
+
+[ 2014-09-17T10:14:51+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003174s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2014-09-17T10:14:51+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001145s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001274s ]
+
+[ 2014-09-17T10:14:53+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002728s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001415s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000356s ]
+
+[ 2014-09-17T10:14:57+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2014-09-17T10:14:57+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2014-09-17T10:15:01+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005069s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.003261s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000351s ]
+
+[ 2014-09-17T10:15:03+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011915s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2014-09-17T10:15:03+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2014-09-17T10:15:24+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000453s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001310s ]
+
+[ 2014-09-17T10:15:24+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001203s ]
+
+[ 2014-09-17T10:15:25+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002531s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.001305s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002057s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000715s ]
+
+[ 2014-09-17T10:20:01+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000990s ]
+
+[ 2014-09-17T10:20:01+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001975s ]
+
+[ 2014-09-17T10:20:04+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalBlogController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.002401s ]
+SQL: SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid= ) LIMIT $offset,20   [ RunTime:0.000513s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT $offset,20' at line 1
+ [ SQL语句 ] : SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid= ) LIMIT $offset,20  
+
+[ 2014-09-17T10:30:59+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2014-09-17T10:30:59+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2014-09-17T10:31:01+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005717s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001923s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000699s ]
+
+[ 2014-09-17T10:31:03+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2014-09-17T10:31:03+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001431s ]
+
+[ 2014-09-17T10:31:05+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003281s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001957s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.001243s ]
+
+[ 2014-09-17T10:31:07+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2014-09-17T10:31:07+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005635s ]
+
+[ 2014-09-17T10:31:09+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalHomepageController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003223s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002169s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.001915s ]
+
+[ 2014-09-17T10:34:27+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+
+[ 2014-09-17T10:35:27+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002244s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001457s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000519s ]
+
+[ 2014-09-17T10:35:32+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2014-09-17T10:35:32+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001273s ]
+
+[ 2014-09-17T10:35:34+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002037s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001349s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000366s ]
+
+[ 2014-09-17T10:35:36+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010268s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2014-09-17T10:35:36+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2014-09-17T10:35:38+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004600s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002115s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000528s ]
+
+[ 2014-09-17T10:36:50+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2014-09-17T10:36:50+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002748s ]
+
+[ 2014-09-17T10:36:54+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalBlogController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.002303s ]
+SQL: SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid= ) LIMIT $offset,20   [ RunTime:0.000349s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT $offset,20' at line 1
+ [ SQL语句 ] : SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid= ) LIMIT $offset,20  
+
+[ 2014-09-17T10:37:00+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalBlogController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.003842s ]
+SQL: SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid= ) LIMIT $offset,20   [ RunTime:0.000591s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT $offset,20' at line 1
+ [ SQL语句 ] : SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid= ) LIMIT $offset,20  
+
+[ 2014-09-17T11:06:08+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2014-09-17T11:06:08+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000979s ]
+
+[ 2014-09-17T11:06:11+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+ERR: Think\Controller:myBlog方法不存在！
+
+[ 2014-09-17T11:15:15+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002630s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000889s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001296s ]
+
+[ 2014-09-17T11:15:15+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000916s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2014-09-17T11:15:17+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+ERR: Think\Controller:myBlog方法不存在！
+
+[ 2014-09-17T11:16:51+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+ERR: Think\Controller:myBlog方法不存在！
+
+[ 2014-09-17T11:18:45+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+ERR: Think\Controller:myBlog方法不存在！
+
+[ 2014-09-17T11:19:12+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+
+[ 2014-09-17T11:19:27+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalBlogController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001570s ]
+SQL: SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid= ) LIMIT $offset,20   [ RunTime:0.000283s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT $offset,20' at line 1
+ [ SQL语句 ] : SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid= ) LIMIT $offset,20  
+
+[ 2014-09-17T11:21:43+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+
+[ 2014-09-17T11:34:50+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.002061s ]
+SQL: SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid= ) LIMIT $offset, 20   [ RunTime:0.000449s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT $offset, 20' at line 1
+ [ SQL语句 ] : SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid= ) LIMIT $offset, 20  
+
+[ 2014-09-17T11:39:22+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001971s ]
+SQL: SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid= )  [ RunTime:0.000306s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid= ) 
+
+[ 2014-09-17T11:39:24+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001776s ]
+SQL: SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid= )  [ RunTime:0.000402s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid= ) 
+
+[ 2014-09-17T11:39:46+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001711s ]
+SQL: SELECT * FROM `blog` WHERE ( bloguid= )  [ RunTime:0.000339s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `blog` WHERE ( bloguid= ) 
+
+[ 2014-09-17T11:40:00+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001928s ]
+SQL: SELECT * FROM `blog` WHERE ( bloguid= )  [ RunTime:0.000430s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `blog` WHERE ( bloguid= ) 
+
+[ 2014-09-17T11:40:03+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001906s ]
+SQL: SELECT * FROM `blog` WHERE ( bloguid= )  [ RunTime:0.000430s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `blog` WHERE ( bloguid= ) 
+
+[ 2014-09-17T17:15:38+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2014-09-17T17:15:38+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001931s ]
+
+[ 2014-09-17T17:15:45+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2014-09-17T17:15:45+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2014-09-17T17:15:48+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+
+[ 2014-09-17T17:16:01+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.011237s ]
+SQL: SELECT * FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000294s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( uid= ) LIMIT 1  
+
+[ 2014-09-17T17:18:24+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+
+[ 2014-09-17T17:19:58+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+ERR: 非法操作:MainNavigation
+
+[ 2014-09-17T17:20:04+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+
+[ 2014-09-17T17:20:07+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+
+[ 2014-09-17T17:21:07+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001549s ]
+ERR: 非法操作:MainNavigation
+
+[ 2014-09-17T17:21:19+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+
+[ 2014-09-17T17:23:12+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002211s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.039732s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.021144s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'zhangsan' ) AND ( `password` = 'zhangsan' ) LIMIT 1   [ RunTime:0.011317s ]
+SQL: SELECT * FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.010247s ]
+NOTIC: [8] Undefined variable: uid D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 73 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 78 行.
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 3 ) AND ( `msgstate` = 0 )  [ RunTime:0.009084s ]
+
+[ 2014-09-17T17:23:18+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001970s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.031203s ]
+SQL: SELECT * FROM `blog` WHERE ( bloguid= )  [ RunTime:0.000831s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `blog` WHERE ( bloguid= ) 
+
+[ 2014-09-17T17:25:08+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001276s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2014-09-17T17:25:08+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2014-09-17T17:25:12+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2014-09-17T17:25:12+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000992s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001149s ]
+
+[ 2014-09-17T17:25:18+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002534s ]
+ERR: 非法操作:MainNavigation
+
+[ 2014-09-17T17:25:27+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+ERR: 非法操作:MainNavigation
+
+[ 2014-09-17T17:27:31+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/MainNavigation/checkVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002621s ]
+ERR: 非法操作:MainNavigation
+
+[ 2014-09-17T17:27:45+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/MainNavigation/checkVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+ERR: 非法操作:MainNavigation
+
+[ 2014-09-17T17:28:01+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+ERR: 非法操作:MainNavigation
+
+[ 2014-09-17T17:28:51+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001547s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001496s ]
+
+[ 2014-09-17T17:28:51+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2014-09-17T17:29:24+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/MainNavigation/checkVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001773s ]
+ERR: 非法操作:MainNavigation
+
+[ 2014-09-17T17:34:36+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001013s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001791s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001781s ]
+
+[ 2014-09-17T17:34:36+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001624s ]
+
+[ 2014-09-17T17:34:45+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+ERR: 非法操作:MainNavigation
+
+[ 2014-09-17T17:34:46+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+ERR: 非法操作:MainNavigation
+
+[ 2014-09-17T19:11:30+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2014-09-17T19:11:30+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2014-09-17T19:11:52+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/checkVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+
+[ 2014-09-17T19:11:58+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/checkVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+
+[ 2014-09-17T19:12:36+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002433s ]
+
+[ 2014-09-17T19:14:28+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2014-09-17T19:14:29+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2014-09-17T19:15:37+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/checkVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+
+[ 2014-09-17T19:15:41+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/checkVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+
+[ 2014-09-17T19:15:44+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2014-09-17T19:15:53+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/checkVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+
+[ 2014-09-17T19:15:59+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.005133s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.004865s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004131s ]
+SQL: SELECT * FROM `user` WHERE ( `uname` = 'heheng' ) LIMIT 1   [ RunTime:0.000804s ]
+SQL: SELECT * FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000355s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 8 ) AND ( `msgstate` = 0 )  [ RunTime:0.000599s ]
+
+[ 2014-09-17T19:16:54+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/activate?uid=8&&token=6a28f2d0c1c0f801ee8a6f05dc46ee98
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2014-09-17T19:17:41+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002729s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001897s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.001362s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001448s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT * FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000104s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `image` WHERE ( iid= ) LIMIT 1  
+NOTIC: [8] Undefined variable: uid D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 73 行.
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 8 ) AND ( `msgstate` = 0 )  [ RunTime:0.000187s ]
+
+[ 2014-09-17T19:18:27+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2014-09-17T19:18:27+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002220s ]
+
+[ 2014-09-17T19:18:29+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.055846s ]
+SQL: SELECT * FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000228s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( uid= ) LIMIT 1  
+
+[ 2014-09-17T19:20:48+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2014-09-17T19:20:48+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001633s ]
+
+[ 2014-09-17T19:20:50+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003441s ]
+SQL: SELECT * FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000466s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( uid= ) LIMIT 1  
+
+[ 2014-09-17T19:22:29+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2014-09-17T19:22:29+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2014-09-17T19:22:37+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.026722s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.001717s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001460s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'zhangsan' ) AND ( `password` = '81cf2b6503ce48b913ad4705b7a09abd' ) LIMIT 1   [ RunTime:0.000232s ]
+
+[ 2014-09-17T19:22:48+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2014-09-17T19:22:48+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001042s ]
+
+[ 2014-09-17T19:23:07+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003381s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.003535s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.061900s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000332s ]
+SQL: SELECT * FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000240s ]
+NOTIC: [8] Undefined variable: uid D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 73 行.
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 8 ) AND ( `msgstate` = 0 )  [ RunTime:0.000218s ]
+
+[ 2014-09-17T19:23:14+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000694s ]
+
+[ 2014-09-17T19:23:14+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001514s ]
+
+[ 2014-09-17T19:23:16+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003506s ]
+SQL: SELECT * FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000220s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( uid= ) LIMIT 1  
+
+[ 2014-09-17T19:25:16+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2014-09-17T19:25:17+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001640s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002163s ]
+
+[ 2014-09-17T19:25:23+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003650s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.003239s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.004018s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = '4266bf8d3dc65bc84fd3badf2edfdbe7' ) LIMIT 1   [ RunTime:0.002191s ]
+
+[ 2014-09-17T19:25:27+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004465s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.002065s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002491s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = '4266bf8d3dc65bc84fd3badf2edfdbe7' ) LIMIT 1   [ RunTime:0.000683s ]
+
+[ 2014-09-17T19:25:32+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005801s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.003974s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.005596s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = '4266bf8d3dc65bc84fd3badf2edfdbe7' ) LIMIT 1   [ RunTime:0.000935s ]
+
+[ 2014-09-17T19:25:44+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001645s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.001400s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001603s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000334s ]
+SQL: SELECT * FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: uid D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 73 行.
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 8 ) AND ( `msgstate` = 0 )  [ RunTime:0.000127s ]
+
+[ 2014-09-17T19:25:48+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010920s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2014-09-17T19:25:48+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2014-09-17T19:25:51+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002465s ]
+SQL: SELECT * FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000350s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( uid= ) LIMIT 1  
+
+[ 2014-09-17T19:28:19+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001008s ]
+
+[ 2014-09-17T19:28:19+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001532s ]
+
+[ 2014-09-17T19:29:22+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002121s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.001541s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001604s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SELECT * FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000162s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 74 行.
+NOTIC: [8] Undefined variable: uid D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 75 行.
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 8 ) AND ( `msgstate` = 0 )  [ RunTime:0.000208s ]
+
+[ 2014-09-17T19:29:27+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2014-09-17T19:29:27+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000914s ]
+
+[ 2014-09-17T19:29:29+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002631s ]
+SQL: SELECT * FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000330s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( uid= ) LIMIT 1  
+
+[ 2014-09-17T19:30:31+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2014-09-17T19:30:31+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2014-09-17T19:30:43+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003145s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.002909s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.003365s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000899s ]
+SQL: SELECT * FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000274s ]
+NOTIC: [8] Undefined variable: uid D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 75 行.
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 8 ) AND ( `msgstate` = 0 )  [ RunTime:0.000200s ]
+
+[ 2014-09-17T19:30:57+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000683s ]
+
+[ 2014-09-17T19:30:57+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000736s ]
+
+[ 2014-09-17T19:30:59+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002484s ]
+SQL: SELECT * FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000463s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `user` WHERE ( uid= ) LIMIT 1  
+
+[ 2014-09-17T19:42:10+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000507s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2014-09-17T19:42:10+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2014-09-17T19:42:31+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2014-09-17T19:42:31+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2014-09-17T19:42:42+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.010837s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.004145s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.003417s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.002022s ]
+SQL: SELECT * FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.001106s ]
+NOTIC: [8] Undefined variable: uid D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 75 行.
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 8 ) AND ( `msgstate` = 0 )  [ RunTime:0.000608s ]
+
+[ 2014-09-17T19:42:45+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2014-09-17T19:42:45+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2014-09-17T19:42:57+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001734s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.001399s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001385s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: SELECT * FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: uid D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 75 行.
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 8 ) AND ( `msgstate` = 0 )  [ RunTime:0.000155s ]
+
+[ 2014-09-17T19:43:01+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2014-09-17T19:43:02+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2014-09-17T19:43:03+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+
+[ 2014-09-17T19:43:49+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2014-09-17T19:43:49+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2014-09-17T19:43:51+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+
+[ 2014-09-17T19:46:18+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2014-09-17T19:46:18+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2014-09-17T19:46:28+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004515s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.003379s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.003319s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000872s ]
+SQL: SELECT * FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000342s ]
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 8 ) AND ( `msgstate` = 0 )  [ RunTime:0.000516s ]
+
+[ 2014-09-17T19:46:37+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2014-09-17T19:46:37+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2014-09-17T19:46:40+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003212s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.001563s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.004970s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000660s ]
+
+[ 2014-09-17T19:57:53+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2014-09-17T19:57:53+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001924s ]
+
+[ 2014-09-17T19:57:55+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.004347s ]
+SQL: SELECT * FROM `blog` WHERE ( bloguid= )  [ RunTime:0.000687s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `blog` WHERE ( bloguid= ) 
+
+[ 2014-09-17T20:01:48+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001848s ]
+SQL: SELECT * FROM `blog` WHERE ( bloguid= )  [ RunTime:0.000462s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `blog` WHERE ( bloguid= ) 
+
+[ 2014-09-17T20:06:11+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.002002s ]
+SQL: SELECT * FROM `blog` WHERE ( bloguid=8 )  [ RunTime:0.000409s ]
+
+[ 2014-09-17T20:07:12+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001911s ]
+SQL: SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid=8 ) LIMIT $offset, 20   [ RunTime:0.000397s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '$offset, 20' at line 1
+ [ SQL语句 ] : SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid=8 ) LIMIT $offset, 20  
+
+[ 2014-09-17T20:07:14+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001729s ]
+SQL: SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid=8 ) LIMIT $offset, 20   [ RunTime:0.000336s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '$offset, 20' at line 1
+ [ SQL语句 ] : SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid=8 ) LIMIT $offset, 20  
+
+[ 2014-09-17T20:11:29+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001856s ]
+SQL: SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid=8 ) LIMIT 0, 20   [ RunTime:0.000332s ]
+
+[ 2014-09-17T20:12:14+08:00 ] 127.0.0.1 /welfare/index.php/Home/Activity/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002162s ]
+NOTIC: [8] Use of undefined constant STYLE_PATH - assumed 'STYLE_PATH' D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2014-09-17T20:12:14+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2014-09-17T20:12:17+08:00 ] 127.0.0.1 /welfare/index.php/Home/Activity/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.001713s ]
+SQL: SELECT * FROM `province`  [ RunTime:0.000667s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002273s ]
+
+[ 2014-09-17T20:22:52+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001911s ]
+SQL: SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid=8 ) LIMIT 0, 20   [ RunTime:0.000453s ]
+
+[ 2014-09-17T20:23:24+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002154s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.002255s ]
+SQL: SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid=8 ) LIMIT -20, 20   [ RunTime:0.000454s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-20, 20' at line 1
+ [ SQL语句 ] : SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid=8 ) LIMIT -20, 20  
+
+[ 2014-09-17T20:26:07+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2014-09-17T20:26:07+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001079s ]
+
+[ 2014-09-17T20:26:10+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001478s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.002352s ]
+SQL: SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid=8 ) LIMIT 0, 20   [ RunTime:0.000332s ]
+
+[ 2014-09-17T20:56:02+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.133743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.133832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2014-09-17T20:56:02+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001495s ]
+
+[ 2014-09-17T20:56:09+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001848s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.001412s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001613s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000417s ]
+SQL: SELECT * FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 8 ) AND ( `msgstate` = 0 )  [ RunTime:0.000208s ]
+
+[ 2014-09-17T20:56:15+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036066s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2014-09-17T20:56:15+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001395s ]
+
+[ 2014-09-17T20:56:17+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalBlog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.002149s ]
+SQL: SELECT `blogtitle`,`blogcontent` FROM `blog` WHERE ( bloguid=8 ) LIMIT 0, 20   [ RunTime:0.000476s ]
+
+[ 2014-09-17T21:01:03+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalPhotograph/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000468s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002719s ]
+
+[ 2014-09-17T21:01:03+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002203s ]
+
+[ 2014-09-17T21:01:06+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalPhotograph/moreAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001902s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001455s ]
+SQL: SELECT * FROM `album` WHERE ( uid=8 ) ORDER BY createdt LIMIT 3,3   [ RunTime:0.210911s ]
+NOTIC: [2] Variable passed to each() is not an array or object D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalPhotographController.class.php 第 55 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001065s ]
+
+[ 2014-09-17T21:01:44+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalPhotograph/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2014-09-17T21:01:44+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002475s ]
+
+[ 2014-09-17T21:01:45+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalPhotograph/moreAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.003359s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.002160s ]
+SQL: SELECT * FROM `album` WHERE ( uid=8 ) ORDER BY createdt LIMIT 3,3   [ RunTime:0.000494s ]
+NOTIC: [2] Variable passed to each() is not an array or object D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalPhotographController.class.php 第 55 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2014-09-17T21:04:18+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalPhotograph/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000918s ]
+
+[ 2014-09-17T21:04:18+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002733s ]
+
+[ 2014-09-17T21:04:20+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalPhotograph/moreAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001928s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002700s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.002726s ]
+SQL: SELECT * FROM `album` WHERE ( uid=8 ) ORDER BY createdt LIMIT 3,3   [ RunTime:0.000485s ]
+NOTIC: [2] Variable passed to each() is not an array or object D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalPhotographController.class.php 第 55 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2014-09-17T21:04:59+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalPhotograph/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2014-09-17T21:05:00+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004997s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005484s ]
+
+[ 2014-09-17T21:05:01+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalPhotograph/moreAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002725s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001986s ]
+SQL: SELECT * FROM `album` WHERE ( uid=8 ) ORDER BY createdt LIMIT 3,3   [ RunTime:0.000515s ]
+NOTIC: [2] Variable passed to each() is not an array or object D:\Program Files (x86)\wamp\www\welfare\Home\Controller\PersonalPhotographController.class.php 第 55 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001053s ]
+
+[ 2014-09-17T21:06:00+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2014-09-17T21:06:00+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2014-09-17T21:06:02+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001550s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.002054s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.001057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001210s ]
+
+[ 2014-09-17T21:10:11+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2014-09-17T21:10:11+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2014-09-17T21:10:13+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.002911s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2014-09-17T21:19:02+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.002063s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000475s ]
+
+[ 2014-09-17T21:23:51+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.001742s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000444s ]
+
+[ 2014-09-17T21:26:37+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.001913s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000547s ]
+
+[ 2014-09-17T21:27:18+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.003911s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.001154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001925s ]
+
+[ 2014-09-17T21:27:48+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.003858s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000897s ]
+NOTIC: [8] Undefined variable: reponse D:\Program Files (x86)\wamp\www\welfare\Home\Controller\LocationIndexController.class.php 第 49 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001581s ]
+
+[ 2014-09-17T21:28:06+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.001916s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000658s ]
+NOTIC: [8] Undefined variable: reponse D:\Program Files (x86)\wamp\www\welfare\Home\Controller\LocationIndexController.class.php 第 50 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000965s ]
+
+[ 2014-09-17T21:29:49+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.002340s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000717s ]
+NOTIC: [8] Undefined variable: reponse D:\Program Files (x86)\wamp\www\welfare\Home\Controller\LocationIndexController.class.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2014-09-17T21:31:42+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.002432s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2014-09-17T21:32:00+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.001821s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000383s ]
+
+[ 2014-09-17T21:32:18+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.002425s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000636s ]
+
+[ 2014-09-17T21:32:54+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.002048s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2014-09-17T21:33:16+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.003928s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.001192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001736s ]
+
+[ 2014-09-17T21:34:30+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.001734s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2014-09-17T21:35:23+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.002017s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002598s ]
+
+[ 2014-09-17T21:40:29+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.002122s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000856s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000918s ]
+
+[ 2014-09-17T21:48:00+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.001743s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000442s ]
+
+[ 2014-09-17T21:49:53+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002180s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.002138s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000607s ]
+
+[ 2014-09-17T21:50:08+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2014-09-17T21:50:08+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000694s ]
+
+[ 2014-09-17T21:50:10+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001319s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.003527s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000461s ]
+
+[ 2014-09-17T21:50:22+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2014-09-17T21:50:22+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002181s ]
+
+[ 2014-09-17T21:50:24+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.002046s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000478s ]
+
+[ 2014-09-17T22:03:56+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/geCity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+ERR: 非法操作:geCity
+
+[ 2014-09-17T22:04:02+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/getCity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.002051s ]
+SQL: SELECT `cityid`,`cityname` FROM `city` WHERE ( provinceid=1 )  [ RunTime:0.000744s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.001902s ]
+SQL: SELECT `siteid`,`sitename` FROM `site` WHERE ( provinceid=1 )  [ RunTime:0.080496s ]
+

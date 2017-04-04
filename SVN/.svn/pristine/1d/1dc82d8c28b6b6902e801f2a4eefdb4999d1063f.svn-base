@@ -1,0 +1,110 @@
+﻿/**
+ * Author:chen_xl
+ * Date:2014-10-27
+ * Function:地点之相册页
+ * Modified by Austin Yang @ 2014-10-20 00:00 添加全局URL，更改ajax判断返回值机制
+ */
+var delay = 1;
+//记录当前页数；
+$(document).ready(function(){
+  //全局URL
+  commonURL = "/maitian/welfare/index.php";
+
+    //变量：当有一次申请页面不成功，则不会再申请
+    canApply = 1;
+    loadcount = 0;
+    var locationhref = window.location.href;
+    schoolid = locationhref.split("schoolid/")[1];
+    $("#main-box").empty();
+    hrefChange();
+    loadMore();
+});
+//监测到当前处于页面尾时，载入新页面
+$(window).scroll(function(){
+        if(delay == 1){
+          delay = 0;
+          setTimeout(function(){
+            if($(document).height()-$(this).scrollTop()-$(this).height()<100 && canApply == 1)
+                    {
+                        loadMore();
+                    }
+                delay = 1;
+          },500);
+        }
+    });
+
+function hrefChange(){
+    $("#blogHref").attr("href", commonURL + "/Home/Historyblog/index/schoolid/"+schoolid);
+    $("#photoHref").attr("href", commonURL + "/Home/Photograph/index/schoolid/"+schoolid);
+    $("#schoolHref").attr("href", commonURL + "/Home/School/index/schoolid/"+schoolid);
+}
+
+//载入新页面
+function loadMore(){
+  $.ajax({
+    "type":"post",
+    "url": commonURL + "/Home/Photograph/moreAlbum",
+    "data":{"currentpage":loadcount,"schoolid":schoolid},
+    "success":function(data){
+      if (data.status == "1") {
+        //每一个for循环，载入一个相册。
+        for (var i = 0; i < data.imagesrcs.length; i++) {
+          var currentbox = ((loadcount*3)+i).toString();
+          var loadPhoto = "";
+            //载入第一张照片，为active
+          var eachPhotoLoad = "<div class = 'item active'> <img src='"+ data.imagesrcs[i][0] +"'></div>";
+            //载入标签，可以选择相册中的照片 第一张为active
+            var addLi = "<li data-target='#box" + currentbox + "' data-slide-to = '0' class='active'></li>";
+            //载入当前相册所有照片与标签
+          for (var j = 1; j < data.imagesrcs[i].length; j++){
+            eachPhotoLoad+= "<div class = 'item'> <img src='"+ data.imagesrcs[i][j] +"'></div>"
+                addLi+= "<li data-target='#box'" + currentbox + " data-slide-to = '" + j.toString() + "'></li>";
+          };
+          loadPhoto+= "<div class='border-set text-center photoBlock'>"+
+                        "<h3>"+
+                          data.albumnames[i] +
+                          "<small>"+
+                            data.uploadtimes[i]+
+                          "</small>"+
+                        "</h3>"+
+                        "<div id='box" +currentbox +"' class='carousel slide border-set photoBox'>"+
+                          "<ol class='carousel-indicators'>"+
+                            addLi+
+                          "</ol>"+
+                          "<div class='carousel-inner'>"+
+                            eachPhotoLoad +
+                          "</div>"+
+                          "<a class='left carousel-control' href='#box"+ currentbox +"' data-slide='prev'>"+
+                            "&lsaquo;"+
+                          "</a>"+
+                          "<a class='right carousel-control' href='#box"+ currentbox +"' data-slide='next'>"+
+                            "&rsaquo;"+
+                          "</a>"+
+                        "</div>"+
+                      "</div>";
+              $("#main-box").append(loadPhoto);
+        }
+        //增加页面数
+        loadcount++;
+      } else if (data.status == "0") {
+        canApply = 0;
+          if (data.msg == "1") {
+              var username = $.cookie("username");
+              if (username) {
+                  //清除cookie中存储的用户信息
+                  $.cookie('username', null, {expires: -1, path: '/'});
+                  $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                  $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                  
+                  hidePortrait();
+              }
+
+              alert("请重新登录！");
+              //TO DO!!!
+          } else if (data.msg == "2") {
+              alert("数据库访问错误");
+          }
+      }
+    },//end success function
+  });//end ajax
+}//end loadmore

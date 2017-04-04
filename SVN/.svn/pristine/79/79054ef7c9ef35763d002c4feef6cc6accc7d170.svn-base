@@ -1,0 +1,305 @@
+<extend name="../welfare/Home/View/Tpl/base.html" />
+
+<block name="title">
+  <title>活动展示</title>
+</block>
+
+<block name="css">
+  <link href="{$static}/css/activity_display.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="{$static}/css/fsgallery.css" rel="stylesheet" />
+</block>
+
+<block name="menu">
+  <div class="btn-group-vertical levelTwo">
+    <a href="#" class="btn btn-info" role="button" id="actname">
+      活动名
+    </a>
+    <a href="feedbacktable.html" class="btn btn-info" role="button" id="actfeedback">
+      查看反馈
+    </a>
+    <a href="#" class="btn btn-info" role="button" id="actattend">
+      报名参加
+    </a>
+    <a href="../../album.html" class="btn btn-info" role="button" id="actattend">
+      活动相册
+    </a>
+  </div>
+</block>
+
+<block name="main">
+  <div class="container holder">
+    <div class="jumbotron">
+      <div class="row">
+        <!-- 左侧-->
+        <div class="col-sm-2">
+          <div class="well" id="poster">
+            这是海报
+          </div>
+          
+
+          <button id="fol" type="button" class="btn btn-default">+关注</button>
+
+          <div id="follower" class="row">
+            <div class="follow">
+            <div class="col-sm-5 col-md-6">
+              <a href="" class="thumbnail">
+                <img src="{$static}/resources/1.jpg" alt="通用的占位符缩略图">
+                Amin
+              </a>
+            </div>
+
+            <div class="col-sm-5 col-md-6">
+              <a href="" class="thumbnail">
+                <img src="{$static}/resources/1.jpg" alt="通用的占位符缩略图">
+                aa
+              </a>
+            </div>
+            </div>
+
+            <div class="col-sm-5 col-md-6">
+              <a href="" class="thumbnail">
+                <img src="{$static}/resources/1.jpg" alt="通用的占位符缩略图">
+                bb
+              </a>
+            </div>
+
+            <div class="col-sm-5 col-md-6">
+              <a href="" class="thumbnail">
+                <img src="{$static}/resources/1.jpg" alt="通用的占位符缩略图">
+                cc
+              </a>
+            </div>
+          </div><!-- /#follower -->
+        </div><!-- /左侧-->
+
+        <!-- 右侧-->
+        <div class="col-sm-10" id="main-box" role="main">
+
+          <div class="row">
+          <div class="information col-md-4">
+            <h2>活动名</h2>
+            <div>
+              <span class="infolabel">时间：</span>
+              <span id="time"></span>
+            </div>
+
+            <div>
+              <span class="infolabel">地点：</span>
+              <span id="location1"></span>
+            </div>
+
+            <div>
+              <span class="infolabel">类型：</span>
+              <span id="type"></span>
+            </div>
+
+            <div>
+              <span class="infolabel">组织者：</span>
+              <span id="organizer">
+                <a href="">Amin</a>
+                <a href="">Amin</a>
+              </span>
+            </div>
+          </div><!-- /.information -->
+
+          <!-- feedback -->
+          <div class="information col-md-8">
+            <h3>反馈</h3>
+            <div>
+              <span class="infolabel">学生状况：</span>
+              <span id="">我有位家境一般的朋友，一直觉得如 果自己有钱一定会更幸福。后来他妈做婴 幼教育发财了。快十年后我见他，问：现 在你倒是有钱了，你真的幸福吗？他回 答：爽翻啦！我默默地走开了。</span>
+            </div>
+
+            <div>
+              <span class="infolabel">教师状况：</span>
+              <span id="">如果你很忙，除了你真的很重要以 外，更可能的原因是：你很弱，你没有什 么更好的事情去做，你生活太差不得不努 力来弥补，或者你装作很忙，让自己显得 很重要。——史蒂夫-乔布斯</span>
+            </div>
+
+            <div>
+              <span class="infolabel">学校建筑物状况：</span>
+              <span id="">你年轻时一事无成；时而自怨自艾颓 废堕落，时而咬紧牙关拼命努力，经营关 系；但你的生活一直没有改善，你一直很 痛苦，直到三十岁。”他听后兴奋地问： 那三十岁之后呢？有转机吗？算命先生微 微抬起头：三十岁后……你就开始习惯 了。</span>
+            </div>
+
+            <div>
+              <span class="infolabel">学校图书馆状况：</span>
+              <span id="">有些年轻人，一毕业就到某些大型国 企和机关中工作。每天没什么事儿，就是 吃饭喝酒，福利好得不得了。人生还没有 奋斗过就开始养老，自己的理想被丢在一 旁，用民脂民膏来享受特权。对于这样的 年轻人，我只想问你们四个字：哪投简 历？</span>
+            </div>
+          </div>
+          <!-- end feedback -->
+          </div>
+
+          <!-- photo -->
+          <div id="gallery" class="row">
+            <!-- <p>
+              相册 <a href="./album.html">查看更多</a>
+            </p> -->
+            <div class="col-sm-6 col-md-4">
+              <a href="{$static}/resources/3.jpg" class="thumbnail">
+                  <img src="{$static}/resources/3.jpg" alt="通用的占位符缩略图">
+              </a>
+            </div>
+
+            <div class="col-sm-6 col-md-2">
+              <a href="{$static}/resources/2.jpg" class="thumbnail">
+                  <img src="{$static}/resources/2.jpg" alt="通用的占位符缩略图">
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <a href="{$static}/resources/3.jpg" class="thumbnail">
+                  <img src="{$static}/resources/3.jpg" alt="通用的占位符缩略图">
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <a href="{$static}/resources/3.jpg" class="thumbnail">
+                  <img src="{$static}/resources/3.jpg" alt="通用的占位符缩略图">
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <a href="{$static}/resources/3.jpg" class="thumbnail">
+                  <img src="{$static}/resources/3.jpg" alt="通用的占位符缩略图">
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <a href="{$static}/resources/3.jpg" class="thumbnail">
+                  <img src="{$static}/resources/3.jpg" alt="通用的占位符缩略图">
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <a href="{$static}/resources/3.jpg" class="thumbnail">
+                  <img src="{$static}/resources/3.jpg" alt="通用的占位符缩略图">
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <a href="{$static}/resources/3.jpg" class="thumbnail">
+                  <img src="{$static}/resources/3.jpg" alt="通用的占位符缩略图">
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-2">
+              <a href="{$static}/resources/3.jpg" class="thumbnail">
+                  <img src="{$static}/resources/3.jpg" alt="通用的占位符缩略图">
+              </a>
+            </div>
+            
+
+            
+          </div>
+          <!-- end photo -->
+          
+
+          <div id="activityde" class="well row">
+            <p>活动详细介绍</p>
+          </div>
+
+          <div class="well row">
+            <h4 class="title">交流区</h4>
+
+            <div id="divcontent">
+              <div class="content row">
+                <div class="comment">
+                  <div>
+                    <div class="col-md-1">
+                      <a href="" class="thumbnail">
+                        <img src="{$static}/resources/1.jpg" alt="通用的占位符缩略图">
+                      </a>
+                    </div>
+
+                    <div class="col-md-11">
+                      <div class="comname">AminHuang</div>
+                      <span class="touid">121</span>
+                      <span class="val">这是一段废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话</span>
+                    </div>
+
+                    <div class=" col-md-offset-9">
+                      <span class="time">发表时间：2014-9-8</span>
+                      <button type="button" class="toComment btn btn-default btn-xs">回复</button>
+                    </div>
+                  </div>
+                </div><!-- /.comment -->
+
+                <div class="recomment col-md-12">
+                  <div class="recom col-md-12">
+                    <div class="col-md-1">
+                      <div class="thumbnail">
+                        <img src="{$static}/resources/1.jpg" alt="通用的占位符缩略图">
+                      </div>
+                    </div>
+                    <div class="col-md-11">
+                      <span class="comname">Amin</span>
+                      <span class="touid">123</span>
+                      <span class="val">回复AminHuang：这是回复回复回复</span>
+                    </div>
+                    <div class="col-md-offset-8">
+                      <span class="time">发表时间：2014-9-8</span>
+                      <button class="toComment btn btn-primary btn-xs sub" >回复</button>
+                    </div>
+                  </div><!-- recom -->
+
+                  <div class="recom col-md-12">
+                    <div class="col-md-1">
+                      <div class="thumbnail">
+                        <img src="{$static}/resources/1.jpg" alt="通用的占位符缩略图">
+                      </div>
+                    </div>
+                    <div class="col-md-11">
+                      <span class="comname">Amin</span>
+                      <span class="touid">133</span>
+                      <span class="val">回复AminHuang：这不是不是不是不是不是不是不是不是不是不是不是不是不是不是不是不是回复回复回复</span>
+                    </div>
+                    <div class="col-md-offset-8">
+                      <span class="time">发表时间：2014-9-8</span>
+                      <button class="toComment btn btn-primary btn-xs sub" >回复</button>
+                    </div>
+                  </div><!-- /.recom -->
+                </div><!-- /.recomment -->
+                    
+                <div class="answer col-md-12 text-right">
+                  <textarea class="valtocomment form-control" rows="2"></textarea>
+                  <button class="btn btn-primary btn-xs sub" >提交</button>
+                </div><!-- /.answer -->
+              </div><!-- /.content /.row -->
+
+              <div class="content row">
+                <div class="comment">
+                  <div>
+                    <div class="col-md-1">
+                      <a href="" class="thumbnail">
+                        <img src="{$static}/resources/1.jpg" alt="通用的占位符缩略图">
+                      </a>
+                    </div>
+                    <div class="col-md-11">
+                      <div class="comname">AminHuang</div>
+                      <span class="touid">111</span>
+                      <span class="val">这是一段废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话废话</span>
+                    </div>
+                    <div class=" col-md-offset-9">
+                      <span class="time">发表时间：2014-9-8</span>
+                      <button type="button" class="toComment btn btn-default btn-xs">回复</button>
+                    </div>
+                  </div>
+                </div><!-- /.content -->
+
+                <div class="answer col-md-12 text-right">
+                  <textarea class="valtocomment form-control" rows="2"></textarea>
+                  <button class="btn btn-primary btn-xs sub" >提交</button>
+                </div>
+              </div><!-- /.content /.row -->
+            </div><!-- /#divcontent -->
+
+            <form role="form">
+              <div class="form-group">
+                <label for="name">留言</label>
+                <textarea id="valcomment" class="form-control" rows="3"></textarea>
+              </div>
+              <button class="btn btn-primary" id="subcomment" type="button">提交</button>
+            </form>
+         </div><!-- .well .row -->
+        </div><!-- /右侧-->
+      </div><!-- /.row -->
+    </div><!-- /.jumbotron -->
+  </div>
+</block>
+    
+<block name="js">
+  <script src="{$static}/js/activity_display.js" type="text/javascript" charset="utf-8"></script>
+  <script src="{$static}/js/fs_forse.js"></script>
+</block>

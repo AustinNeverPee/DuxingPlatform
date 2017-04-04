@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.4.min.js"></script>
+<script>
+function removeAll(id) {
+    $.post("removeAll",function(data) {
+		var data = eval("("+data+")");
+		if(data.status == 1)
+			alert("删除成功!");
+		else
+			alert("删除失败!");
+	});
+}
+function addBase() {
+	$.post("addBase",function(data) {
+		var data = eval("("+data+")");
+		if(data.status == 1)
+			alert("添加成功!");
+		else
+			alert("添加失败!");
+	});
+}
+</script>
+</head>
+<body>
+<button onclick="removeAll()">删除所有数据表中数据</button>
+<button onclick="addBase()">添加基本数据</button>
+</body>
+</html>

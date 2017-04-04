@@ -1,0 +1,41 @@
+<?php
+/**
+ *作者：杨柳
+ *时间：2015-3-16
+ *修改时间：2015-3-24
+ *所属部分：首页展示
+ *主要包括热门活动、热门日志、热门地点的获取
+*/
+
+namespace Home\Controller;
+use Think\Controller;
+header("Content-Type: text/html; charset=utf-8");
+require_once "functions.php";
+
+class HomePageController extends Controller {
+	public function index() {
+		isUser();
+
+
+
+		/*在调用之前，现行给模板传入参数！渲染模板*/
+		$this->assign('static', C('STATIC_RESOURCE'));
+		$this->assign('gate', C('COMMON_GATE'));
+		$this->display();
+	}
+	
+    public function getHotStuff() {
+        $data = array();
+        $data['activity'] = M('activity')->limit(10)->select();
+        $data['blog'] = M('blog')->limit(10)->select();
+        $data['site'] = M('site')->limit(10)->select();
+
+        $this->ajaxReturn($data, 'json');
+    }
+	/*public function test() {
+		echo U('PersonalHomepage/index?id=1')."<br />";
+		echo C('COMMON_GATE')."<br />";
+		echo C('STATIC_RESOURCE');
+		die("<br />暂停脚本");
+	}*/
+}

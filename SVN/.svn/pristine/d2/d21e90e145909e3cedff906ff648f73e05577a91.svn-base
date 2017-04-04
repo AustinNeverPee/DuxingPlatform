@@ -1,0 +1,23 @@
+$(document).ready(function(){
+
+	commonURL = "/maitian/welfare/index.php";
+	/*
+	拆分URL获取参数schoolid
+	*/
+    var locationhref = window.location.href;
+    schoolid = locationhref.split("schoolid/")[1];
+	initate();
+})
+
+function initate(){
+	$.post(commonURL+"/Home/School/getHostoryFbk",{"schid":schoolid},function(json){
+		for(var i = 0;i<json.length;i++){
+			var content = '<div class="historyfbklist">'+
+			'<div class="page-header"><h2><b>'+json.actname+'</b><small>'+json.date+
+			'</small></h2></div><p>'+json.cont+
+			'</p></div>';
+			$("#main-box").append(content);
+		}
+
+	});
+}

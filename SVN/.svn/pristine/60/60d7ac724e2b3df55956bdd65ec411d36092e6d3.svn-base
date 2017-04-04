@@ -1,0 +1,76 @@
+<extend name="../welfare/Home/View/Tpl/base.html" />
+
+<block name="title">
+  <title>相册图片</title>
+</block>
+
+<block name="css">
+  <link href="{$static}/css/activity_display.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="{$static}/css/fsgallery.css" rel="stylesheet" />
+</block>
+
+<block name="main">
+  <div class="container holder">
+    <div class="jumbotron">
+      <div class="row">
+        <!-- 左侧-->
+        <div class="col-sm-2">
+          
+        </div><!-- /左侧-->
+
+        <!-- 右侧-->
+        <div class="col-sm-10" id="main-box" role="main">
+          <!-- 占位-->
+
+          
+
+          <!-- photo -->
+          <div id="gallery" class="row">
+            <!-- 相册封面填充 -->
+           <!--  载入标签，可以选择相册中的照片 第一张为active
+                    /*var addLi = "<li data-target='#box" + currentbox + "' data-slide-to = '0' class='active'></li>";*/
+                    //载入所有照片与标签
+                  /*  for (var j = 1; j < data.imagesrcs[i].length; j++){
+                        eachPhotoLoad+= "<div class = 'item'> <img src='"+ data.imagesrcs[i][j] +"'></div>";
+                        addLi+= "<li data-target='#box'" + currentbox + " data-slide-to = '" + j.toString() + "'></li>";
+                    }
+                    loadPhoto+= "<div class='border-set text-center photoBlock'>"+
+                             "<h3>"+
+                             data.albumnames[i] +
+                             "<small>"+
+                             data.uploadtimes[i]+
+                            "</small>"+
+                            "</h3>"+
+                                "<div id='box" +currentbox +"' class='carousel slide border-set'>"+
+                                "<ol class='carousel-indicators'>"+
+                                addLi+
+                                "</ol>"+
+                                "<div class='carousel-inner'>"+
+                                eachPhotoLoad +
+                                "</div>"+
+                                "<a class='left carousel-control' href='#box"+ currentbox +"' data-slide='prev'>"+
+                              "&lsaquo;"+
+                              "</a>"+
+                              "<a class='right carousel-control' href='#box"+ currentbox +"' data-slide='next'>"+
+                              "&rsaquo;"+
+                              "</a>";+
+                              "</div>"+
+                              "</div>";
+                    $("#divphoto").append(loadPhoto);*/ -->
+            
+          </div>
+          <!-- end photo -->
+          
+
+          
+         
+        </div><!-- /右侧-->
+      </div><!-- /.row -->
+    </div><!-- /.jumbotron -->
+  </div>
+</block>
+    
+<block name="js">
+  <script src="{$static}/js/fs_forse.js"></script>
+  <script src="{$static}/js/show_fbkphoto.js"></script>
+</block>

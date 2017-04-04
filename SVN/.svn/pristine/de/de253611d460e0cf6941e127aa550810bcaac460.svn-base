@@ -1,0 +1,98 @@
+.pcontent {
+	/*border-right: 1px solid #DCDCDC;*/
+	/*margin-right: 10px;*/
+}
+
+.page-header {
+	text-align: center;
+}
+
+h4.title {
+	font-family: "Times New Roman",Georgia,Serif;
+}
+
+div.content {
+	border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: 1px;
+    margin: 10px;
+    padding: 10px;
+}
+
+div.name {
+	font-weight:bold;
+}
+/*日志*/
+#divblog .log{
+	margin-bottom: 20px;
+	background-color: #e77919;
+	padding: 5px;
+}
+
+.logMain{
+  text-align: left;
+  background-color: #ffffff;
+}
+
+h3{
+	margin-top: 0px;
+}
+
+.logTitle{
+	color: #ffffff;
+}
+#blogbox button{
+	float: right;
+}
+/*日志结束*/
+
+/*相册*/
+.photoBlock img{
+	max-height: 240px;
+	max-width: 320px;
+	min-height: 220px;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+}
+
+small {
+	color: #ffffff!important;
+}
+
+.photoBlock{
+	height: 300px;
+	background-color: #e77919;
+	color: #ffffff;
+	width: 800px;
+	margin-top: 20px;
+}
+
+.photoBox{
+	background-color: #ffffff;
+}
+
+/*相册结束*/
+
+/*左侧*/
+#leftBox button{
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: grey;
+    color: #ffffff;
+}
+
+#leftBox .form-control{
+	margin-top: 20px;
+}
+/*左侧结束*/
+
+.alttext {
+	display: none;
+}
+.alttextred {
+	color:red;
+	font-size: 24pt;
+}

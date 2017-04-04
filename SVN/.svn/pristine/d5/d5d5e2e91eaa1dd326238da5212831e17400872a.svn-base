@@ -1,0 +1,23 @@
+$(document).ready(function(){
+
+	commonURL = "/maitian/welfare/index.php";
+	/*
+	拆分URL获取参数schoolid
+	*/
+    var locationhref = window.location.href;
+    schoolid = locationhref.split("schoolid/")[1];
+	initate();
+})
+
+function initate(){
+	$.post(commonURL+"/Home/School/getFeedBackBySiteid",{"siteid":schoolid},function(json){
+		for(var i = 0;i<json.length;i++){
+			var content = '<div class="historyfbklist">'+
+			'<div class="page-header"><h2><b>'+'麦田少年社建议'+json[i].teamsuggest+'</b><small>'+json[i].fdbckdt+
+			'</small></h2></div><p>学校建筑物状态'+json[i].schbuildingstate+
+			'</p></div>';
+			$("#main-box").append(content);
+		}
+
+	});
+}

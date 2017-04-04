@@ -1,0 +1,191 @@
+<extend name="../welfare/Home/View/Tpl/base.html" />
+
+<block name="title">
+  <title>活动展示</title>
+</block>
+
+<block name="css">
+  <link href="{$static}/css/activity_display.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="{$static}/css/fsgallery.css" rel="stylesheet" />
+</block>
+
+<block name="menu">
+  <div class="btn-group-vertical levelTwo">
+    <a href="#" class="btn btn-info" role="button" id="actname">
+      活动名
+    </a>
+    <a href="feedbacktable.html" class="btn btn-info" role="button" id="actfeedback">
+      查看反馈
+    </a>
+    <a href="feedbacktable.html" class="btn btn-info" role="button" id="addfeedback">
+      创建反馈
+    </a>
+    <a href="#" class="btn btn-info" role="button" id="actattend">
+      报名参加
+    </a>
+  </div>
+</block>
+
+<block name="main">
+  <div class="container holder">
+    <div class="jumbotron">
+      <div class="row">
+        <!-- 左侧-->
+        <div class="col-sm-2">
+          <div class="well" id="poster">
+          </div>
+          
+
+          <button id="fol" type="button" class="btn btn-default">+关注</button>
+
+          <div id="follower" class="row">
+            <div class="follow">
+            <div class="col-sm-5 col-md-6">
+              <a href="" class="thumbnail">
+              </a>
+            </div>
+
+            <div class="col-sm-5 col-md-6">
+              <a href="" class="thumbnail">
+              </a>
+            </div>
+            </div>
+
+
+          </div><!-- /#follower -->
+        </div><!-- /左侧-->
+
+        <!-- 右侧-->
+        <div class="col-sm-10" id="main-box" role="main">
+
+          <div class="row">
+          <div class="information col-md-12">
+            <div class="col-md-4" id="activityname">
+              
+            </div>
+            <div class="col-md-4">
+              <p>
+              <span class="infolabel">时间：</span>
+              <span id="time"></span>
+              </p>
+              <p>
+              <span class="infolabel">类型：</span>
+              <span id="type"></span>
+              </p>
+             
+
+            </div>
+
+            <div class="col-md-4">
+              <p>
+              <span class="infolabel">组织者：</span>
+              <span id="organizer">
+              </span>
+              </p>
+               <p>
+              <span class="infolabel">地点：</span>
+              <span id="location1"></span>
+              </p>
+            </div>
+          </div><!-- /.information -->
+
+          <!-- feedback -->
+          <div class="information col-md-12">
+            <h3>反馈</h3>
+            <p>
+              <span class="infolabel">学生状况：</span>
+              <span id="studentstate" class="infodetail"></span>
+              
+            </p>
+            <p>
+              <span class="infolabel">教师状况：</span>
+              <span id="" class="infodetail"></span>
+            </p>
+            <p>
+              <span class="infolabel">学校建筑物状况：</span>
+              <span id="" class="infodetail"></span>
+            </p>
+            <p>
+              <span class="infolabel">学校图书馆状况：</span>
+              <span id="" class="infodetail"></span>
+            </p>
+
+            <p>
+              <span class="infolabel">教师状况：</span>
+              <span id="teacherstate"></span>
+              
+            </p>
+
+            <p>
+              <span class="infolabel">学校建筑物状况：</span>
+              <span id="buildingstate" class="infodetail"></span>
+             
+            </p>
+
+            <p>
+              <span class="infolabel">学校图书馆状况：</span>
+              <span id="libstate" class="infodetail"></span>
+              <a href="" class="btn btn-default btn-sm feedbackhref">查看详细反馈</a>
+            </p>
+          </div>
+          <!-- end feedback -->
+          </div>
+
+          <!-- photo -->
+          <div id="gallery" class="row">
+            <!-- <p>
+              相册 <a href="./album.html">查看更多</a>
+            </p> -->
+            
+            
+          </div>
+          <!-- end photo -->
+          
+
+          <div id="activityde" class="well row">
+            <p>活动详细介绍</p>
+          </div>
+
+          <div class="well row">
+            <h4 class="title">交流区</h4>
+
+            <div id="divcontent">
+              <div class="content row">
+                <div class="comment">
+                  <div>
+                    <div class="col-md-1">
+                    </div>
+
+                    <div class="col-md-11">
+                    </div>
+
+                    <div class=" col-md-offset-9">
+                    </div>
+                  </div>
+                </div><!-- /.comment -->
+
+                <div class="answer col-md-12 text-right">
+                  <textarea class="valtocomment form-control" rows="2"></textarea>
+                  <button class="btn btn-primary btn-xs sub" >提交</button>
+                </div>
+              </div><!-- /.content /.row -->
+            </div><!-- /#divcontent -->
+
+            <form role="form">
+              <div class="form-group">
+                <label for="name">留言</label>
+                <textarea id="valcomment" class="form-control" rows="3"></textarea>
+              </div>
+              <button class="btn btn-primary" id="subcomment" type="button">提交</button>
+            </form>
+         </div><!-- .well .row -->
+        </div><!-- /右侧-->
+      </div><!-- /.row -->
+    </div><!-- /.jumbotron -->
+  </div>
+</block>
+    
+<block name="js">
+  <script src="{$static}/js/activity_display.js" type="text/javascript" charset="utf-8"></script>
+  <script src="{$static}/js/fs_forse.js"></script>
+</block>

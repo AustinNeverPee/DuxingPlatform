@@ -1,0 +1,254 @@
+<?php
+/*
+author:胡学东
+*/
+namespace Home\Controller;
+use Think\Controller;
+require_once "functions.php";
+header("Content-Type: text/html; charset=utf-8");
+class ActivityController extends Controller {
+    public function index() {		
+		/*在调用之前，现行给模板传入参数！渲染模板*/
+		$this->assign('static', C('STATIC_RESOURCE'));
+		$this->assign('gate', C('COMMON_GATE'));
+	    $this->display();
+	}
+    
+	public function initate() {
+	    $data = array();
+	    $Province = M("province");
+		
+		$content = $Province->select();
+		if(!queryCheck($content)) {
+			die();
+		}
+		
+		$data['status'] = 1;
+		$data["provinceids"] = array();
+		$data["provincenames"] = array();
+		foreach($content as $province) {
+			array_push($data["provinceids"],$province["provinceid"]);
+			array_push($data["provincenames"],$province["provincename"]);
+		}
+		echo json_encode($data);
+	}
+
+    public function getCity() {
+	
+		//定义一个图片路径前缀！
+		define("PREDIR", C('STATIC_RESOURCE')."/resources/");
+		
+	    $provinceid = I("post.provinceid");
+	    $data = array();
+		
+		if(!ajaxCheck($provinceid)) {
+			die();
+		}
+		
+		//读取市的id和名称
+		$City = M("city");
+		$Image = M("image");
+		$content = $City->where("provinceid = '$provinceid'")->select();
+        if(!queryCheck($content)) {
+			die();
+		}
+		$data['status'] = 1;
+		$data["cityids"] = array();
+		$data["citienames"] = array();
+		foreach($content as $city) {
+			array_push($data["cityids"],$city["cityid"]);
+			array_push($data["citienames"],$city["cityname"]);
+		}
+
+		//读取活动id和名称
+		$Activity = M("activity");
+			
+		$siteid = M("site")->where("provinceid = '$provinceid'")->getField("siteid");
+		if(!queryCheck($siteid)) {
+			die();
+		}
+		$aids = M("targetloc")->where("siteid = '$siteid'")->getField("aid",true);
+        if(!queryCheck($aids)) {
+			die();
+		}		
+		$data["activityids"] = array();
+		$data["activityurls"] = array();
+		$data["activitynames"] = array();	
+		$data["imagesrcs"] = array();
+
+		foreach($aids as $aid) {
+			$content = $Activity->where('aid='.$aid)->select();
+			if(!queryCheck($content)) {
+				die();
+			}
+			foreach($content as $activity) {
+				array_push($data["activityids"],$activity["aid"]);
+				array_push($data["activitynames"],$activity["aname"]);
+				array_push($data["activityurls"],U('ActivityDisplay/index?acid='.$activity["aid"]));
+				
+				//这里代码有修改
+				$goalImage =  $Image -> where("iid='".$activity['apostimg']."'") ->find();
+				if(!queryCheck($goalImage)) {
+					die();
+				}
+				array_push($data["imagesrcs"], PREDIR.$goalImage['imgpath']);
+		    }
+		}
+		echo json_encode($data);
+	}
+
+	public function getCounty() {
+	
+		//定义一个图片路径前缀！
+		define("PREDIR", C('STATIC_RESOURCE')."/resources/");
+		
+	    $cityid = I("post.cityid");
+	    $data = array();
+        
+		
+		if(!ajaxCheck($cityid)) {
+			die();
+		}
+		//读取县的id和名称
+		$County = M("county");
+		
+		$content = $County->where("cityid = '$cityid'")->select();
+		if(!queryCheck($content)) {
+			die();
+		}
+		
+		$data['status'] = 1;
+		$data["countyids"] = array();
+		$data["countynames"] = array();
+		foreach($content as $county) {
+			array_push($data["countyids"],$county["countyid"]);
+			array_push($data["countynames"],$county["countyname"]);
+		}
+		
+		//读取活动id和名称
+		$Activity = M("activity");
+		$data["activityids"] = array();
+		$data["activityurls"] = array();
+		$data["activitynames"] = array();
+		$data["imagesrcs"] = array();
+		$siteid = M("site")->where("cityid = '$cityid'")->getField("siteid");
+        if(!queryCheck($siteid)) {
+			die();
+		}		
+		$aids = M("targetloc")->where("siteid = '$siteid'")->getField("aid",true);
+		if(!queryCheck($aids)) {
+			die();
+		}
+		foreach($aids as $aid) {
+		    $content = $Activity->where('aid='.$aid)->select();
+			if(!queryCheck($content)) {
+				die();
+			}
+			foreach($content as $activity) {
+				array_push($data["activityids"], $activity["aid"]);
+				array_push($data["activitynames"], $activity["aname"]);
+				array_push($data["activityurls"], U('ActivityDisplay/index?acid='.$activity["aid"]));
+				array_push($data["imagesrcs"], PREDIR.$activity["apostimg"]);
+			}
+		}
+		//var_dump($data);
+		echo json_encode($data);
+	}
+
+	public function getTown() {
+	
+		//定义一个图片路径前缀！
+		define("PREDIR", C('STATIC_RESOURCE')."/resources/");
+		
+	    $countyid = I("post.countyid");
+	    $data = array();
+		
+		
+		if(!ajaxCheck($countyid)) {
+			die();
+		}
+		//读取乡镇的id和名称
+		$Town = M("town");
+		
+		$content = $Town->where("countyid = '$countyid'")->select();
+		if(!queryCheck($content)) {
+			die();
+		}
+		
+		$data['status'] = 1;
+		$data["townids"] = array();
+		$data["townnames"] = array();
+		foreach($content as $town) {
+			array_push($data["townids"],$town["townid"]);
+			array_push($data["townnames"],$town["townname"]);
+		}
+		
+		//读取活动id和名称
+		$Activity = M("activity");
+		$data["activityids"] = array();
+		$data["activityurls"] = array();
+		$data["activitynames"] = array();
+		$data["imagesrcs"] = array();
+		$siteid = M("site")->where("countyid = '$countyid'")->getField("siteid");
+		if(!queryCheck($siteid)) {
+			die();
+		}
+		$aids = M("targetloc")->where("siteid = '$siteid'")->getField("aid",true);
+		if(!queryCheck($aids)) {
+			die();
+		}
+		foreach($aids as $aid) {
+		    $content = $Activity->where('aid='.$aid)->select();
+			if(!queryCheck($content)) {
+				die();
+			}
+			foreach($content as $activity) {
+				array_push($data["activityids"],$activity["aid"]);
+				array_push($data["activityurls"],U('ActivityDisplay/index?acid='.$activity["aid"]));
+				array_push($data["activitynames"],$activity["aname"]);
+				array_push($data["imagesrcs"], PREDIR.$activity["apostimg"]);
+			}
+		}
+		
+		echo json_encode($data);
+	}
+	
+	public function getActivity() {
+	
+		//定义一个图片路径前缀！
+		define("PREDIR", C('STATIC_RESOURCE')."/resources/");
+		
+	    $townid = I("post.townid");
+	    $data = array();
+		
+		
+		if(!ajaxCheck($townid)) {
+			die();
+		}
+		//读取活动id和名称
+		$Activity = M("activity");
+		$content = $Activity->where("townid = '$townid'")->select();
+		if(!queryCheck($content)) {
+			die();
+		}
+		$data["activityids"] = array();
+		$data["activityurls"] = array();
+		$data["activitynames"] = array();
+		$data["imagesrcs"] = array();
+		foreach($content as $activity) {
+		    array_push($data["activityids"],$activity["aid"]);
+			array_push($data["activityurls"],U('ActivityDisplay/index?acid='.$activity["aid"]));
+			array_push($data["activitynames"],$activity["aname"]);
+			array_push($data["imagesrcs"], PREDIR.$activity["apostimg"]);
+		}
+		
+		echo json_encode($data);
+	}
+
+	public function album() {		
+		/*在调用之前，现行给模板传入参数！渲染模板*/
+		$this->assign('static', C('STATIC_RESOURCE'));
+		$this->assign('gate', C('COMMON_GATE'));
+	    $this->display();
+	}
+}

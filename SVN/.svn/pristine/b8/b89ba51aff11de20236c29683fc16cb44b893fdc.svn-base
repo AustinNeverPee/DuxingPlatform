@@ -1,0 +1,23 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+header("Content-Type: text/html; charset=utf-8");
+
+class AdminController extends Controller {
+	public function index() {
+		$this->display();
+	}
+	public function removeAll() {
+		$chart = ["actfdbcktype","actfollower","activity","activitytype","actrelcmnt","actrelimg","album","blog","blogrelcmnt","blogrelimg",
+		"blogrelsite","city","comment","county","feedback","feedbacktype","follower","image","imagetype","imgrelcmnt","member","message",
+		"organization","participant","province","report","site","sitefollower","siterelcmnt","siterelimg","sponsor","targetloc","town","user",
+		"user","usergroup","userverify"];
+		for($i = 0; $i < count($chart); $i++)
+			M($chart[$i])->where("1")->delete();
+		$text['status'] = 1;
+		echo json_encode($text);
+	}
+	public function addBase() {
+		M("usergroup")->
+	}
+}

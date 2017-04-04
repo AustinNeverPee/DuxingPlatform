@@ -1,0 +1,62 @@
+<extend name="../welfare/Home/View/Tpl/base.html" />
+
+<block name="title">
+  <title>地点索引</title>
+</block>
+
+<block name="css">
+  <link href="{$static}/css/location.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="{$static}/css/fsgallery.css" rel="stylesheet" />
+</block>
+
+<block name="menu">
+  <div class="btn-group-vertical levelTwo">
+    <a href="{$gate}/LocationIndex/index" class="btn btn-info" role="button">
+      地点索引
+    </a>
+    <a href="{$gate}/NewLocation/index" class="btn btn-info" role="button">
+      新建地点
+    </a>
+  </div>
+</block>
+
+<block name="main">
+  <div class="container holder">
+    <div class="jumbotron">
+      <div class="row">
+        <!--筛选框 选择地点-->
+        <div class="col-md-2 text-center well" id="filter-box">
+
+          <select class="form-control" id="province">
+            <option value="0">-省-</option>
+          </select>
+
+          <select class="form-control" id="cities">
+            <option value="0">-市-</option>
+          </select>
+
+          <select class="form-control" id="contries">
+            <option value="0">-县/区-</option>
+          </select>
+
+          <select class="form-control" id="towns">
+            <option value="0">-村镇-</option>
+          </select>
+        </div><!--结束选择地点-->
+        <!--学校列表-->
+        <div class="col-md-10 well" id="main-box">
+          <div class="row" id="main-school">
+            <div class="col-md-3 text-center">
+              <span class="glyphicon glyphicon-star"></span><a href="#">schools</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</block>
+    
+<block name="js">
+  <script src="{$static}/js/location.js" type="text/javascript"></script>
+  <script src="{$static}/js/fs_forse.js"></script>
+</block>

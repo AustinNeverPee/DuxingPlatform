@@ -1,0 +1,7 @@
+<html>
+	<body>
+	<h1>404错误</h1>
+	<p>您访问的页面不存在！</p>
+	<a href="welfare/index.php/Home/HomePage">点击返回主页</a>
+	</body>
+</html>

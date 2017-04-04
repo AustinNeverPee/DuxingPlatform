@@ -1,0 +1,27 @@
+<?php
+$debug = false;
+
+if($debug) {
+	$consts = Array(
+		"DATA_BASE" => Array(
+			"HOST" => "localhost",
+			"NAME" => "welfare",
+			"USER" => "root",
+			"PWD"  => "",
+			"PORT" => "3306"
+		)
+	);
+}
+else {
+	$consts = Array(
+		"DATA_BASE" => Array(
+			"HOST" => "localhost",
+			"NAME" => "maitian",
+			"USER" => "maitian",
+			"PWD"  => "5438250",
+			"PORT" => "3306"
+		)
+	);
+}
+
+return $consts;

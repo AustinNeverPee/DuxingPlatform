@@ -1,0 +1,213 @@
+/**
+ * Author:chen_xl
+ * Date:2015-3-21
+ * CSS:HomePage;
+ */
+ #logo{
+ 	position: absolute;
+ 	top:10px; 
+ 	left:10px;
+ }
+ #mainbutton1{
+ 	position: absolute; 
+ 	left: 135px;
+ 	top: 20px; 
+ 	/*opacity:0.4;*/
+ 	background-color:rgba(50,50,50,0.4); 
+ 	color:#FFFFFF; 
+ 	width:80px; 
+ 	color:white; 
+ 	height:80px; 
+ 	border:1px 
+ 	solid rgba(50,50,50,0.4); 
+ 	border-radius:50%;
+ }
+
+ #mainbutton1:hover{
+ 	background-color:rgba(50,50,50,1);
+ 	border:1px 
+ 	solid rgba(50,50,50,1);
+ }
+
+  #mainbutton2{
+	position: absolute;
+	left: 100px; 
+	top: 100px; 
+	/*opacity:0.4;*/
+	background-color:rgba(50,50,50,0.4); 
+	color:#FFFFFF; width:80px; 
+	color:white; height:80px; 
+	border:1px solid rgba(50,50,50,0.4); 
+	border-radius:50%;
+ }
+
+ #mainbutton2:hover{
+ 	background-color:rgba(50,50,50,1);
+ 	border:1px 
+ 	solid rgba(50,50,50,1);
+ }
+
+ #mainbutton3{
+ 	position: absolute; 
+ 	left: 20px;
+ 	top: 135px;
+ 	/*opacity:0.4;*/
+ 	background-color:rgba(50,50,50,0.4); 
+ 	color:#FFFFFF; width:80px; 
+ 	color:white; height:80px; 
+ 	border:1px solid rgba(50,50,50,0.4); 
+ 	border-radius:50%;
+ }
+
+ #mainbutton3:hover{
+ 	background-color:rgba(50,50,50,1);
+ 	border:1px 
+ 	solid rgba(50,50,50,1);
+ }
+
+#indexsignin {
+	position: absolute; 
+ 	left: 20px;
+ 	top: 225px;
+ 	background-color:rgba(50,50,50,0.4); 
+ 	color:#FFFFFF; width:80px; 
+ 	color:white; height:80px; 
+ 	border:1px solid rgba(50,50,50,0.4); 
+ 	border-radius:50%;
+}
+
+#signin:hover {
+	background-color:rgba(50,50,50,1);
+ 	border:1px 
+ 	solid rgba(50,50,50,1);
+}
+
+#indexsignup {
+	position: absolute; 
+ 	left: 20px;
+ 	top: 315px;
+ 	background-color:rgba(50,50,50,0.4); 
+ 	color:#FFFFFF; width:80px; 
+ 	color:white; height:80px; 
+ 	border:1px solid rgba(50,50,50,0.4); 
+ 	border-radius:50%;
+}
+
+#indexsignup:hover {
+	background-color:rgba(50,50,50,1);
+ 	border:1px 
+ 	solid rgba(50,50,50,1);
+}
+
+#navfram{
+	width: 90px;
+	position:fixed; 
+	top:0px; 
+	right:10px;
+}
+
+.navbutton{
+ 	border:1px 
+ 	solid rgba(50,50,50,0.4);
+ 	width:80px; 
+ 	height:80px; 
+ 	border-radius:50%;
+ 	/*opacity:0.3; */
+ 	background-color:rgba(50,50,50,0.4); 
+ 	color:white; 
+ 	margin-top: 10px;
+}
+
+.navbutton:hover{
+	border:1px
+ 	solid rgba(50,50,50,1);
+	background-color: rgba(50,50,50,1);
+	/*opacity: 0.7;*/
+}
+
+.navbutton:active{
+	border: 0px;
+}
+
+ #contents{
+ 	margin:0px; 
+ 	padding:0px;
+ }
+
+ #activity{
+ 	margin:0;
+ }
+
+ h1{
+ 	padding-bottom:20px; 
+ 	padding-top:20px;
+ }
+
+ .secondaryhead{
+	width:80%; 
+	margin:0 auto; 
+	text-align:center; 
+	overflow:hidden;
+ }
+
+ .sconndaryblock{
+ 	width:33.333333%; 
+ 	float:left;
+ }
+
+ .diffrentstyle{
+ 	margin:0; 
+ 	background-color:#EFEFEF;
+ }
+
+ #contact{
+ 	background-color:#222222; 
+ 	color:white; 
+ 	text-align:center; 
+ 	padding:5px;
+ }
+
+ #imagestyle{
+ 	width:100%;
+ }
+
+ .headImage {
+ 	position: absolute; 
+ 	left: 100px;
+ 	top: 100px;
+ 	/*background-color:rgba(50,50,50,0.4); */
+ 	color:#FFFFFF;
+ 	width:80px; 
+ 	height:80px; 
+ 	/*border:1px solid rgba(50,50,50,0.4); */
+ 	border-radius:50%;
+ 	text-align: center;
+ 	border:1px solid rgba(50,50,50,0.4);
+ }
+
+ .head {
+ 	width: 80px;
+ 	height: 80px;
+ 	border-radius: 50%;
+ 	border:1px solid rgba(50,50,50,0.4); 
+ }
+
+ /*#username {
+ 	background-color:rgba(50,50,50,0.4);
+ 	border:1px solid rgba(50,50,50,0.4); 
+ 	border-radius:10%;
+ 	padding: 4px;
+ }*/
+
+ #forgetPassword {
+	margin-left: 10px;
+}
+
+#imgIdentifyingCode {
+	 width: 80px;
+	 height: 33px;
+}
+
+#signup {
+	margin-left: 10px;
+}

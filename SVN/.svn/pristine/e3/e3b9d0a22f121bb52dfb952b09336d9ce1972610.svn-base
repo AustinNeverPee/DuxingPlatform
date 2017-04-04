@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+function remov(id) {
+    $.post("remove",{id:id},function(data) {
+		var data = eval("("+data+")");
+		if(data.status == 1)
+			alert("删除成功!");
+		else
+			alert("删除失败!");
+	});
+}
+</script>
+</head>
+<body>
+<p>Test!</p>
+<?php
+$num = count($data);
+for($i = 0;$i < $num;$i++) {
+    echo "<p>"+$data[$i]["uname"]+"</p><button onclick='remov("+$data[$i]["uid"]+")'>删除该用户</button>";
+}
+?>
+</body>
+</html>

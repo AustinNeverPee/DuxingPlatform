@@ -1,0 +1,243 @@
+<?php
+/*
+author:胡学东
+*/
+namespace Home\Controller;
+use Think\Controller;
+require_once "functions.php";
+header("Content-Type: text/html; charset=utf-8");
+class NewLocationController extends Controller {
+    public function index() {
+		
+		/*在调用之前，现行给模板传入参数！渲染模板*/
+		$this->assign('static', C('STATIC_RESOURCE'));
+		$this->assign('gate', C('COMMON_GATE'));
+	    $this->display();
+	}
+	public function initate() {
+	    $data = array();
+	    $Province = M("province");
+		$content = $Province->select();
+		
+		if(!queryCheck($content)) {
+			die();
+		}
+		$data['status'] = 1;
+	    $data["provinceids"] = array();
+		$data["provincenames"] = array();
+		foreach($content as $province) {
+			array_push($data["provinceids"],$province["provinceid"]);
+			array_push($data["provincenames"],$province["provincename"]);
+		}
+		echo json_encode($data);
+	}
+
+    public function getCity() {
+	    $provinceid = I("post.provinceid");
+		
+		if(!ajaxCheck($provinceid)) {
+			die();
+		}
+		
+	    $data = array();
+
+		//读取市的id和名称
+		$City = M("city");
+		$content = $City->where("provinceid = '$provinceid'")->select();
+		
+		if(!queryCheck($content)) {
+			die();
+		}
+		$data['status'] = 1;
+		$data["cityids"] = array();
+		$data["citienames"] = array();
+		foreach($content as $city) {
+			array_push($data["cityids"],$city["cityid"]);
+			array_push($data["citienames"],$city["cityname"]);
+		}
+		echo json_encode($data);
+	}
+	
+	public function getCounty() {
+	    $cityid = I("post.cityid");
+		
+		if(!ajaxCheck($cityid)) {
+			die();
+		}
+		
+	    $data = array();
+		$cityid = 1;
+		
+		//读取县的id和名称
+		$County = M("county");
+		$content = $County->where("cityid = '$cityid'")->select();
+		
+		if(!queryCheck($content)) {
+			die();
+		}
+		$data['status'] = 1;
+		$data["countyids"] = array();
+		$data["countynames"] = array();
+		foreach($content as $county) {
+			array_push($data["countyids"],$county["countyid"]);
+			array_push($data["countynames"],$county["countyname"]);
+		}
+		echo json_encode($data);
+	}
+	
+	public function getTown() {
+	    $countyid = I("post.countyid");
+		
+		if(!ajaxCheck($countyid)) {
+			die();
+		}
+		
+	    $data = array();
+		
+		//读取乡镇的id和名称
+		$Town = M("town");
+		$content = $Town->where("countyid = '$countyid'")->select();
+		if(!queryCheck($content)) {
+			die();
+		}
+		$data['status'] = 1;
+		$data["townids"] = array();
+		$data["townnames"] = array();
+		foreach($content as $town) {
+			array_push($data["townids"],$town["townid"]);
+			array_push($data["townnames"],$town["townname"]);
+		}
+		echo json_encode($data);
+	}
+
+	/**
+	 *Author: 何衡
+	 *用户点击上传图片后，将图片信息写入到数据，并将对应文件放到指定用户目录
+	 *@param @uId : string 该参数由session中获得
+	 *@param @siteId : string 该参数由从POST变量中获得
+	 *经测试，该接口工作正常
+	 */
+	public function uploadImage() {
+		
+		//宏定义头像类型！
+		define('ICON', 1);
+
+		//定义需要用的数据库
+		$allImageDB		= M('image');
+		$allUserDB 		= M('user');
+		$allSiteDB		= M('site');
+
+		//从前端获取用户id
+		$uId		= session('uid');
+		$siteId 	= I('post.siteid');
+
+		//定义用户上传图片的目标文件夹
+		$userName = $allUserDB->where('uid='.$uId)->getField('uname');
+		if(!queryCheck($userName)) {
+			die();
+		}
+		$targetFolder = C('STATIC_RESOURCE').'/resources/'.$userName.'/';
+
+		if (!empty($_FILES)) {
+			//在服务器根目录下指定文件上传的路径
+			$tempFile = $_FILES['Filedata']['tmp_name'];
+			$targetPath = $_SERVER['DOCUMENT_ROOT'].$targetFolder;
+
+			//利用毫秒级别的时间重命名上传的文件
+			//切割掉 microtime()函数返回数据格式 0.25139300 1138197510中的点
+			$nodot = explode(".", microtime());
+			$namestr = str_replace(' ', '', $nodot[1]);
+			$uptype = explode(".", $_FILES["Filedata"]["name"]);
+			$newname = $namestr.".".$uptype[1];
+			$_FILES["Filedata"]["name"] = $newname;
+
+			//定位目标文件welfare/Common/Static/resources/$userName/xxxxx.jpg
+			$targetFile = $targetPath.$_FILES['Filedata']['name'];
+
+			//验证文件后缀名是否是规定的类型
+			$fileTypes = array('jpg', 'jpeg', 'pjpeg', 'gif', 'png');
+			$fileParts = pathinfo($_FILES['Filedata']['name']);
+
+			//将图片及其关联信息写入到数据库
+			if (in_array($fileParts['extension'],$fileTypes)) {
+
+				//构造需要写入数据库的图片信息
+				$dataForImg['uid'] = $uId;
+				$dataForImg['imgpath'] = $userName.'/'.$_FILES["Filedata"]["name"];
+				$dataForImg['imgdt'] = date('Y-m-d H:i:s', time());
+				$dataForImg['albumid'] = null;
+				$dataForImg['imgtype'] = ICON;
+				
+				//将图片信息插入到数据库，失败则设置操作异常
+				$iid = $allImageDB->data($dataForImg)->add();
+				if (!queryCheck($iid)) {
+					die();
+				} else {
+
+					//更新用户数据库
+					$allSiteDB->sitemainpic = $iid;
+					$allSiteDB->where('siteid='.$siteId)->save();
+					
+					//写数据库成功，讲图片拷贝到指定目录下
+					move_uploaded_file($tempFile, $targetFile);
+							
+					$tmpImage = new \Think\Image(\Think\Image::IMAGE_GD, $targetFile);
+					$response = array();
+					$response['iid'] = $iid;
+					$response['imgpath'] = $targetFolder.$_FILES['Filedata']['name'];
+					$response['status'] = 1;
+					
+					$this->ajaxReturn($response, 'json');
+					
+				}
+			} else {
+				$response = array();
+				$response['status'] = 0;
+				$response['msg'] = 'Invalid file type.';
+			}
+		}
+	}
+	public function saveLocation() {
+	    
+	    $text = array();
+        $townid = I('post.townid');
+		
+		if(!ajaxCheck($townid)) {
+			die();
+		}
+		
+		$cityid = I('post.cityid');
+		$provinceid = I('post.provinceid');
+		$countyid = I('post.countyid');
+		$descrp = I('post.description');
+		$village = I('post.village');
+		$sitename = I('post.school');
+		$sponsor = I('post.sponsor');
+		//地点图片
+		//$iid = I('post.iid');
+				
+		$Site = M('site');
+		$data['sitename'] = $sitename;
+		$data['sitedetailaddr'] = $village;
+		$data['creatoruid'] = session('uid');
+		$data['createdt'] = date('y-m-d H:i:s');
+		$data['lastmduid'] = session('uid');
+		$data['lastmddt'] = date('y-m-d H:i:s');
+		$data['sitedescrp'] = $descrp;
+		//$data['sitemainpic'] = $iid;
+		$data['townid'] = $townid;
+		$data['countyid'] = $countyid;
+		$data['provinceid'] = $provinceid;
+		$data['cityid'] = $cityid;
+		
+		$mid_var1 = $Site->data($data)->add();
+		if(!queryCheck($mid_var1)) {
+			die();
+		}
+		//新增一个字段，siteid
+		$text['siteid'] = $mid_var1;
+		$text["status"] = 1;
+		
+		echo json_encode($text);
+	}
+}

@@ -1,0 +1,85 @@
+/**
+ * Author:chen_xl
+ * Date:2014-10-18
+ * Function:学校页面
+ */
+
+#main-box,#filter-box{
+  min-height: 500px;
+}
+
+#briefIntroduction{
+  min-height: 150px;
+}
+
+#filter-box button{
+	width: 100%;
+	margin-top: 20px;
+}
+
+#attentionPeople{
+	min-height: 300px;
+}
+
+#img-school {
+	height: 100px;
+	width: 100px;
+	border-radius: 40px;
+}
+
+#block-img-school{
+	margin-right: auto;
+	margin-left: auto;
+	height: 101px;
+	width: 101px;
+}
+/*关注者的头像大小*/
+.attention-photo{
+	width: 50px;
+	height: 50px;
+	border-radius: 20px;
+}
+
+/*定义海报大小*/
+.img-poster{
+	width: 200px;
+	height: 150px;
+}
+
+/*定义海报位置*/
+.poster{
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*定义海报中“更多”按钮位置*/
+
+#main-button{
+	text-align: right;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+div.content {
+	border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: 2px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#filter-box button{
+	background-color: grey;
+	border-radius: 10px;
+}
+
+.well {
+	border-style: none;
+	box-shadow: none;
+}
+
+#briefIntroduction{
+	text-align: left;
+	border-bottom:2px solid rgb(220,220,220);
+}

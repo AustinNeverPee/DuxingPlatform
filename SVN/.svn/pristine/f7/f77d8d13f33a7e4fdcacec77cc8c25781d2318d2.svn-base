@@ -1,0 +1,90 @@
+<extend name="../welfare/Home/View/Tpl/base.html" />
+
+<block name="title">
+  <title>日志编辑</title>
+</block>
+<block name="js">
+  <script src="{$static}/js/summernote.min.js"></script>
+
+  <script src="{$static}/js/testedit.js"></script>
+  <script>
+    $('#editor').summernote({
+        height: 200,                 // set editor height
+          minHeight: null,             // set minimum height of editor
+          maxHeight: null,             // set maximum height of editor
+          focus: false,                // set focus to editable area after initializing summernote
+        }) ;
+  </script>
+</block>
+
+<block name="menu">
+  <div class="btn-group-vertical levelTwo">
+    <a href="{$gate}/PersonalHomepage/index" class="btn btn-info" role="button">
+      个人资料
+    </a>
+    <a href="{$gate}/PersonalBlog/index" class="btn btn-info" role="button">
+      日志
+    </a>
+    <a href="{$gate}/PersonalPhotograph/index" class="btn btn-info" role="button">
+      相册
+    </a>
+    <a href="{$gate}/PersonalActivity/index" class="btn btn-info" role="button">
+      活动
+    </a>
+    <a href="{$gate}/PersonalFollow/index" class="btn btn-info" role="button">
+      我关注的
+    </a>
+  </div>
+</block>
+
+<block name="main">
+  <div class="container holder">
+    <div class="jumbotron">
+      <div class="row">
+        <!-- 左侧筛选框 -->
+        <div class="searchBox well col-md-2">
+        
+        </div><!-- /左侧筛选框 -->
+
+        <!-- 右侧-->
+        <div class="well col-md-10">
+          <div class="row">
+            <form role="form" class="addBlogForm">
+            <div class="form-group col-md-6">
+              <input name="title" class="form-control" id="InputTitle" placeholder="请输入题目">
+            </div>
+            <div class="form-group">
+              <div class="selectItem col-md-3">
+                <!-- <label for="InputType">活动</label>
+ -->            <select id="activity" class="btn btn-default">
+                  <option value="tips">请选择活动</option>
+                </select>
+              </div>
+              <div id="selectSites" class="col-md-3">
+                <!-- <label for="InputType">地点</label> -->
+                <select multiple id="sites" class="btn btn-default">
+                  <option value="tips">请选择地点</option>
+                </select>
+              </div>
+            </div>
+           <!--  <input type="hidden" name="uid" id="bloguid"/>
+            <input type="hidden" name="blogcontent" id="blogcont"/> -->
+          </form>
+          </div>
+          
+          <!-- 富文本编辑器-->
+          <div class="row">
+          <div id="editor">
+          </div>
+          </div><!-- /富文本编辑器-->
+          <!-- 提交按钮 -->
+          <div class="col-md-3 col-md-offset-5">
+            <button class="btn btn-default" id="newBlogBtn">新增</button>
+            <button class="btn btn-default" id="abortBtn">取消</button>
+          </div>
+
+        </div><!-- /右侧-->
+      </div>
+    </div><!-- /.jumbotron -->
+  </div>
+</block>

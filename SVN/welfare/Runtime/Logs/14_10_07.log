@@ -1,0 +1,23 @@
+[ 2014-10-07T16:23:22+08:00 ] 127.0.0.1 /welfare/index.php/Home/Activity/getCity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009898s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003593s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.005024s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.004729s ]
+SQL: SELECT * FROM `city` WHERE ( provinceid = '1' )  [ RunTime:0.001429s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.004567s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.004901s ]
+SQL: SELECT `siteid` FROM `site` WHERE ( provinceid = '1' ) LIMIT 1   [ RunTime:0.001054s ]
+SQL: SHOW COLUMNS FROM `targetloc` [ RunTime:0.004148s ]
+SQL: SELECT `aid` FROM `targetloc` WHERE ( siteid = '1' )  [ RunTime:0.001098s ]
+SQL: SELECT * FROM `activity` WHERE ( aid=1 )  [ RunTime:0.000575s ]
+SQL: SELECT * FROM `image` WHERE ( iid=6 ) LIMIT 1   [ RunTime:0.000365s ]
+SQL: SELECT * FROM `activity` WHERE ( aid=2 )  [ RunTime:0.000326s ]
+SQL: SELECT * FROM `image` WHERE ( iid=7 ) LIMIT 1   [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002596s ]
+

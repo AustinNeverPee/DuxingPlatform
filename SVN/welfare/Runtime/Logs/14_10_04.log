@@ -1,0 +1,960 @@
+[ 2014-10-04T15:05:35+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006964s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021369s ]
+
+[ 2014-10-04T15:05:36+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2014-10-04T15:05:55+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/getLocation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001350s ]
+SQL: SHOW COLUMNS FROM `targetloc` [ RunTime:0.057622s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.025580s ]
+SQL: SELECT `siteid` FROM `targetloc` WHERE ( adi= )  [ RunTime:0.008693s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `siteid` FROM `targetloc` WHERE ( adi= ) 
+NOTIC: [2] Variable passed to each() is not an array or object D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 42 行.
+
+[ 2014-10-04T15:06:40+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/getLocation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `targetloc` [ RunTime:0.001516s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.001623s ]
+SQL: SELECT `siteid` FROM `targetloc` WHERE ( adi=1 )  [ RunTime:0.132823s ]
+ERR: 1054:Unknown column 'adi' in 'where clause'
+ [ SQL语句 ] : SELECT `siteid` FROM `targetloc` WHERE ( adi=1 ) 
+NOTIC: [2] Variable passed to each() is not an array or object D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 45 行.
+
+[ 2014-10-04T15:07:59+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/getLocation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001817s ]
+SQL: SHOW COLUMNS FROM `targetloc` [ RunTime:0.001581s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.001660s ]
+SQL: SELECT `siteid` FROM `targetloc` WHERE ( aid=1 )  [ RunTime:0.057044s ]
+SQL: SELECT `sitename` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000634s ]
+
+[ 2014-10-04T15:10:32+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/getAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001957s ]
+SQL: SELECT `albumid`,`albumname` FROM `album` WHERE ( uid = 8 and relaid=1 )  [ RunTime:0.040829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2014-10-04T15:11:28+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/getAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001420s ]
+SQL: SELECT `albumid`,`albumname` FROM `album` WHERE ( uid = 8 and relaid=1 )  [ RunTime:0.000411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2014-10-04T15:11:56+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/getAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+
+[ 2014-10-04T15:12:14+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/getAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001664s ]
+
+[ 2014-10-04T15:12:29+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/getAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.002499s ]
+SQL: SELECT `albumid`,`albumname` FROM `album` WHERE ( uid = 8 and relaid=1 )  [ RunTime:0.000737s ]
+
+[ 2014-10-04T15:12:30+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/getAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001649s ]
+SQL: SELECT `albumid`,`albumname` FROM `album` WHERE ( uid = 8 and relaid=1 )  [ RunTime:0.000757s ]
+
+[ 2014-10-04T15:12:54+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/getAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001708s ]
+SQL: SELECT `albumid`,`albumname` FROM `album` WHERE ( uid = 8 and relaid=1 )  [ RunTime:0.000390s ]
+
+[ 2014-10-04T15:12:57+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/getAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001667s ]
+SQL: SELECT `albumid`,`albumname` FROM `album` WHERE ( uid = 8 and relaid=1 )  [ RunTime:0.000528s ]
+
+[ 2014-10-04T15:13:36+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/getAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001581s ]
+SQL: SELECT `albumid`,`albumname` FROM `album` WHERE ( uid = 8 and relaid=1 )  [ RunTime:0.000514s ]
+
+[ 2014-10-04T15:14:48+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002177s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2014-10-04T15:14:53+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000872s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000943s ]
+
+[ 2014-10-04T15:14:53+08:00 ] 127.0.0.1 /welfare/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+ERR: 无法加载控制器:Index
+
+[ 2014-10-04T15:16:02+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2014-10-04T15:16:02+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001032s ]
+
+[ 2014-10-04T15:16:13+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001605s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.001322s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.003088s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000408s ]
+SQL: SELECT * FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000217s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.001614s ]
+SQL: SELECT * FROM `message` WHERE ( msgrecvuid = 8 and msgstate = 1 )  [ RunTime:0.000459s ]
+
+[ 2014-10-04T15:30:00+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2014-10-04T15:30:01+08:00 ] 127.0.0.1 /welfare/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+ERR: 无法加载控制器:Index
+
+[ 2014-10-04T15:31:24+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2014-10-04T15:31:24+08:00 ] 127.0.0.1 /welfare/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+ERR: 无法加载控制器:Index
+
+[ 2014-10-04T15:37:16+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000719s ]
+
+[ 2014-10-04T15:37:16+08:00 ] 127.0.0.1 /welfare/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+ERR: 无法加载控制器:Index
+
+[ 2014-10-04T15:38:42+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000706s ]
+
+[ 2014-10-04T15:38:43+08:00 ] 127.0.0.1 /welfare/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+ERR: 无法加载控制器:Index
+
+[ 2014-10-04T15:39:56+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2014-10-04T15:39:56+08:00 ] 127.0.0.1 /welfare/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+ERR: 无法加载控制器:Index
+
+[ 2014-10-04T15:40:03+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001438s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001575s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002971s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001418s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001548s ]
+
+[ 2014-10-04T15:41:21+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001667s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001650s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001239s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001297s ]
+NOTIC: [8] Undefined variable: uId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 125 行.
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000294s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'774556001412408481.jpg','2014-10-04 15:41:21',1,1) [ RunTime:0.000285s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = '774556001412408481.jpg' ) AND ( `imgdt` = '2014-10-04 15:41:21' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.015269s ]
+NOTIC: [8] Undefined variable: uId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 171 行.
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (10,null) [ RunTime:0.009091s ]
+ERR: 1048:Column 'aid' cannot be null
+ [ SQL语句 ] : INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (10,null)
+SQL: DELETE FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = '774556001412408481.jpg' ) AND ( `imgdt` = '2014-10-04 15:41:21' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) [ RunTime:0.000363s ]
+
+[ 2014-10-04T15:42:37+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001568s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001541s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001160s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001238s ]
+NOTIC: [8] Undefined variable: uId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 125 行.
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000245s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'280838001412408557.jpg','2014-10-04 15:42:37',1,1) [ RunTime:0.000143s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = '280838001412408557.jpg' ) AND ( `imgdt` = '2014-10-04 15:42:37' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000139s ]
+NOTIC: [8] Undefined variable: uId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 171 行.
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (11,null) [ RunTime:0.000074s ]
+ERR: 1048:Column 'aid' cannot be null
+ [ SQL语句 ] : INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (11,null)
+SQL: DELETE FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = '280838001412408557.jpg' ) AND ( `imgdt` = '2014-10-04 15:42:37' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) [ RunTime:0.000157s ]
+
+[ 2014-10-04T15:43:35+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001340s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001631s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001416s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001317s ]
+NOTIC: [8] Undefined variable: uId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 125 行.
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000282s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'152270001412408615.jpg','2014-10-04 15:43:35',1,1) [ RunTime:0.000150s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = '152270001412408615.jpg' ) AND ( `imgdt` = '2014-10-04 15:43:35' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: uId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 171 行.
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (12,null) [ RunTime:0.000112s ]
+ERR: 1048:Column 'aid' cannot be null
+ [ SQL语句 ] : INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (12,null)
+SQL: DELETE FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = '152270001412408615.jpg' ) AND ( `imgdt` = '2014-10-04 15:43:35' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) [ RunTime:0.000187s ]
+
+[ 2014-10-04T15:49:54+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2014-10-04T15:49:54+08:00 ] 127.0.0.1 /welfare/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+ERR: 无法加载控制器:Index
+
+[ 2014-10-04T15:49:57+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001619s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002048s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001352s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001339s ]
+NOTIC: [8] Undefined variable: uId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 125 行.
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000237s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'873429001412408997.jpg','2014-10-04 15:49:57',1,1) [ RunTime:0.000164s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = '873429001412408997.jpg' ) AND ( `imgdt` = '2014-10-04 15:49:57' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: uId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 172 行.
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (13,null) [ RunTime:0.000075s ]
+ERR: 1048:Column 'aid' cannot be null
+ [ SQL语句 ] : INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (13,null)
+SQL: DELETE FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = '873429001412408997.jpg' ) AND ( `imgdt` = '2014-10-04 15:49:57' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) [ RunTime:0.000155s ]
+
+[ 2014-10-04T15:54:11+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002168s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2014-10-04T15:54:11+08:00 ] 127.0.0.1 /welfare/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+ERR: 无法加载控制器:Index
+
+[ 2014-10-04T15:54:15+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001475s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001783s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001359s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001432s ]
+NOTIC: [8] Undefined variable: uId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 125 行.
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000279s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'400174001412409255.jpg','2014-10-04 15:54:15',1,1) [ RunTime:0.000176s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = '400174001412409255.jpg' ) AND ( `imgdt` = '2014-10-04 15:54:15' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000175s ]
+NOTIC: [8] Undefined variable: uId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 172 行.
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (14,null) [ RunTime:0.000105s ]
+ERR: 1048:Column 'aid' cannot be null
+ [ SQL语句 ] : INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (14,null)
+SQL: DELETE FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = '400174001412409255.jpg' ) AND ( `imgdt` = '2014-10-04 15:54:15' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) [ RunTime:0.000182s ]
+
+[ 2014-10-04T15:55:47+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001325s ]
+
+[ 2014-10-04T15:55:47+08:00 ] 127.0.0.1 /welfare/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+ERR: 无法加载控制器:Index
+
+[ 2014-10-04T15:55:51+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001470s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001650s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001822s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001460s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000388s ]
+NOTIC: [8] Undefined variable: uid D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 152 行.
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (null,'733537001412409351.jpg','2014-10-04 15:55:51',1,1) [ RunTime:0.000079s ]
+ERR: 1048:Column 'uid' cannot be null
+ [ SQL语句 ] : INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (null,'733537001412409351.jpg','2014-10-04 15:55:51',1,1)
+
+[ 2014-10-04T15:56:18+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001596s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001993s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001241s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001281s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000369s ]
+NOTIC: [8] Undefined variable: uid D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 152 行.
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (null,'563130001412409378.jpg','2014-10-04 15:56:18',1,1) [ RunTime:0.000122s ]
+ERR: 1048:Column 'uid' cannot be null
+ [ SQL语句 ] : INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (null,'563130001412409378.jpg','2014-10-04 15:56:18',1,1)
+
+[ 2014-10-04T15:58:18+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001596s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001611s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001642s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001186s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001258s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000409s ]
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'990509001412409498.jpg','2014-10-04 15:58:18',1,1) [ RunTime:0.000194s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = '990509001412409498.jpg' ) AND ( `imgdt` = '2014-10-04 15:58:18' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (15,8) [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: siteId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 197 行.
+
+[ 2014-10-04T15:58:53+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001713s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001676s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001195s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001326s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'791998001412409533.jpg','2014-10-04 15:58:53',1,1) [ RunTime:0.000160s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = '791998001412409533.jpg' ) AND ( `imgdt` = '2014-10-04 15:58:53' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000121s ]
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (16,8) [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: siteId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 197 行.
+
+[ 2014-10-04T16:02:21+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001440s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001611s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001218s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001315s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000320s ]
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'862472001412409741.jpg','2014-10-04 16:02:21',1,1) [ RunTime:0.000158s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = '862472001412409741.jpg' ) AND ( `imgdt` = '2014-10-04 16:02:21' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (17,8) [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: siteId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 197 行.
+
+[ 2014-10-04T16:05:40+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001778s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001816s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001335s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001491s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000413s ]
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'423997001412409940.jpg','2014-10-04 16:05:40',1,1) [ RunTime:0.000219s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = '423997001412409940.jpg' ) AND ( `imgdt` = '2014-10-04 16:05:40' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000167s ]
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (18,8) [ RunTime:0.000194s ]
+NOTIC: [8] Undefined variable: siteId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 195 行.
+
+[ 2014-10-04T16:07:20+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001506s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002108s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001835s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001612s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000418s ]
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'174046001412410040.jpg','2014-10-04 16:07:20',1,1) [ RunTime:0.000134s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = '174046001412410040.jpg' ) AND ( `imgdt` = '2014-10-04 16:07:20' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000148s ]
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (19,8) [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: siteId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 195 行.
+
+[ 2014-10-04T16:11:26+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001735s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001938s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001586s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001697s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000439s ]
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'536414001412410286.jpg','2014-10-04 16:11:26',1,1) [ RunTime:0.000190s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = '536414001412410286.jpg' ) AND ( `imgdt` = '2014-10-04 16:11:26' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (20,8) [ RunTime:0.000137s ]
+NOTIC: [8] Undefined variable: siteId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 195 行.
+
+[ 2014-10-04T16:12:51+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002998s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001908s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001658s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001921s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000718s ]
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'987205001412410371.jpg','2014-10-04 16:12:51',1,1) [ RunTime:0.000231s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = '987205001412410371.jpg' ) AND ( `imgdt` = '2014-10-04 16:12:51' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000162s ]
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (21,8) [ RunTime:0.000294s ]
+NOTIC: [8] Undefined variable: siteId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 195 行.
+
+[ 2014-10-04T16:17:59+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001722s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002080s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001664s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001744s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000480s ]
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'heheng/644696001412410679.jpg','2014-10-04 16:17:59',1,1) [ RunTime:0.000206s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = 'heheng/644696001412410679.jpg' ) AND ( `imgdt` = '2014-10-04 16:17:59' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000180s ]
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (22,8) [ RunTime:0.000139s ]
+NOTIC: [8] Undefined variable: siteId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 195 行.
+
+[ 2014-10-04T16:19:00+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001828s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001653s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001261s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001353s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000423s ]
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'heheng/617633001412410740.jpg','2014-10-04 16:19:00',1,1) [ RunTime:0.000183s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = 'heheng/617633001412410740.jpg' ) AND ( `imgdt` = '2014-10-04 16:19:00' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (23,8) [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: siteId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 195 行.
+SQL: INSERT INTO `siterelimg` (`siterelimgid`,`siteid`) VALUES (23,null) [ RunTime:0.000111s ]
+ERR: 1048:Column 'siteid' cannot be null
+ [ SQL语句 ] : INSERT INTO `siterelimg` (`siterelimgid`,`siteid`) VALUES (23,null)
+SQL: DELETE FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = 'heheng/617633001412410740.jpg' ) AND ( `imgdt` = '2014-10-04 16:19:00' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) [ RunTime:0.000196s ]
+SQL: DELETE FROM `actrelimg` WHERE ( `actrelimgid` = 23 ) AND ( `aid` = 8 ) [ RunTime:0.000162s ]
+
+[ 2014-10-04T16:24:28+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001385s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001625s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001321s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001385s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000412s ]
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'heheng/946344001412411068.jpg','2014-10-04 16:24:28',1,1) [ RunTime:0.000164s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = 'heheng/946344001412411068.jpg' ) AND ( `imgdt` = '2014-10-04 16:24:28' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (24,8) [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: siteId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 195 行.
+NOTIC: [8] Undefined variable: siteId D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 197 行.
+SQL: INSERT INTO `siterelimg` (`siterelimgid`,`siteid`) VALUES (24,null) [ RunTime:0.000090s ]
+ERR: 1048:Column 'siteid' cannot be null
+ [ SQL语句 ] : INSERT INTO `siterelimg` (`siterelimgid`,`siteid`) VALUES (24,null)
+SQL: DELETE FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = 'heheng/946344001412411068.jpg' ) AND ( `imgdt` = '2014-10-04 16:24:28' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) [ RunTime:0.000190s ]
+SQL: DELETE FROM `actrelimg` WHERE ( `actrelimgid` = 24 ) AND ( `aid` = 8 ) [ RunTime:0.000127s ]
+
+[ 2014-10-04T16:25:09+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001568s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002249s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001371s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001457s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000485s ]
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'heheng/447425001412411109.jpg','2014-10-04 16:25:09',1,1) [ RunTime:0.000155s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = 'heheng/447425001412411109.jpg' ) AND ( `imgdt` = '2014-10-04 16:25:09' ) AND ( `albumid` = 1 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (25,8) [ RunTime:0.000111s ]
+SQL: INSERT INTO `siterelimg` (`siterelimgid`,`siteid`) VALUES (25,1) [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2014-10-04T16:32:47+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001898s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002350s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001805s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001927s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000497s ]
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'heheng/162782001412411567.png','2014-10-04 16:32:47',0,1) [ RunTime:0.000253s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = 'heheng/162782001412411567.png' ) AND ( `imgdt` = '2014-10-04 16:32:47' ) AND ( `albumid` = 0 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000186s ]
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (26,8) [ RunTime:0.000175s ]
+SQL: INSERT INTO `siterelimg` (`siterelimgid`,`siteid`) VALUES (26,0) [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001053s ]
+
+[ 2014-10-04T16:35:02+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001552s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001292s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001714s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001182s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001256s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'heheng/058912001412411702.png','2014-10-04 16:35:02',0,1) [ RunTime:0.000137s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = 'heheng/058912001412411702.png' ) AND ( `imgdt` = '2014-10-04 16:35:02' ) AND ( `albumid` = 0 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (27,8) [ RunTime:0.000101s ]
+SQL: INSERT INTO `siterelimg` (`siterelimgid`,`siteid`) VALUES (27,0) [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2014-10-04T16:35:02+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001600s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001791s ]
+SQL: SHOW COLUMNS FROM `siterelimg` [ RunTime:0.001316s ]
+SQL: SHOW COLUMNS FROM `actrelimg` [ RunTime:0.001337s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000342s ]
+SQL: INSERT INTO `image` (`uid`,`imgpath`,`imgdt`,`albumid`,`imgtype`) VALUES (8,'heheng/113659001412411702.jpg','2014-10-04 16:35:02',0,1) [ RunTime:0.000213s ]
+SQL: SELECT `iid` FROM `image` WHERE ( `uid` = 8 ) AND ( `imgpath` = 'heheng/113659001412411702.jpg' ) AND ( `imgdt` = '2014-10-04 16:35:02' ) AND ( `albumid` = 0 ) AND ( `imgtype` = 1 ) LIMIT 1   [ RunTime:0.000144s ]
+SQL: INSERT INTO `actrelimg` (`actrelimgid`,`aid`) VALUES (28,8) [ RunTime:0.000118s ]
+SQL: INSERT INTO `siterelimg` (`siterelimgid`,`siteid`) VALUES (28,0) [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2014-10-04T17:04:20+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/addAlbum4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+ERR: 非法操作:addAlbum4
+
+[ 2014-10-04T17:04:24+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/addAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+ERR: 非法操作:addAlbum
+
+[ 2014-10-04T17:04:55+08:00 ] 127.0.0.1 /welfare/index.php/Home/TmpaddAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000972s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001675s ]
+ERR: 无法加载控制器:TmpaddAlbum
+
+[ 2014-10-04T17:04:59+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/addAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001830s ]
+NOTIC: [8] Undefined variable: allAlbumDb D:\Program Files (x86)\wamp\www\welfare\Home\Controller\TmpController.class.php 第 132 行.
+
+[ 2014-10-04T17:05:23+08:00 ] 127.0.0.1 /welfare/index.php/Home/Tmp/addAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001896s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.002152s ]
+SQL: INSERT INTO `album` (`uid`,`createdt`,`albumname`,`albumdescrp`,`relaid`,`relsiteid`) VALUES (8,'2014-10-04 17:05:23','Ħ�Ĵ��ڿ�','����һ���ò�',1,1) [ RunTime:0.000330s ]
+

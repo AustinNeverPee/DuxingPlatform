@@ -1,0 +1,26 @@
+<extend name="../welfare/Home/View/Tpl/base.html" />
+
+<block name="title">
+  <title>历史反馈</title>
+</block>
+
+<block name="css">
+	<link rel="stylesheet" type="text/css" href="{$static}/css/historyfbk.css">
+</block>
+
+<block name="menu">
+</block>
+
+<block name="main">
+  <div class="container holder">
+    <div class="jumbotron">
+      <div class="row" id="feedbacklists">
+      	<!-- feedbacklists -->
+      </div><!-- /.row -->
+    </div><!-- /.jumbotron -->
+  </div>
+</block>
+    
+<block name="js">
+  <script src="{$static}/js/historyfbk.js"></script>
+</block>

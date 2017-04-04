@@ -1,0 +1,2148 @@
+[ 2014-09-26T09:03:40+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.036595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002803s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000429s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.286338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.286502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.051166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.051243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.033305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.033458s ]
+
+[ 2014-09-26T09:03:42+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002143s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002371s ]
+
+[ 2014-09-26T09:04:06+08:00 ] 127.0.0.1 /welfare/index.php/Home/HistoryBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+ERR: 无法加载控制器:HistoryBlog
+
+[ 2014-09-26T09:05:15+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000366s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000599s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001899s ]
+
+[ 2014-09-26T09:05:15+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001923s ]
+
+[ 2014-09-26T09:05:23+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2014-09-26T09:05:23+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001289s ]
+
+[ 2014-09-26T09:05:40+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001015s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001539s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.027289s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.029327s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.022960s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.016795s ]
+SQL: SELECT * FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000681s ]
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 8 ) AND ( `msgstate` = 0 )  [ RunTime:0.000636s ]
+
+[ 2014-09-26T09:05:46+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2014-09-26T09:05:46+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000920s ]
+
+[ 2014-09-26T09:06:28+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001172s ]
+
+[ 2014-09-26T09:06:28+08:00 ] 127.0.0.1 /welfare/index.php/Home/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+ERR: 无法加载控制器:Css
+
+[ 2014-09-26T09:06:28+08:00 ] 127.0.0.1 /welfare/index.php/Home/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+ERR: 无法加载控制器:Css
+
+[ 2014-09-26T09:06:28+08:00 ] 127.0.0.1 /welfare/index.php/Home/js/jquery-2.1.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+ERR: 无法加载控制器:Js
+
+[ 2014-09-26T09:06:28+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001174s ]
+
+[ 2014-09-26T09:06:28+08:00 ] 127.0.0.1 /welfare/index.php/Home/css/location_log.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+ERR: 无法加载控制器:Css
+
+[ 2014-09-26T09:06:28+08:00 ] 127.0.0.1 /welfare/index.php/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+ERR: 无法加载控制器:Js
+
+[ 2014-09-26T09:06:28+08:00 ] 127.0.0.1 /welfare/index.php/Home/js/location_log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+ERR: 无法加载控制器:Js
+
+[ 2014-09-26T09:06:28+08:00 ] 127.0.0.1 /welfare/index.php/Home/js/index.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+ERR: 无法加载控制器:Js
+
+[ 2014-09-26T09:11:44+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001191s ]
+
+[ 2014-09-26T09:11:44+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001063s ]
+
+[ 2014-09-26T09:11:44+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.024975s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000731s ]
+
+[ 2014-09-26T10:42:57+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `blogrelsite` [ RunTime:0.002420s ]
+SQL: SELECT `blogid` FROM `blogrelsite` WHERE ( siteid = '1' ) LIMIT 0,20   [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.002195s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '1' ) LIMIT 1   [ RunTime:0.000460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000917s ]
+
+[ 2014-09-26T10:57:06+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `blogrelsite` [ RunTime:0.001644s ]
+SQL: SELECT `blogid` FROM `blogrelsite` WHERE ( siteid = '1' ) LIMIT 0,20   [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001461s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001866s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001544s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '1' ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=e ) LIMIT 1   [ RunTime:0.000125s ]
+ERR: 1054:Unknown column 'e' in 'where clause'
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid=e ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2014-09-26T10:58:59+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `blogrelsite` [ RunTime:0.001652s ]
+SQL: SELECT `blogid` FROM `blogrelsite` WHERE ( siteid = '1' ) LIMIT 0,20   [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001569s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001923s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001605s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '1' ) LIMIT 1   [ RunTime:0.000371s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000157s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=e ) LIMIT 1   [ RunTime:0.000110s ]
+ERR: 1054:Unknown column 'e' in 'where clause'
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid=e ) LIMIT 1  
+
+[ 2014-09-26T11:00:06+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+
+[ 2014-09-26T11:00:25+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `blogrelsite` [ RunTime:0.001632s ]
+SQL: SELECT `blogid` FROM `blogrelsite` WHERE ( siteid = '1' ) LIMIT 0,20   [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001482s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001970s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001599s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '1' ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000160s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=e ) LIMIT 1   [ RunTime:0.000116s ]
+ERR: 1054:Unknown column 'e' in 'where clause'
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid=e ) LIMIT 1  
+
+[ 2014-09-26T11:02:03+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002131s ]
+
+[ 2014-09-26T11:02:23+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `blogrelsite` [ RunTime:0.124922s ]
+SQL: SELECT `blogid` FROM `blogrelsite` WHERE ( siteid = '1' ) LIMIT 0,20   [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001491s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001803s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001560s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '1' ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000154s ]
+
+[ 2014-09-26T11:03:19+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `blogrelsite` [ RunTime:0.002444s ]
+SQL: SELECT `blogid` FROM `blogrelsite` WHERE ( siteid = '1' ) LIMIT 0,20   [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.002158s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002775s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002227s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '1' ) LIMIT 1   [ RunTime:0.000375s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000161s ]
+
+[ 2014-09-26T11:03:29+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `blogrelsite` [ RunTime:0.001566s ]
+SQL: SELECT `blogid` FROM `blogrelsite` WHERE ( siteid = '1' ) LIMIT 0,20   [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001454s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001836s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001597s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '1' ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000190s ]
+
+[ 2014-09-26T11:03:41+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: SHOW COLUMNS FROM `blogrelsite` [ RunTime:0.001533s ]
+SQL: SELECT `blogid` FROM `blogrelsite` WHERE ( siteid = '1' ) LIMIT 0,20   [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001391s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001830s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001576s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '1' ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: SELECT `uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000175s ]
+
+[ 2014-09-26T11:06:50+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+SQL: SHOW COLUMNS FROM `blogrelsite` [ RunTime:0.063416s ]
+SQL: SELECT `blogid` FROM `blogrelsite` WHERE ( siteid = '1' ) LIMIT 0,20   [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.004524s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005525s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.004690s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '1' ) LIMIT 1   [ RunTime:0.001110s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000580s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000595s ]
+
+[ 2014-09-26T11:07:06+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `blogrelsite` [ RunTime:0.001602s ]
+SQL: SELECT `blogid` FROM `blogrelsite` WHERE ( siteid = '1' ) LIMIT 0,20   [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001452s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001836s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001621s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '1' ) LIMIT 1   [ RunTime:0.000356s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000198s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000811s ]
+
+[ 2014-09-26T11:07:50+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001619s ]
+SQL: SHOW COLUMNS FROM `blogrelsite` [ RunTime:0.002604s ]
+SQL: SELECT `blogid` FROM `blogrelsite` WHERE ( siteid = '1' ) LIMIT 0,20   [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.002424s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003212s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002671s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '1' ) LIMIT 1   [ RunTime:0.000572s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000285s ]
+
+[ 2014-09-26T11:08:04+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `blogrelsite` [ RunTime:0.001519s ]
+SQL: SELECT `blogid` FROM `blogrelsite` WHERE ( siteid = '1' ) LIMIT 0,20   [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001546s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001865s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001561s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '1' ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000198s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000167s ]
+
+[ 2014-09-26T11:08:49+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `blogrelsite` [ RunTime:0.002801s ]
+SQL: SELECT `blogid` FROM `blogrelsite` WHERE ( siteid = '1' ) LIMIT 0,20   [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.002732s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003262s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002730s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '1' ) LIMIT 1   [ RunTime:0.000640s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000321s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000274s ]
+
+[ 2014-09-26T11:08:51+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002412s ]
+SQL: SHOW COLUMNS FROM `blogrelsite` [ RunTime:0.002567s ]
+SQL: SELECT `blogid` FROM `blogrelsite` WHERE ( siteid = '1' ) LIMIT 0,20   [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.002597s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003290s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.003575s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '1' ) LIMIT 1   [ RunTime:0.001254s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000543s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000487s ]
+
+[ 2014-09-26T11:09:08+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002391s ]
+SQL: SHOW COLUMNS FROM `blogrelsite` [ RunTime:0.002743s ]
+SQL: SELECT `blogid` FROM `blogrelsite` WHERE ( siteid = '1' ) LIMIT 0,20   [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.002518s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003077s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002694s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '1' ) LIMIT 1   [ RunTime:0.000629s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001422s ]
+
+[ 2014-09-26T11:10:12+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001679s ]
+SQL: SHOW COLUMNS FROM `blogrelsite` [ RunTime:0.004630s ]
+SQL: SELECT `blogid` FROM `blogrelsite` WHERE ( siteid = '1' ) LIMIT 0,20   [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.004550s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005958s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.004778s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '1' ) LIMIT 1   [ RunTime:0.001190s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000662s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000475s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001833s ]
+
+[ 2014-09-26T11:30:04+08:00 ] 127.0.0.1 /welfare/index.php/Home/Historyblog/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+SQL: SHOW COLUMNS FROM `blogrelsite` [ RunTime:0.002618s ]
+SQL: SELECT `blogid` FROM `blogrelsite` WHERE ( siteid = '1' ) LIMIT 0,20   [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003244s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.003496s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '1' ) LIMIT 1   [ RunTime:0.000583s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '2' ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '3' ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000306s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: SELECT * FROM `blog` WHERE ( blogid = '4' ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001471s ]
+
+[ 2014-09-26T11:35:50+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/getCity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.003079s ]
+SQL: SELECT `cityid`,`cityname` FROM `city` WHERE ( provinceid=1 )  [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.003034s ]
+SQL: SELECT `siteid`,`sitename` FROM `site` WHERE ( provinceid=1 )  [ RunTime:0.000614s ]
+
+[ 2014-09-26T16:24:40+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002774s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.146725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.146901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010534s ]
+
+[ 2014-09-26T16:24:41+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002813s ]
+
+[ 2014-09-26T16:24:46+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2014-09-26T16:24:46+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002059s ]
+
+[ 2014-09-26T16:24:50+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003656s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.003209s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.004119s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000460s ]
+SQL: SELECT * FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000403s ]
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 8 ) AND ( `msgstate` = 0 )  [ RunTime:0.000268s ]
+
+[ 2014-09-26T16:24:58+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001869s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2014-09-26T16:24:58+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001818s ]
+
+[ 2014-09-26T16:24:58+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+ERR: 非法操作:LocationIndex
+
+[ 2014-09-26T16:25:22+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003088s ]
+ERR: 非法操作:LocationIndex
+
+[ 2014-09-26T16:26:49+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001654s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001584s ]
+
+[ 2014-09-26T16:26:49+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2014-09-26T16:26:49+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.003109s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.001065s ]
+
+[ 2014-09-26T16:26:52+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/LocationIndex/getCity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+ERR: 非法操作:LocationIndex
+
+[ 2014-09-26T16:27:40+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002236s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001526s ]
+
+[ 2014-09-26T16:27:40+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001843s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000922s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2014-09-26T16:27:40+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.001645s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000361s ]
+
+[ 2014-09-26T16:27:41+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/getCity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.001718s ]
+SQL: SELECT `cityid`,`cityname` FROM `city` WHERE ( provinceid=1 )  [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.001640s ]
+SQL: SELECT `siteid`,`sitename` FROM `site` WHERE ( provinceid=1 )  [ RunTime:0.000354s ]
+
+[ 2014-09-26T16:27:45+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/School/index?schoolid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+ERR: 非法操作:School
+
+[ 2014-09-26T16:28:04+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.001665s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000352s ]
+
+[ 2014-09-26T16:28:06+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/getCity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.002109s ]
+SQL: SELECT `cityid`,`cityname` FROM `city` WHERE ( provinceid=1 )  [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.001611s ]
+SQL: SELECT `siteid`,`sitename` FROM `site` WHERE ( provinceid=1 )  [ RunTime:0.000319s ]
+
+[ 2014-09-26T16:28:21+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/School/index?schoolid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+ERR: 非法操作:School
+
+[ 2014-09-26T16:31:21+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001807s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.002104s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000420s ]
+
+[ 2014-09-26T16:31:23+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/getCity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.001655s ]
+SQL: SELECT `cityid`,`cityname` FROM `city` WHERE ( provinceid=1 )  [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.002003s ]
+SQL: SELECT `siteid`,`sitename` FROM `site` WHERE ( provinceid=1 )  [ RunTime:0.000274s ]
+
+[ 2014-09-26T16:31:27+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/getCounty
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `county` [ RunTime:0.001632s ]
+SQL: SELECT `countyid`,`countyname` FROM `county` WHERE ( cityid=1 )  [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.001637s ]
+SQL: SELECT `siteid`,`sitename` FROM `site` WHERE ( cityid=1 )  [ RunTime:0.000300s ]
+
+[ 2014-09-26T16:31:30+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/getTown
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `town` [ RunTime:0.002112s ]
+SQL: SELECT `townid`,`townname` FROM `town` WHERE ( countyid=1 )  [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.001762s ]
+SQL: SELECT `siteid`,`sitename` FROM `site` WHERE ( countyid=1 )  [ RunTime:0.000282s ]
+
+[ 2014-09-26T16:45:47+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/School/index?schoolid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002164s ]
+ERR: 非法操作:School
+
+[ 2014-09-26T16:46:20+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.002486s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000480s ]
+
+[ 2014-09-26T16:46:22+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000887s ]
+
+[ 2014-09-26T16:46:22+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000927s ]
+
+[ 2014-09-26T16:46:22+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+ERR: 非法操作:LocationIndex
+
+[ 2014-09-26T16:47:01+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001407s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2014-09-26T16:47:01+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000872s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2014-09-26T16:47:01+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.002026s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000628s ]
+
+[ 2014-09-26T16:47:29+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/School/index?schoolid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001832s ]
+ERR: 非法操作:School
+
+[ 2014-09-26T16:48:23+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.001658s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000386s ]
+
+[ 2014-09-26T16:48:25+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/School/index?schoolid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+ERR: 非法操作:School
+
+[ 2014-09-26T16:48:26+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.002831s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000564s ]
+
+[ 2014-09-26T16:48:31+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001451s ]
+
+[ 2014-09-26T16:48:31+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2014-09-26T16:48:31+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.001732s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000438s ]
+
+[ 2014-09-26T16:48:33+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/getCity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.001816s ]
+SQL: SELECT `cityid`,`cityname` FROM `city` WHERE ( provinceid=1 )  [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.001918s ]
+SQL: SELECT `siteid`,`sitename` FROM `site` WHERE ( provinceid=1 )  [ RunTime:0.000349s ]
+
+[ 2014-09-26T16:48:35+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/getCounty
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `county` [ RunTime:0.001982s ]
+SQL: SELECT `countyid`,`countyname` FROM `county` WHERE ( cityid=1 )  [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.001667s ]
+SQL: SELECT `siteid`,`sitename` FROM `site` WHERE ( cityid=1 )  [ RunTime:0.000301s ]
+
+[ 2014-09-26T16:48:40+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/getTown
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `town` [ RunTime:0.002023s ]
+SQL: SELECT `townid`,`townname` FROM `town` WHERE ( countyid=1 )  [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.001841s ]
+SQL: SELECT `siteid`,`sitename` FROM `site` WHERE ( countyid=1 )  [ RunTime:0.000343s ]
+
+[ 2014-09-26T16:48:42+08:00 ] 127.0.0.1 /welfare/index.php/Home/School/index?schoolid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2014-09-26T16:48:42+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001372s ]
+
+[ 2014-09-26T16:48:42+08:00 ] 127.0.0.1 /welfare/index.php/Home/School/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `sitefollower` [ RunTime:0.001947s ]
+SQL: SHOW COLUMNS FROM `siterelcmnt` [ RunTime:0.001967s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.002282s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002528s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002286s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.002110s ]
+SQL: SELECT `sitemainpic` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000410s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT `sitedescrp` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000163s ]
+SQL: SELECT `sitefollowuid` FROM `sitefollower` WHERE ( siteid=1 )  [ RunTime:0.016678s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000266s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000180s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000184s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT `cmntid` FROM `siterelcmnt` WHERE ( siteid=1 )  [ RunTime:0.000193s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=1 ) LIMIT 1   [ RunTime:0.012735s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=2 ) LIMIT 1   [ RunTime:0.000269s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=3 ) LIMIT 1   [ RunTime:0.000203s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=5 ) LIMIT 1   [ RunTime:0.000192s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=6 ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=7 ) LIMIT 1   [ RunTime:0.000167s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=8 ) LIMIT 1   [ RunTime:0.000158s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=9 ) LIMIT 1   [ RunTime:0.000156s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=10 ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=108 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000166s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000164s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000180s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 ) LIMIT 1   [ RunTime:0.000139s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=7 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000181s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000156s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=8 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=9 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000174s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 ) LIMIT 1   [ RunTime:0.000143s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=10 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 ) LIMIT 1   [ RunTime:0.000131s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=108 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000124s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000133s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000122s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000075s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000124s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000154s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000132s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000141s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000141s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000105s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000069s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000149s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000120s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000112s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000149s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000110s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000109s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000092s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000141s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000103s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000122s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000113s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000075s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000110s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000113s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000100s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000136s ]
+
+[ 2014-09-26T16:48:44+08:00 ] 127.0.0.1 /welfare/index.php/Home/School/moreActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+SQL: SHOW COLUMNS FROM `targetloc` [ RunTime:0.019650s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.004239s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.003452s ]
+SQL: SELECT `aid` FROM `targetloc` WHERE ( siteid=1 ) ORDER BY aid LIMIT 0,10   [ RunTime:0.014121s ]
+SQL: SELECT `apostimg`,`adescrp` FROM `activity` WHERE ( aid=2 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=7 ) LIMIT 1   [ RunTime:0.000232s ]
+
+[ 2014-09-26T16:49:04+08:00 ] 127.0.0.1 /welfare/index.php/Home/School/location_log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001713s ]
+ERR: 非法操作:location_log
+
+[ 2014-09-26T16:49:10+08:00 ] 127.0.0.1 /welfare/index.php/Home/School/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+SQL: SHOW COLUMNS FROM `sitefollower` [ RunTime:0.001870s ]
+SQL: SHOW COLUMNS FROM `siterelcmnt` [ RunTime:0.001989s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.002301s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001948s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001587s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.003080s ]
+SQL: SELECT `sitemainpic` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000381s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000149s ]
+SQL: SELECT `sitedescrp` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: SELECT `sitefollowuid` FROM `sitefollower` WHERE ( siteid=1 )  [ RunTime:0.000182s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000191s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000133s ]
+SQL: SELECT `cmntid` FROM `siterelcmnt` WHERE ( siteid=1 )  [ RunTime:0.000146s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=1 ) LIMIT 1   [ RunTime:0.000166s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=2 ) LIMIT 1   [ RunTime:0.000196s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=3 ) LIMIT 1   [ RunTime:0.000186s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=5 ) LIMIT 1   [ RunTime:0.000187s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=6 ) LIMIT 1   [ RunTime:0.000179s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=7 ) LIMIT 1   [ RunTime:0.000188s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=8 ) LIMIT 1   [ RunTime:0.000172s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=9 ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=10 ) LIMIT 1   [ RunTime:0.000183s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=108 ) LIMIT 1   [ RunTime:0.000187s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000186s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000185s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000183s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000189s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 ) LIMIT 1   [ RunTime:0.000184s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000195s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 ) LIMIT 1   [ RunTime:0.000179s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=7 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000183s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000192s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=8 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000184s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000187s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=9 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000235s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 ) LIMIT 1   [ RunTime:0.000177s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=10 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000193s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 ) LIMIT 1   [ RunTime:0.000183s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=108 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000187s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000175s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000162s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000121s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000197s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000202s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000178s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000154s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000159s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000130s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000249s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000183s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000175s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000119s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000174s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000169s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000099s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000147s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000144s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000094s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000144s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000112s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000169s ]
+
+[ 2014-09-26T16:49:12+08:00 ] 127.0.0.1 /welfare/index.php/Home/School/moreActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `targetloc` [ RunTime:0.001584s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.001807s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002444s ]
+SQL: SELECT `aid` FROM `targetloc` WHERE ( siteid=1 ) ORDER BY aid LIMIT 0,10   [ RunTime:0.000412s ]
+SQL: SELECT `apostimg`,`adescrp` FROM `activity` WHERE ( aid=2 ) LIMIT 1   [ RunTime:0.000161s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=7 ) LIMIT 1   [ RunTime:0.000149s ]
+
+[ 2014-09-26T16:49:17+08:00 ] 127.0.0.1 /welfare/index.php/Home/School/location_log.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+ERR: 非法操作:location_log
+
+[ 2014-09-26T17:53:16+08:00 ] 127.0.0.1 /welfare/index.php/Home/Photograph
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000418s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.212345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.212499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001815s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002371s ]
+
+[ 2014-09-26T17:53:16+08:00 ] 127.0.0.1 /welfare/index.php/Home/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+ERR: 无法加载控制器:Css
+
+[ 2014-09-26T17:53:16+08:00 ] 127.0.0.1 /welfare/index.php/Home/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+ERR: 无法加载控制器:Css
+
+[ 2014-09-26T17:53:16+08:00 ] 127.0.0.1 /welfare/index.php/Home/css/location_album.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
+ERR: 无法加载控制器:Css
+
+[ 2014-09-26T17:53:16+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002216s ]
+
+[ 2014-09-26T17:53:16+08:00 ] 127.0.0.1 /welfare/index.php/Home/js/jquery-2.1.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+ERR: 无法加载控制器:Js
+
+[ 2014-09-26T17:53:16+08:00 ] 127.0.0.1 /welfare/index.php/Home/js/index.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+ERR: 无法加载控制器:Js
+
+[ 2014-09-26T17:53:16+08:00 ] 127.0.0.1 /welfare/index.php/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+ERR: 无法加载控制器:Js
+
+[ 2014-09-26T17:53:16+08:00 ] 127.0.0.1 /welfare/index.php/Home/js/location_album.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+ERR: 无法加载控制器:Js
+
+[ 2014-09-26T17:53:28+08:00 ] 127.0.0.1 /welfare/index.php/Home/Photograph/moreAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001771s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001616s ]
+SQL: SELECT * FROM `album` WHERE ( relsiteid = '1' ) LIMIT 0,3   [ RunTime:0.000402s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( albumid = '2' )  [ RunTime:0.007634s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( albumid = '4' )  [ RunTime:0.000223s ]
+
+[ 2014-09-26T17:58:25+08:00 ] 127.0.0.1 /welfare/index.php/Home/Photograph/moreAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002858s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.002667s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002563s ]
+SQL: SELECT * FROM `album` WHERE ( relsiteid = '1' ) LIMIT 0,3   [ RunTime:0.000623s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( albumid = '2' )  [ RunTime:0.000271s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( albumid = '4' )  [ RunTime:0.000255s ]
+
+[ 2014-09-26T18:03:59+08:00 ] 127.0.0.1 /welfare/index.php/Home/Photograph/moreAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001748s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001581s ]
+SQL: SELECT * FROM `album` WHERE ( relsiteid = '1' ) LIMIT 0,3   [ RunTime:0.000381s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( albumid = '2' )  [ RunTime:0.000175s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( albumid = '4' )  [ RunTime:0.000168s ]
+
+[ 2014-09-26T18:04:21+08:00 ] 127.0.0.1 /welfare/index.php/Home/Photograph/moreAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001671s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001610s ]
+SQL: SELECT * FROM `album` WHERE ( relsiteid = '1' ) LIMIT 0,3   [ RunTime:0.000355s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( albumid = '2' )  [ RunTime:0.000176s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( albumid = '4' )  [ RunTime:0.000167s ]
+
+[ 2014-09-26T19:50:41+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002760s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000429s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.120349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016775s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016965s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021872s ]
+
+[ 2014-09-26T19:50:41+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002046s ]
+
+[ 2014-09-26T19:50:48+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2014-09-26T19:50:48+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2014-09-26T19:50:54+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000710s ]
+
+[ 2014-09-26T19:50:55+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001999s ]
+
+[ 2014-09-26T20:00:23+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001502s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001873s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.001446s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001611s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SELECT * FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000184s ]
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 8 ) AND ( `msgstate` = 0 )  [ RunTime:0.000188s ]
+
+[ 2014-09-26T20:01:05+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001141s ]
+
+[ 2014-09-26T20:01:05+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001886s ]
+
+[ 2014-09-26T20:01:37+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002887s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.002427s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002611s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000421s ]
+SQL: SELECT * FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 8 ) AND ( `msgstate` = 0 )  [ RunTime:0.000251s ]
+
+[ 2014-09-26T20:01:47+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000436s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.204700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.204837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001633s ]
+
+[ 2014-09-26T20:01:47+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001051s ]
+
+[ 2014-09-26T20:01:47+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.002089s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.000499s ]
+
+[ 2014-09-26T20:01:50+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/getCity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.001564s ]
+SQL: SELECT `cityid`,`cityname` FROM `city` WHERE ( provinceid=1 )  [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.001497s ]
+SQL: SELECT `siteid`,`sitename` FROM `site` WHERE ( provinceid=1 )  [ RunTime:0.000299s ]
+
+[ 2014-09-26T20:01:51+08:00 ] 127.0.0.1 /welfare/index.php/Home/School/index?schoolid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025633s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2014-09-26T20:01:51+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2014-09-26T20:01:51+08:00 ] 127.0.0.1 /welfare/index.php/Home/School/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `sitefollower` [ RunTime:0.001481s ]
+SQL: SHOW COLUMNS FROM `siterelcmnt` [ RunTime:0.001484s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.001563s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001693s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001794s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.001900s ]
+SQL: SELECT `sitemainpic` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: SELECT `sitedescrp` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: SELECT `sitefollowuid` FROM `sitefollower` WHERE ( siteid=1 )  [ RunTime:0.008401s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000205s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000175s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000173s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: SELECT `cmntid` FROM `siterelcmnt` WHERE ( siteid=1 )  [ RunTime:0.000177s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=1 ) LIMIT 1   [ RunTime:0.012742s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=2 ) LIMIT 1   [ RunTime:0.000196s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=3 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=5 ) LIMIT 1   [ RunTime:0.000172s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=6 ) LIMIT 1   [ RunTime:0.000144s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=7 ) LIMIT 1   [ RunTime:0.000123s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=8 ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=9 ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=10 ) LIMIT 1   [ RunTime:0.000124s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=108 ) LIMIT 1   [ RunTime:0.000125s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000163s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000161s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 ) LIMIT 1   [ RunTime:0.000148s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 ) LIMIT 1   [ RunTime:0.000143s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=7 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000157s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000127s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=8 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000190s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000188s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=9 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000161s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 ) LIMIT 1   [ RunTime:0.000142s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=10 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000159s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 ) LIMIT 1   [ RunTime:0.000136s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=108 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000132s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000111s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000096s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000156s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000149s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000122s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000093s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000144s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000113s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000127s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000119s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000125s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000076s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000107s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000089s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000136s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000088s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000128s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000110s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000121s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000080s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000133s ]
+
+[ 2014-09-26T20:01:52+08:00 ] 127.0.0.1 /welfare/index.php/Home/School/moreActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `targetloc` [ RunTime:0.001843s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.001875s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001767s ]
+SQL: SELECT `aid` FROM `targetloc` WHERE ( siteid=1 ) ORDER BY aid LIMIT 0,10   [ RunTime:0.012911s ]
+SQL: SELECT `apostimg`,`adescrp` FROM `activity` WHERE ( aid=2 ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=7 ) LIMIT 1   [ RunTime:0.000176s ]
+
+[ 2014-09-26T21:00:45+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2014-09-26T21:00:46+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002148s ]
+
+[ 2014-09-26T21:00:47+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000366s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000559s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2014-09-26T21:00:47+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2014-09-26T21:00:47+08:00 ] 127.0.0.1 /welfare/index.php/Home/PersonalHomepage/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+
+[ 2014-09-26T21:00:50+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2014-09-26T21:00:50+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2014-09-26T21:00:50+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001808s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.103060s ]
+SQL: SELECT `provinceid`,`provincename` FROM `province`  [ RunTime:0.001180s ]
+
+[ 2014-09-26T21:00:52+08:00 ] 127.0.0.1 /welfare/index.php/Home/LocationIndex/getCity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.059759s ]
+SQL: SELECT `cityid`,`cityname` FROM `city` WHERE ( provinceid=1 )  [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.031048s ]
+SQL: SELECT `siteid`,`sitename` FROM `site` WHERE ( provinceid=1 )  [ RunTime:0.000346s ]
+
+[ 2014-09-26T21:00:53+08:00 ] 127.0.0.1 /welfare/index.php/Home/School/index?schoolid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000496s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002406s ]
+
+[ 2014-09-26T21:00:53+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000823s ]
+
+[ 2014-09-26T21:00:53+08:00 ] 127.0.0.1 /welfare/index.php/Home/School/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: SHOW COLUMNS FROM `sitefollower` [ RunTime:0.028701s ]
+SQL: SHOW COLUMNS FROM `siterelcmnt` [ RunTime:0.024577s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.016551s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.012738s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.020934s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.001847s ]
+SQL: SELECT `sitemainpic` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000181s ]
+SQL: SELECT `sitedescrp` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000124s ]
+SQL: SELECT `sitefollowuid` FROM `sitefollower` WHERE ( siteid=1 )  [ RunTime:0.000204s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000180s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000108s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000128s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT `cmntid` FROM `siterelcmnt` WHERE ( siteid=1 )  [ RunTime:0.000166s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=1 ) LIMIT 1   [ RunTime:0.006871s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=2 ) LIMIT 1   [ RunTime:0.000202s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=3 ) LIMIT 1   [ RunTime:0.000149s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=5 ) LIMIT 1   [ RunTime:0.000128s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=6 ) LIMIT 1   [ RunTime:0.000127s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=7 ) LIMIT 1   [ RunTime:0.000120s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=8 ) LIMIT 1   [ RunTime:0.000111s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=9 ) LIMIT 1   [ RunTime:0.000113s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=10 ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=108 ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000114s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000111s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 ) LIMIT 1   [ RunTime:0.000116s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=7 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000158s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=8 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000159s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000159s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=9 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 ) LIMIT 1   [ RunTime:0.000161s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=10 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000154s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 ) LIMIT 1   [ RunTime:0.000128s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=108 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000129s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000107s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.010661s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000199s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000122s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000106s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000105s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000102s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000097s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000062s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000147s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000127s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000114s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000122s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000097s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000065s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000127s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000068s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000111s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000178s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000081s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000164s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000149s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000142s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000072s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000126s ]
+
+[ 2014-09-26T21:00:54+08:00 ] 127.0.0.1 /welfare/index.php/Home/School/moreActivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `targetloc` [ RunTime:0.135296s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.017483s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001745s ]
+SQL: SELECT `aid` FROM `targetloc` WHERE ( siteid=1 ) ORDER BY aid LIMIT 0,10   [ RunTime:0.019970s ]
+SQL: SELECT `apostimg`,`adescrp` FROM `activity` WHERE ( aid=2 ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=7 ) LIMIT 1   [ RunTime:0.000174s ]
+

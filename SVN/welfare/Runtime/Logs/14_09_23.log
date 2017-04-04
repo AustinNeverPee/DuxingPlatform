@@ -1,0 +1,988 @@
+[ 2014-09-23T09:12:12+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001545s ]
+
+[ 2014-09-23T09:12:12+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001370s ]
+
+[ 2014-09-23T09:12:44+08:00 ] 172.18.34.16 /welfare/index.php/Home/HomePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2014-09-23T09:12:44+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2014-09-23T09:16:10+08:00 ] 127.0.0.1 /welfare/index.php/Home/School/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `sitefollower` [ RunTime:0.007781s ]
+SQL: SHOW COLUMNS FROM `siterelcmnt` [ RunTime:0.008248s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.002574s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.012796s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.006453s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.012725s ]
+SQL: SELECT `sitemainpic` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000712s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: SELECT `sitedescrp` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000236s ]
+SQL: SELECT `sitefollowuid` FROM `sitefollower` WHERE ( siteid=1 )  [ RunTime:0.000237s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000185s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: SELECT `cmntid` FROM `siterelcmnt` WHERE ( siteid=1 )  [ RunTime:0.000189s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=1 ) LIMIT 1   [ RunTime:0.000223s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=2 ) LIMIT 1   [ RunTime:0.000180s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=3 ) LIMIT 1   [ RunTime:0.000203s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=5 ) LIMIT 1   [ RunTime:0.000199s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=6 ) LIMIT 1   [ RunTime:0.000212s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=7 ) LIMIT 1   [ RunTime:0.000178s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=8 ) LIMIT 1   [ RunTime:0.000169s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=9 ) LIMIT 1   [ RunTime:0.000166s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=10 ) LIMIT 1   [ RunTime:0.000176s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=108 ) LIMIT 1   [ RunTime:0.000163s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000192s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000182s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 ) LIMIT 1   [ RunTime:0.000159s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 ) LIMIT 1   [ RunTime:0.000160s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=7 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000156s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=8 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000158s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=9 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 ) LIMIT 1   [ RunTime:0.000143s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=10 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 ) LIMIT 1   [ RunTime:0.000136s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=108 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000166s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000110s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000163s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000157s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000161s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000164s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000149s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000109s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000149s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000149s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000107s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000154s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000108s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000107s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000148s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000164s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000186s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000120s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000168s ]
+
+[ 2014-09-23T09:16:46+08:00 ] 127.0.0.1 /welfare/index.php/Home/School/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `sitefollower` [ RunTime:0.001908s ]
+SQL: SHOW COLUMNS FROM `siterelcmnt` [ RunTime:0.002005s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.002035s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001766s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001528s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.001598s ]
+SQL: SELECT `sitemainpic` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000423s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000142s ]
+SQL: SELECT `sitedescrp` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT `sitefollowuid` FROM `sitefollower` WHERE ( siteid=1 )  [ RunTime:0.000155s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000193s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000174s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000187s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000178s ]
+SQL: SELECT `cmntid` FROM `siterelcmnt` WHERE ( siteid=1 )  [ RunTime:0.000192s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=1 ) LIMIT 1   [ RunTime:0.000207s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=2 ) LIMIT 1   [ RunTime:0.000207s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=3 ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=5 ) LIMIT 1   [ RunTime:0.000230s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=6 ) LIMIT 1   [ RunTime:0.000244s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=7 ) LIMIT 1   [ RunTime:0.000240s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=8 ) LIMIT 1   [ RunTime:0.000212s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=9 ) LIMIT 1   [ RunTime:0.000203s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=10 ) LIMIT 1   [ RunTime:0.000193s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=108 ) LIMIT 1   [ RunTime:0.000199s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000199s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000172s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000145s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 ) LIMIT 1   [ RunTime:0.000158s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=7 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000156s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=8 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000161s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=9 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 ) LIMIT 1   [ RunTime:0.000149s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=10 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000166s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 ) LIMIT 1   [ RunTime:0.000147s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=108 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000156s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000163s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000135s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000105s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000156s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000143s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000145s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000130s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000101s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000197s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000135s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000129s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000128s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000089s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000156s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000179s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000091s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000154s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000089s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000123s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000159s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000095s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000134s ]
+
+[ 2014-09-23T09:18:27+08:00 ] 127.0.0.1 /welfare/index.php/Home/School/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+SQL: SHOW COLUMNS FROM `sitefollower` [ RunTime:0.001734s ]
+SQL: SHOW COLUMNS FROM `siterelcmnt` [ RunTime:0.001698s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.001634s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001658s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001481s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.001674s ]
+SQL: SELECT `sitemainpic` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000420s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: SELECT `sitedescrp` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000147s ]
+SQL: SELECT `sitefollowuid` FROM `sitefollower` WHERE ( siteid=1 )  [ RunTime:0.000211s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000205s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000223s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000196s ]
+SQL: SELECT `cmntid` FROM `siterelcmnt` WHERE ( siteid=1 )  [ RunTime:0.000205s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=1 ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=2 ) LIMIT 1   [ RunTime:0.000213s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=3 ) LIMIT 1   [ RunTime:0.000215s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=5 ) LIMIT 1   [ RunTime:0.000214s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=6 ) LIMIT 1   [ RunTime:0.000209s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=7 ) LIMIT 1   [ RunTime:0.000203s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=8 ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=9 ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=10 ) LIMIT 1   [ RunTime:0.000199s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=108 ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000204s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000229s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000202s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000208s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 ) LIMIT 1   [ RunTime:0.000191s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000182s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=7 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000181s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=8 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000142s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000163s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=9 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000207s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=10 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000162s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 ) LIMIT 1   [ RunTime:0.000158s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=108 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000163s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000156s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000116s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000159s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000156s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000144s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000148s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000158s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000109s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000148s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000154s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000148s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000154s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000147s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000139s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000115s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000154s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000109s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000149s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000109s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000183s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000157s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000148s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000104s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000148s ]
+
+[ 2014-09-23T09:19:06+08:00 ] 127.0.0.1 /welfare/index.php/Home/School/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002651s ]
+SQL: SHOW COLUMNS FROM `sitefollower` [ RunTime:0.002195s ]
+SQL: SHOW COLUMNS FROM `siterelcmnt` [ RunTime:0.002439s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.002424s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002512s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002222s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.002588s ]
+SQL: SELECT `sitemainpic` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000631s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000244s ]
+SQL: SELECT `sitedescrp` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000245s ]
+SQL: SELECT `sitefollowuid` FROM `sitefollower` WHERE ( siteid=1 )  [ RunTime:0.000260s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000275s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000239s ]
+SQL: SELECT * FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000598s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000603s ]
+SQL: SELECT `cmntid` FROM `siterelcmnt` WHERE ( siteid=1 )  [ RunTime:0.000626s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=1 ) LIMIT 1   [ RunTime:0.000682s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=2 ) LIMIT 1   [ RunTime:0.000672s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=3 ) LIMIT 1   [ RunTime:0.000667s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=5 ) LIMIT 1   [ RunTime:0.000670s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=6 ) LIMIT 1   [ RunTime:0.000675s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=7 ) LIMIT 1   [ RunTime:0.000629s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=8 ) LIMIT 1   [ RunTime:0.000672s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=9 ) LIMIT 1   [ RunTime:0.000667s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=10 ) LIMIT 1   [ RunTime:0.000663s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=108 ) LIMIT 1   [ RunTime:0.000673s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000669s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000662s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000714s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000664s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 ) LIMIT 1   [ RunTime:0.000581s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000729s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 ) LIMIT 1   [ RunTime:0.000642s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=7 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000677s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000571s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=8 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000701s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000647s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=9 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000657s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 ) LIMIT 1   [ RunTime:0.000628s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=10 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000443s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 ) LIMIT 1   [ RunTime:0.000394s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=108 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000411s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000407s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000303s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000395s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000378s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000391s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000379s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000392s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000389s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000285s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000391s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000379s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000401s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000365s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000406s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000478s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000292s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000391s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000382s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000293s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000387s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000384s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000419s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000288s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000386s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000384s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000387s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000318s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000397s ]
+
+[ 2014-09-23T15:26:38+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityDisplay/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001766s ]
+SQL: SHOW COLUMNS FROM `actfollower` [ RunTime:0.006039s ]
+SQL: SHOW COLUMNS FROM `activitytype` [ RunTime:0.006972s ]
+SQL: SHOW COLUMNS FROM `sponsor` [ RunTime:0.006731s ]
+SQL: SHOW COLUMNS FROM `targetloc` [ RunTime:0.006691s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.007773s ]
+SQL: SHOW COLUMNS FROM `actrelcmnt` [ RunTime:0.006508s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.007550s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005890s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.004218s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.003999s ]
+SQL: SELECT * FROM `activity` WHERE ( aid=1 ) LIMIT 1   [ RunTime:0.001108s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=6 ) LIMIT 1   [ RunTime:0.000399s ]
+SQL: SELECT `siteid` FROM `targetloc` WHERE ( aid=1 )  [ RunTime:0.019263s ]
+SQL: SELECT `sitename` FROM `site` WHERE ( siteid=2 ) LIMIT 1   [ RunTime:0.000457s ]
+SQL: SELECT `atypename` FROM `activitytype` WHERE ( atypeid=1 ) LIMIT 1   [ RunTime:0.000366s ]
+SQL: SELECT `actfollowuid` FROM `actfollower` WHERE ( aid=1 )  [ RunTime:0.000405s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000410s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000300s ]
+SQL: SELECT * FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000332s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=3 ) LIMIT 1   [ RunTime:0.000313s ]
+SQL: SELECT * FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000329s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=4 ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SELECT `sponsoruid` FROM `sponsor` WHERE ( aid=1 )  [ RunTime:0.000379s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SELECT `cmntid` FROM `actrelcmnt` WHERE ( aid=1 )  [ RunTime:0.000495s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=1 ) LIMIT 1   [ RunTime:0.016832s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=2 ) LIMIT 1   [ RunTime:0.000638s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=3 ) LIMIT 1   [ RunTime:0.000591s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=4 ) LIMIT 1   [ RunTime:0.000567s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=5 ) LIMIT 1   [ RunTime:0.000690s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=6 ) LIMIT 1   [ RunTime:0.000669s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=7 ) LIMIT 1   [ RunTime:0.000771s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=8 ) LIMIT 1   [ RunTime:0.000773s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=9 ) LIMIT 1   [ RunTime:0.000665s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=10 ) LIMIT 1   [ RunTime:0.000649s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000670s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000691s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000656s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=4 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000652s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000675s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 ) LIMIT 1   [ RunTime:0.000650s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000671s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 ) LIMIT 1   [ RunTime:0.000647s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=7 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000674s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000648s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=8 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000654s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000662s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=9 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000702s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 ) LIMIT 1   [ RunTime:0.000648s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=10 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000671s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 ) LIMIT 1   [ RunTime:0.000653s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000605s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.014758s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000781s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000615s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000694s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000660s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000687s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000746s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000608s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000498s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000642s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000639s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000671s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000647s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000602s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000458s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000715s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000624s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000591s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000422s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000456s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000623s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000663s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000619s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000468s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000655s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000618s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000454s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000618s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000470s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+
+[ 2014-09-23T15:37:58+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityDisplay/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001385s ]
+SQL: SHOW COLUMNS FROM `actfollower` [ RunTime:0.002957s ]
+SQL: SHOW COLUMNS FROM `activitytype` [ RunTime:0.003546s ]
+SQL: SHOW COLUMNS FROM `sponsor` [ RunTime:0.003472s ]
+SQL: SHOW COLUMNS FROM `targetloc` [ RunTime:0.003304s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.003797s ]
+SQL: SHOW COLUMNS FROM `actrelcmnt` [ RunTime:0.003440s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.004291s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003936s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.003458s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.004051s ]
+SQL: SELECT * FROM `activity` WHERE ( aid=1 ) LIMIT 1   [ RunTime:0.001082s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=6 ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SELECT `siteid` FROM `targetloc` WHERE ( aid=1 )  [ RunTime:0.000320s ]
+SQL: SELECT `sitename` FROM `site` WHERE ( siteid=2 ) LIMIT 1   [ RunTime:0.000328s ]
+SQL: SELECT `atypename` FROM `activitytype` WHERE ( atypeid=1 ) LIMIT 1   [ RunTime:0.000313s ]
+SQL: SELECT `actfollowuid` FROM `actfollower` WHERE ( aid=1 )  [ RunTime:0.000333s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000375s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SELECT * FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000361s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=3 ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: SELECT * FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000402s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=4 ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: SELECT `sponsoruid` FROM `sponsor` WHERE ( aid=1 )  [ RunTime:0.000375s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000357s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000371s ]
+SQL: SELECT `cmntid` FROM `actrelcmnt` WHERE ( aid=1 )  [ RunTime:0.000390s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=1 ) LIMIT 1   [ RunTime:0.000400s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=2 ) LIMIT 1   [ RunTime:0.000639s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=3 ) LIMIT 1   [ RunTime:0.000656s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=4 ) LIMIT 1   [ RunTime:0.000937s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=5 ) LIMIT 1   [ RunTime:0.000646s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=6 ) LIMIT 1   [ RunTime:0.000678s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=7 ) LIMIT 1   [ RunTime:0.000649s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=8 ) LIMIT 1   [ RunTime:0.000669s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=9 ) LIMIT 1   [ RunTime:0.000668s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=10 ) LIMIT 1   [ RunTime:0.000663s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000721s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000709s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000692s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=4 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000794s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000646s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 ) LIMIT 1   [ RunTime:0.000641s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000735s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 ) LIMIT 1   [ RunTime:0.000646s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=7 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000758s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000669s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=8 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000682s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000696s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=9 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000659s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 ) LIMIT 1   [ RunTime:0.000658s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=10 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000683s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 ) LIMIT 1   [ RunTime:0.000728s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000573s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000469s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000632s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000608s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000648s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000648s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000642s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000627s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000566s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000477s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000688s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000607s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000604s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000659s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000574s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000454s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000605s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000639s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000579s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000462s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000499s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000619s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000624s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000661s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000461s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000619s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000630s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000476s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000633s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000478s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+
+[ 2014-09-23T15:43:28+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityDisplay/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001760s ]
+SQL: SHOW COLUMNS FROM `actfollower` [ RunTime:0.003363s ]
+SQL: SHOW COLUMNS FROM `activitytype` [ RunTime:0.003532s ]
+SQL: SHOW COLUMNS FROM `sponsor` [ RunTime:0.003470s ]
+SQL: SHOW COLUMNS FROM `targetloc` [ RunTime:0.003678s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.003695s ]
+SQL: SHOW COLUMNS FROM `actrelcmnt` [ RunTime:0.003368s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.003612s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003045s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002220s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.002440s ]
+SQL: SELECT * FROM `activity` WHERE ( aid=1 ) LIMIT 1   [ RunTime:0.000897s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=6 ) LIMIT 1   [ RunTime:0.000240s ]
+SQL: SELECT `siteid` FROM `targetloc` WHERE ( aid=1 )  [ RunTime:0.000248s ]
+SQL: SELECT `sitename` FROM `site` WHERE ( siteid=2 ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SELECT `atypename` FROM `activitytype` WHERE ( atypeid=1 ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SELECT `actfollowuid` FROM `actfollower` WHERE ( aid=1 )  [ RunTime:0.000250s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000262s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000231s ]
+SQL: SELECT * FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=3 ) LIMIT 1   [ RunTime:0.000230s ]
+SQL: SELECT * FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=4 ) LIMIT 1   [ RunTime:0.000230s ]
+SQL: SELECT `sponsoruid` FROM `sponsor` WHERE ( aid=1 )  [ RunTime:0.000242s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000234s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000233s ]
+SQL: SELECT `cmntid` FROM `actrelcmnt` WHERE ( aid=1 )  [ RunTime:0.000241s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=1 ) LIMIT 1   [ RunTime:0.000264s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=2 ) LIMIT 1   [ RunTime:0.000254s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=3 ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=4 ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=5 ) LIMIT 1   [ RunTime:0.000271s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=6 ) LIMIT 1   [ RunTime:0.000262s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=7 ) LIMIT 1   [ RunTime:0.000262s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=8 ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=9 ) LIMIT 1   [ RunTime:0.000227s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=10 ) LIMIT 1   [ RunTime:0.000230s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000227s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000207s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000197s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=4 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000194s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000202s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 ) LIMIT 1   [ RunTime:0.000193s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000201s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 ) LIMIT 1   [ RunTime:0.000194s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=7 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000201s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000196s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=8 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000201s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000201s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=9 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 ) LIMIT 1   [ RunTime:0.000243s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=10 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000249s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 ) LIMIT 1   [ RunTime:0.000245s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000217s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000178s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000240s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000230s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000236s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000230s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000246s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000229s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000214s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000175s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000235s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000229s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000240s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000254s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000216s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000176s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000237s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000224s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000216s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000175s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000194s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000239s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000246s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000233s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000175s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000233s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000235s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000176s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000188s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+
+[ 2014-09-23T15:55:39+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityDisplay/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `actfollower` [ RunTime:0.001656s ]
+SQL: SHOW COLUMNS FROM `activitytype` [ RunTime:0.002036s ]
+SQL: SHOW COLUMNS FROM `sponsor` [ RunTime:0.001931s ]
+SQL: SHOW COLUMNS FROM `targetloc` [ RunTime:0.001968s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.002134s ]
+SQL: SHOW COLUMNS FROM `actrelcmnt` [ RunTime:0.001880s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.001997s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.126799s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.005353s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.005167s ]
+SQL: SELECT * FROM `activity` WHERE ( aid=1 ) LIMIT 1   [ RunTime:0.001569s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=6 ) LIMIT 1   [ RunTime:0.000552s ]
+SQL: SELECT `siteid` FROM `targetloc` WHERE ( aid=1 )  [ RunTime:0.000520s ]
+SQL: SELECT `sitename` FROM `site` WHERE ( siteid=2 ) LIMIT 1   [ RunTime:0.000546s ]
+SQL: SELECT `atypename` FROM `activitytype` WHERE ( atypeid=1 ) LIMIT 1   [ RunTime:0.000518s ]
+SQL: SELECT `actfollowuid` FROM `actfollower` WHERE ( aid=1 )  [ RunTime:0.000743s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000689s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000607s ]
+SQL: SELECT * FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000637s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=3 ) LIMIT 1   [ RunTime:0.000518s ]
+SQL: SELECT * FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000574s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=4 ) LIMIT 1   [ RunTime:0.000497s ]
+SQL: SELECT `sponsoruid` FROM `sponsor` WHERE ( aid=1 )  [ RunTime:0.000588s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000521s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000497s ]
+SQL: SELECT `cmntid` FROM `actrelcmnt` WHERE ( aid=1 )  [ RunTime:0.000610s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=1 ) LIMIT 1   [ RunTime:0.000604s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=2 ) LIMIT 1   [ RunTime:0.000647s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=3 ) LIMIT 1   [ RunTime:0.000535s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=4 ) LIMIT 1   [ RunTime:0.000570s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=5 ) LIMIT 1   [ RunTime:0.000553s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=6 ) LIMIT 1   [ RunTime:0.000609s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=7 ) LIMIT 1   [ RunTime:0.000553s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=8 ) LIMIT 1   [ RunTime:0.000527s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=9 ) LIMIT 1   [ RunTime:0.000538s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=10 ) LIMIT 1   [ RunTime:0.000523s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000537s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000552s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000525s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=4 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000534s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000574s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 ) LIMIT 1   [ RunTime:0.000531s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000543s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 ) LIMIT 1   [ RunTime:0.000546s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=7 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000525s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000561s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=8 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000546s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000648s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=9 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000549s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 ) LIMIT 1   [ RunTime:0.000549s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=10 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000585s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 ) LIMIT 1   [ RunTime:0.000594s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000432s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000424s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000570s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000501s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000527s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000495s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000469s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000469s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000429s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000381s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000495s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000490s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000540s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=2 ) LIMIT 1   [ RunTime:0.000531s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000460s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000368s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=1 ) LIMIT 1   [ RunTime:0.000570s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000487s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=0 ) LIMIT 1   [ RunTime:0.000453s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1   [ RunTime:0.000395s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `imgpath` FROM `image` WHERE ( iid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000373s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000525s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000502s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000355s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000514s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000497s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000370s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000497s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000389s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+
+[ 2014-09-23T16:00:11+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityDisplay/follow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001740s ]
+SQL: SHOW COLUMNS FROM `actfollower` [ RunTime:0.002960s ]
+NOTIC: [8] Undefined variable: allSiteFollowerDB D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityDisplayController.class.php 第 261 行.
+
+[ 2014-09-23T16:02:12+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityDisplay/follow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001375s ]
+SQL: SHOW COLUMNS FROM `actfollower` [ RunTime:0.002873s ]
+NOTIC: [8] Undefined variable: allSiteFollowerDB D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityDisplayController.class.php 第 261 行.
+
+[ 2014-09-23T16:02:44+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityDisplay/follow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002415s ]
+SQL: SHOW COLUMNS FROM `actfollower` [ RunTime:0.002971s ]
+SQL: SELECT * FROM `actfollower` WHERE ( actfollowuid= and aid=1 ) LIMIT 1   [ RunTime:0.001052s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and aid=1 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `actfollower` WHERE ( actfollowuid= and aid=1 ) LIMIT 1  
+SQL: INSERT INTO `actfollower` (`actfollowuid`,`aid`) VALUES (null,1) [ RunTime:0.090971s ]
+ERR: 1048:Column 'actfollowuid' cannot be null
+ [ SQL语句 ] : INSERT INTO `actfollower` (`actfollowuid`,`aid`) VALUES (null,1)
+
+[ 2014-09-23T16:04:50+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityDisplay/follow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001800s ]
+
+[ 2014-09-23T16:05:03+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000302s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000514s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.177601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.177825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015952s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010906s ]
+
+[ 2014-09-23T16:05:04+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004325s ]
+
+[ 2014-09-23T16:05:17+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\MainNavigationController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004527s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.006574s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.004327s ]
+SQL: SELECT `uid`,`uicon` FROM `user` WHERE ( `uname` = 'heheng' ) AND ( `password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000457s ]
+SQL: SELECT * FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000233s ]
+SQL: SELECT * FROM `message` WHERE ( `msgrecvuid` = 8 ) AND ( `msgstate` = 0 )  [ RunTime:0.000294s ]
+
+[ 2014-09-23T16:05:23+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityDisplay/follow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+
+[ 2014-09-23T16:10:02+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityDisplay/follow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+SQL: SHOW COLUMNS FROM `actfollower` [ RunTime:0.001864s ]
+SQL: SELECT * FROM `actfollower` WHERE ( actfollowuid=8 and aid=1 ) LIMIT 1   [ RunTime:0.000710s ]
+SQL: INSERT INTO `actfollower` (`actfollowuid`,`aid`) VALUES (8,1) [ RunTime:0.000377s ]
+
+[ 2014-09-23T16:13:37+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityDisplay/leaveMessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.003178s ]
+SQL: SHOW COLUMNS FROM `actrelcmnt` [ RunTime:0.003484s ]
+SQL: INSERT INTO `comment` (`cmntid`,`cmntuid`,`cmntcontent`,`cmntdt`,`recmntid`,`rtcmntid`) VALUES (null,8,'这他妈是评论，看清楚，是评论！','2014-09-23 16:13:37',null,null) [ RunTime:0.001460s ]
+SQL: SELECT `cmntid` FROM `comment` WHERE ( `cmntdt` = '2014-09-23 16:13:37' ) LIMIT 1   [ RunTime:0.008297s ]
+SQL: INSERT INTO `actrelcmnt` (`aid`,`cmntid`) VALUES (1,109) [ RunTime:0.000608s ]
+
+[ 2014-09-23T16:18:23+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityDisplay/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002486s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.003866s ]
+SQL: SHOW COLUMNS FROM `actrelcmnt` [ RunTime:0.003832s ]
+SQL: INSERT INTO `comment` (`cmntid`,`cmntuid`,`cmntcontent`,`cmntdt`,`recmntid`,`rtcmntid`) VALUES (null,8,'这是针对id为5的评论的回复','2014-09-23 16:18:23',5,1) [ RunTime:0.001076s ]
+SQL: SELECT `cmntid` FROM `comment` WHERE ( `cmntdt` = '2014-09-23 16:18:23' ) LIMIT 1   [ RunTime:0.000385s ]
+SQL: INSERT INTO `actrelcmnt` (`aid`,`cmntid`) VALUES (1,110) [ RunTime:0.000509s ]
+

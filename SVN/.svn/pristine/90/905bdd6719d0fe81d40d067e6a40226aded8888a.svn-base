@@ -1,0 +1,373 @@
+/**
+ * Author:黄嘉敏
+ * Date:2014-9-28
+ * Function:发布活动
+ * Modified by Austin Yang @ 2014-10-20 00:00 添加全局URL，更改ajax判断返回值机制
+ */
+
+
+//载入“省”资料
+var loc = 0;
+var acid = -1;
+$(document).ready(function(){
+    //全局URL
+    commonURL = "/maitian/welfare/index.php";
+
+    init();
+
+    $(".province").change(function(){
+        provinceChange($(this));
+    });
+    $(".cities").change(function(){
+        cityChange($(this));
+    });
+    $(".contrises").change(function(){
+        contryChange($(this));
+    });
+    $(".towns").change(function(){
+        townChange($(this));
+    });
+
+    // 组织者，点击增加
+    // $(".newOrganizer").click(function(){
+    //     $("#organizer").append($("#organizers").clone(true));
+    // });
+    // 组织者，点击减少
+    // $(".deleteOrganizer").click(function(){
+    //     $(this).parent().remove();
+    // });
+
+    // 活动地点，点击增加
+    $(".newLocation").click(function(){
+        $("#location").append($("#locations").clone(true));
+    });
+
+    // 活动地点，点击减少
+    $(".deleteLocation").click(function(){
+        $(this).parent().remove();
+    });
+});
+
+function init(){
+    $.ajax({
+        "url": commonURL + "/Home/NewActivity/initate",
+        "type":"get",
+        "success":function(data){
+            if (data.status == "1") {
+                var option="";
+                for (var i = 0; i < data.activitytypeids.length; i++) {
+                    option = "<option value='"+data.activitytypeids[i]+"'>"+data.activitytypenames[i]+"</option>";
+                    $("#activitytype").append(option);
+                }
+            } else if (data.status == "0") {
+                if (data.msg == "1") {
+                    var username = $.cookie("username");
+                    if (username) {
+                        //清除cookie中存储的用户信息
+                        $.cookie('username', null, {expires: -1, path: '/'});
+                        $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                        $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                        
+                        hidePortrait();
+                    }
+
+                    alert("请重新登录！");
+                    //TO DO!!!
+                } else if (data.msg == "2") {
+                    alert("数据库访问错误");
+                }
+            }
+        }
+    });
+
+    $.ajax({
+        "url": commonURL + "/Home/NewActivity/getProvince",
+        "type":"get",
+        "success":function(data){
+            if (data.status == "1") {
+                var option="";
+                for (var i = 0; i < data.provinceids.length; i++) {
+                    option = "<option value='"+data.provinceids[i]+"'>"+data.provincenames[i]+"</option>";
+                    $(".province").append(option);
+                }
+            } else if (data.status == "0") {
+                if (data.msg == "1") {
+                    var username = $.cookie("username");
+                    if (username) {
+                        //清除cookie中存储的用户信息
+                        $.cookie('username', null, {expires: -1, path: '/'});
+                        $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                        $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                        
+                        hidePortrait();
+                    }
+
+                    alert("请重新登录！");
+                    //TO DO!!!
+                } else if (data.msg == "2") {
+                    alert("数据库访问错误");
+                }
+            }
+        }
+    });
+}
+
+function provinceChange(loc){
+    // loc.parent().parent()是找到locations
+    var city = loc.parent().parent().find(".cities");
+    var contry = loc.parent().parent().find(".contrises");
+    var town = loc.parent().parent().find(".towns");
+    var site = loc.parent().parent().find(".sites");
+    //如果“省”选项不为空，动态载入地点，如果为空，重置“市”，县等为空
+    if(loc.val() != "-1"){
+        $.ajax({
+            "url": commonURL + "/Home/NewActivity/getCity",
+            "data":{"provinceid":loc.val()},//传递省份信息
+            "success":function(data) {
+                if (data.status == "1") {
+                    city.html("<option value='-1'>--选择市--</option>");
+                    var option = "";
+                    for(var i = 0; i < data.cityids.length;i++){
+                        option = "<option value='"+data.cityids[i]+"'>"+data.citienames[i]+"</option>";
+                        city.append(option);
+                    }
+                } else if (data.status == "0") {
+                    if (data.msg == "1") {
+                        var username = $.cookie("username");
+                        if (username) {
+                            //清除cookie中存储的用户信息
+                            $.cookie('username', null, {expires: -1, path: '/'});
+                            $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                            $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                            
+                            hidePortrait();
+                        }
+
+                        alert("请重新登录！");
+                        //TO DO!!!
+                    } else if (data.msg == "2") {
+                        alert("数据库访问错误");
+                    }
+                }
+            }//end success function
+        });//end ajax
+    } else{
+        city.html("<option value='-1'>--选择市--</option>");
+        contry.html("<option value='-1'>--选择县--</option>");
+        town.html("<option value='-1'>--选择乡镇--</option>");
+        site.html("<option value='-1'>--选择地点--</option>");
+    }
+}
+
+function cityChange(loc){
+    var contry = loc.parent().parent().find(".contrises");
+    var town = loc.parent().parent().find(".towns");
+    var site = loc.parent().parent().find(".sites");
+    if(loc.val() != "-1"){
+        $.ajax({
+            "url": commonURL + "/Home/NewActivity/getCounty",
+            "data":{"cityid":loc.val()},
+            "success":function(data){
+                if (data.status == "1") {
+                    //初始化”县“列表
+                    contry.html("<option value='-1'>--选择县--</option>");
+                    var option = "";
+                    //载入添加的”县“
+                    for(var i = 0; i < data.countyids.length;i++){
+                        option = "<option value='"+ data.countyids[i]+"'>" + data.countynames[i]+"</option>";
+                        contry.append(option);
+                    }
+                } else if (data.status == "0") {
+                    if (data.msg == "1") {
+                        var username = $.cookie("username");
+                        if (username) {
+                            //清除cookie中存储的用户信息
+                            $.cookie('username', null, {expires: -1, path: '/'});
+                            $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                            $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                            
+                            hidePortrait();
+                        }
+
+                        alert("请重新登录！");
+                        //TO DO!!!
+                    } else if (data.msg == "2") {
+                        alert("数据库访问错误");
+                    }
+                }
+            }//end success fuction
+        });//end ajax
+    } else{
+        contry.html("<option value='-1'>--选择县--</option>");
+        town.html("<option value='-1'>--选择乡镇--</option>");
+        site.html("<option value='-1'>--选择地点--</option>");
+    }
+}
+
+function contryChange(loc){
+    var town = loc.parent().parent().find(".towns");
+    var site = loc.parent().parent().find(".sites");
+    if(loc.val() != "-1"){
+        $.ajax({
+            "url": commonURL + "/Home/NewActivity/getTown",
+            "data":{"countyid":loc.val()},
+            "success":function(data) {
+                if (data.status == "1") {
+                    //初始化乡镇列表
+                    town.html("<option value='-1'>--选择乡镇--</option>");
+                    var option = "";
+                    //载入添加的乡镇
+                    for(var i = 0; i < data.townids.length;i++){
+                        option = "<option value='"+data.townids[i]+"'>" + data.townnames[i]+"</option>";
+                        town.append(option);
+                    }
+                } else if (data.status == "0") {
+                    if (data.msg == "1") {
+                        var username = $.cookie("username");
+                        if (username) {
+                            //清除cookie中存储的用户信息
+                            $.cookie('username', null, {expires: -1, path: '/'});
+                            $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                            $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                            
+                            hidePortrait();
+                        }
+
+                        alert("请重新登录！");
+                        //TO DO!!!
+                    } else if (data.msg == "2") {
+                        alert("数据库访问错误");
+                    }
+                }
+            }//end success fuction
+        });//end ajax
+    } else{
+        town.html("<option value='-1'>--选择乡镇--</option>");
+        site.html("<option value='-1'>--选择地点--</option>");
+    }
+}
+
+function townChange(loc){
+    var site = loc.parent().parent().find(".sites");
+    if(loc.val() != "-1"){
+        $.ajax({
+            "url": commonURL + "/Home/NewActivity/getSite",
+            "data":{"townid":loc.val()},
+            "success":function(data) {
+                if (data.status == "1") {
+
+                    //初始化乡镇列表
+                    site.html("<option value='-1'>--选择地点--</option>");
+                    var option = "";
+                    //载入添加的乡镇
+                    for(var i = 0; i < data.siteids.length;i++){
+                        option = "<option value='"+data.siteids[i]+"'>" + data.sitenames[i]+"</option>";
+                        site.append(option);
+                    }
+                } else if (data.status == "0") {
+                    if (data.msg == "1") {
+                        var username = $.cookie("username");
+                        if (username) {
+                            //清除cookie中存储的用户信息
+                            $.cookie('username', null, {expires: -1, path: '/'});
+                            $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                            $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                            
+                            hidePortrait();
+                        }
+
+                        alert("请重新登录！");
+                        //TO DO!!!
+                    } else if (data.msg == "2") {
+                        alert("数据库访问错误");
+                    }
+                }
+            }//end success fuction
+        });//end ajax
+    } else{
+        site.html("<option value='-1'>--选择地点--</option>");
+    }
+}
+
+
+$(function() {
+    $('#file_upload').uploadify({
+        'formData' :{
+            'siteid' :acid
+          },
+                
+        'swf'      : '/maitian/welfare/Common/Static/swf/uploadify.swf',
+        'uploader' : commonURL+'/Home/NewActivity/uploadImage',
+        'onUploadSuccess':function(file,data,res) {
+
+            var url = JSON.parse(data);/*使用json解析器转化为js对象*/
+            $('#headImg').attr('src',url.imgpath);
+        }
+    });
+})
+
+//点击发布
+$("#submitButton").click(function(){
+    // 获得所有组织者输入框里的内容，存到数组里面
+    // var organizer = new Array();
+    // var tmp = $("#organizer").find(".InputOrganizer");
+    // for (var i = 0; i < tmp.length; i++) {
+    //     organizer[i] = tmp[i].value;
+    // }
+    // 获得所有地点id，存到对应数组里面
+    var sites = new Array();
+    var tmp1 = $("#location").find(".sites");
+    for (var i = 0; i < tmp1.length; i++) {
+        sites[i] = tmp1[i].value;
+    }
+    
+    // 组织者的json对象
+    var sponsorids = '{"sponsorids":[]}'; 
+
+    var siteids = '{"siteids":['+sites[0];
+    for (var i = 1; i < sites.length; i++){
+        siteids = siteids + ',' + sites[i];
+    }
+    siteids = siteids + ']}';
+
+    $.ajax({
+        "url": commonURL + "/Home/NewActivity/saveActivity",
+        "data":{"activitytypeid": $("#activitytype").val(),
+                "sponsorids":sponsorids,
+                "siteids":siteids,
+                "title":$("#InputTitle").val(),
+                "startdate":$("#InputStartTime").val(),
+                "enddate":$("#InputEndTime").val(),
+                "description":$("#InputInstruction").val(),
+                "population":$("#InputVolunteer").val()
+            },
+        "success":function(data){
+            if (data.status == "1") {
+                acid = data.acid;
+                alert("创建成功");
+
+                /*显示头像区域*/
+                $(".headImgblock").attr("visibility","visible");
+                /*window.location=commonURL + "/Home/Activity/index";*/
+            } else if (data.status === "0") {
+
+                if (data.msg == "1") {
+                    var username = $.cookie("username");
+                    if (username) {
+                        //清除cookie中存储的用户信息
+                        $.cookie('username', null, {expires: -1, path: '/'});
+                        $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                        $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                        
+                        hidePortrait();
+                    }
+
+                    alert("请重新登录！");
+                    //TO DO!!!
+                } else if (data.msg == "2") {
+                    alert("数据库访问错误");
+                }
+            }
+        }
+    });
+});

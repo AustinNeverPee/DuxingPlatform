@@ -1,0 +1,557 @@
+<?php
+/**
+ *Author: 何衡
+ *Date: 2014/8/30
+ *Function: 实现“学校页”控制器
+ */
+namespace Home\Controller;
+use Think\Controller;
+require_once "functions.php";
+header("Content-Type: text/html; charset=utf-8");
+
+class SchoolController extends Controller {
+	/**
+	 *首次访问该网页，调用模板，设置session
+	 *@param GET['schoolid']: void 无参数
+	 */
+	public function index() {
+
+		/*在调用之前，现行给模板传入参数！渲染模板*/
+		$this->assign('static', C('STATIC_RESOURCE'));
+		$this->assign('gate', C('COMMON_GATE'));
+		$this->display();
+	}
+
+	/**
+	 *用户加载完框架后，调用该函数填充页面内容
+	 *@param $schoolid : string 该参数由前端post传递过来
+	 *经测试，该接口工作正常！
+	 */
+	public function initate() {
+        $query_error = 0;
+
+		//定义一个图片路径前缀！
+		define("PREDIR", C('STATIC_RESOURCE')."/resources/");
+
+		//从前端post数据中取出，schoolid!
+		$schoolId = I('post.schoolid');
+		if(!ajaxCheck($schoolId)) {
+			die();
+		}
+		//实例化所有需要用到的数据库！
+		$allSiteFollowerDB	= M('sitefollower');
+		$siterelcmntDB		= M('siterelcmnt');
+		$allCommentsDB		= M('comment');
+		$allUsersDB			= M('user');
+		$allImagesDB		= M('image');
+		$allSitesDB			= M('site');
+		
+		//第一步，拉取地点头像
+		$siteImageid = $allSitesDB->where('siteid='.$schoolId)->getField('sitemainpic');
+		if(!queryCheck($siteImageid)) {
+		    die();
+		}
+		
+		
+		$siteImageSrc = $allImagesDB->where("iid='".$siteImageid."'")->getField('imgpath');
+		if(!queryCheck($siteImageSrc)) {
+		    die();
+		}
+		if($siteImageSrc == null) {
+            $consts = require "consts.php";
+            $siteImageSrc = $consts["STATIC_PATH"]["STATIC_IMG_PATH"].$consts["DEFAULT_IMG"]["DEFAULT_SITE"];
+        }
+        else {
+            $siteImageSrc = PREDIR.$siteImageSrc;
+        }
+
+		//第二布，拉取学校（地点）的简介
+		$siteDescrp = $allSitesDB->where('siteid='.$schoolId)->getField('sitedescrp');
+		if(!queryCheck($siteDescrp)) {
+		    die();
+		}
+		
+		//第三步，拉取活动关注者的id
+		$siteFollowerIds = $allSiteFollowerDB->where('siteid='.$schoolId)->getField('sitefollowuid', true);
+		if(!queryCheck($siteFollowerIds)) {
+		    die();
+		}
+		//第四步，拉取活动关注者的名字，拉取关注者的头像集合
+		$siteFollowerNames = array();
+		$siteFollowerSrcs = array();
+		while (list($subScripty, $entry) = each($siteFollowerIds)) {
+			$userInfo = $allUsersDB->where("uid='$entry'")->find();
+			if(!queryCheck($userInfo)) {
+				die();
+			}
+			$tmpImageSrc = $allImagesDB->where("iid='".$userInfo['uicon']."'")->getField('imgpath');
+			if(!queryCheck($tmpImageSrc)) {
+				die();
+			}
+			if($tmpImageSrc == null) {
+	            $consts = require "consts.php";
+	            $src = $consts["STATIC_PATH"]["STATIC_IMG_PATH"].$consts["DEFAULT_IMG"]["DEFAULT_USER"];
+	        }
+	        else {
+	            $src = PREDIR.$tmpImageSrc;
+	        }
+			array_push($siteFollowerNames, $userInfo['uname']);
+			array_push($siteFollowerSrcs, $src);
+		}
+		
+		//第五步，拉取地点下面的评论,先将所有评论放入数组
+		$commentIds = $siterelcmntDB->where('siteid='.$schoolId)->getField('cmntid', true);
+		if(!queryCheck($commentIds)) {
+		    die();
+		}
+
+		//定义8个保存评论相应的值的数组
+		$allComments = array();
+		$allOwners = array();
+		$allToids = array();
+		$allCmnids = array();
+		$allTimes = array();
+		$allOwnNames = array();
+		$allOwnSrcs = array();
+		$allToNames = array();
+		
+		//定义一个数组，用于保存多个根节点（留言id）的数组
+		$allRootIds = array();
+
+		//找出了所有的根节点，并记录相应的id，并设置相应位置的信息
+		while(list($subScript, $entry) = each($commentIds)) {
+			$tmpComment = $allCommentsDB->where('recmntid is null and rtcmntid is null and cmntid='.$entry)->find();
+			if(!queryCheck($tmpComment)) {
+				die();
+			}
+			
+			if (!empty($tmpComment)){
+				//定义5个临时数组（这里少了7个中的2个用户名数组）
+				$tmpcmn = array();
+				$tmpown = array();
+				$tmptoi = array();
+				$tmpcid = array();
+				$tmpTim = array();
+				
+				//向临时数组中添加第0个信息
+				array_push($tmpcmn, $tmpComment['cmntcontent']);
+				array_push($tmpown, $tmpComment['cmntuid']);
+				array_push($tmptoi, null);          //因为是根节点，这个值比较特殊，设置为空
+				array_push($tmpcid, $tmpComment['cmntid']);
+				array_push($tmpTim, $tmpComment['cmntdt']);
+
+				//记录每个根节点的id号
+				array_push($allRootIds, $tmpComment['cmntid']);
+
+				//将临时数组作为二维数组新的一纬写入到数组中
+				$allComments[count($allComments)] = $tmpcmn;
+				$allOwners[count($allOwners)] = $tmpown;
+				$allCmnids[count($allCmnids)] = $tmpcid;
+				$allTimes[count($allTimes)] = $tmpTim;
+				$allToids[count($allToids)] = $tmptoi;
+			}
+		}
+
+		/*重置commentIds数组的指针！*/
+		reset($commentIds);
+		
+		//往每个根节点后面添加二级的评论
+		while (list($subScript, $entry) = each($commentIds)) {
+			$tmpComment = $allCommentsDB->where('cmntid='.$entry.' and recmntid is not null and rtcmntid is not null')->find();
+			if(!queryCheck($tmpComment)) {
+				die();
+			}
+			if (!empty($tmpComment)) {
+				foreach ($allRootIds as $key => $value) {  //通过rootid的数目，来控制循环
+					if ($allRootIds[$key] == $tmpComment['rtcmntid']) {
+						array_push($allComments[$key], $tmpComment['cmntcontent']);
+						array_push($allOwners[$key], $tmpComment['cmntuid']);
+						array_push($allCmnids[$key], $tmpComment['cmntid']);
+						array_push($allTimes[$key], $tmpComment['cmntdt']);
+
+						//找每个评论针对的用户的id
+						$commentObj = $allCommentsDB->where('cmntid='.$tmpComment['recmntid'])->find();
+						if(!queryCheck($commentObj)) {
+							die();
+						}
+						array_push($allToids[$key], $commentObj['cmntuid']);
+					}
+				}
+			}
+		}
+
+		//找出每条留言或者评论属主的名字和头像
+		//var_dump($allOwners);
+		foreach ($allOwners as $key => $value) {
+			$tmpNames = array();
+			$tmpSrcs = array();
+			while (list($subScript, $entry) = each($value)) {
+				$nameAndSrc = $allUsersDB->where("uid=".$entry)->field('uname, uicon')->find();
+				if(!queryCheck($nameAndSrc)) {
+					die();
+				}
+				$tmpImagsrc = $allImagesDB->where("iid='".$nameAndSrc['uicon']."'")->getField('imgpath');
+				if(!queryCheck($tmpImagesrc)) {
+					die();
+				}
+				if($tmpImagsrc == null) {
+		            $consts = require "consts.php";
+		            $src = $consts["STATIC_PATH"]["STATIC_IMG_PATH"].$consts["DEFAULT_IMG"]["DEFAULT_USER"];
+		        }
+		        else {
+		            $src = PREDIR.$tmpImagsrc;
+		        }
+				array_push($tmpNames, $nameAndSrc['uname']);
+				array_push($tmpSrcs, $src);
+			}
+			$allOwnNames[count($allOwnNames)] = $tmpNames;
+			$allOwnSrcs[count($allOwnSrcs)] = $tmpSrcs;
+		}
+		
+		//找出每条评论或者留言针对对象的名字
+		foreach ($allToids as $key => $value) {
+			$tmpNames = array();
+			while (list($subScript, $entry) = each($value)) {
+			    $mid_var1 = $allUsersDB->where("uid=".$entry)->getField('uname');
+				array_push($tmpNames, $mid_var1);
+				if(!queryCheck($mid_var1)) {
+					die();
+				}
+			}
+			$allToNames[count($allToNames)] = $tmpNames;
+		}
+
+		$res = M('site')->where("siteid='$schoolId'")->field('sitename,lastmddt')->find();
+		
+		//封装需要向前端返回的数据
+		$response['src']			= $siteImageSrc;
+		$response['followerids']	= $siteFollowerIds;
+		$response['followernames']	= $siteFollowerNames;
+		$response['followersrcs']	= $siteFollowerSrcs;
+		$response['descrp']			= $siteDescrp;
+		$response['sitename']		= $res['sitename'];
+		$response['lastmddt']		= $res['lastmddt'];
+		$response['comments']		= $allComments;
+		$response['commentids']		= $allCmnids;
+		$response['ownerids']		= $allOwners;
+		$response['ownernames']		= $allOwnNames;
+		$response['ownersrcs']		= $allOwnSrcs;
+		$response['toids']			= $allToids;
+		$response['tonames']		= $allToNames;
+		$response['times']			= $allTimes;
+
+		//这个函数里没有做任何错误检测！也就强行将返回状态置为1了
+		$response['status'] = 1;
+		
+		//ajax返回初始化信息
+		$this->ajaxReturn($response, "json");
+	}
+	
+	/**
+	 *用户关注在浏览地点时请求“关注地点”
+	 *@param uid : string 该参数是位于session中的uid
+	 *@param schoolid : string 该参数由前端post过来
+	 *经测试，该接口工作正常！
+	 */
+	public function follow() {
+		
+		//从session中获得uid
+		$uId = session('uid');
+		
+		//从post请求中，获得schoolid
+		$schoolId = I('post.schoolid');
+		if(!ajaxCheck($schoolId)) {
+			die();
+		}
+		
+		//实例化所有需要用到的数据库！
+		$allSiteFollowerDB = M('sitefollower');
+		
+		//查询数据库是否已经存在这样一条记录
+		$isfollowed = $allSiteFollowerDB->where("sitefollowuid=".$uId." and siteid=".$schoolId)->find();
+		if(!queryCheck($isfollowed)) {
+		    die();
+		}
+
+		//判断查询结果，并设置相应的返回状态和提示信息
+		if (empty($isfollowed)) {
+			$data['sitefollowuid'] = $uId;
+			$data['siteid'] = $schoolId;
+			$mid_var2 = $allSiteFollowerDB->data($data)->add();
+			if(!queryCheck($mid_var2)) {
+				die();
+			}
+			$response['status'] = 1;
+		} else {
+			//已经存在该数据，返回已经我关注的状态！
+			$response['status'] = 0;
+			$response['msg'] = "该学校已被关注";
+		}
+
+		//ajax向前端返回信息
+		$this->ajaxReturn($response, "json");
+	}
+	
+
+	public function historyfbk(){
+		$this->assign('static', C('STATIC_RESOURCE'));
+		$this->assign('gate', C('COMMON_GATE'));
+		$this->display();
+
+	}
+	/**
+	 *“学校”也动态请求更多活动信息的请求
+	 *@param @shcoolid : string 该参数由前端post传过来
+	 *@param @currentpage : string 该参数由前端post传过来
+	 *经测试，该接口工作正常！
+	 */
+	public function moreActivity() {
+		
+		//定义默认每页信息的查找量和图片路径前缀！
+		define("PREDIR", C('STATIC_RESOURCE')."/resources/");
+		define("PAGELENGTH", 10);
+		
+		//从post中获取currentpage和schoolid参数
+		$schoolId		= I('post.schoolid');
+		if(!ajaxCheck($schoolId)) {
+			die();
+		}
+		$currentPage	= I('post.currentpage');
+		//$schoolId = 1;
+		//$currentPage = 0;
+
+		//实例化所有需要用到的数据库！
+		$targetLocDB	= M('targetloc');
+		$allAciDB		= M('activity');
+		$allImageDB		= M('image');
+		
+		//定义3个保存返回信息的数组
+		$allAcids		= array();
+		$allAciSrcs		= array();
+		$allDescriptions= array();
+		$allActivityurls= array();
+
+		//第一步，找地点对用的活动id，这里有一个问题，如何基于时间给我的查询排序？下面的排序应该是错的
+		$allAcids = $targetLocDB->where("siteid=".$schoolId)->order('aid')
+					  ->limit($currentPage * PAGELENGTH, PAGELENGTH)->getField('aid', true);
+		if(!queryCheck($allAcids)) {
+		    die();
+		}
+
+		//第二步，抓取活动的海报和活动的描述！这里假装前面的排序是可以正常运作的！
+		while (list($subScript, $entry) = each($allAcids)) {
+			$desAndSrc = $allAciDB->where('aid='.$entry)->field('apostimg, adescrp')->find();
+			if(!queryCheck($desAndSrc)) {
+				die();
+			}
+			$postSrc = $allImageDB->where("iid='".$desAndSrc['apostimg']."'")->getField('imgpath');
+			if(!queryCheck($postSrc)) {
+				die();
+			}
+			if($postSrc == null) {
+		        $consts = require "consts.php";
+		        $src = $consts["STATIC_PATH"]["STATIC_IMG_PATH"].$consts["DEFAULT_IMG"]["DEFAULT_USER"];
+		    }
+		    else {
+		        $src = PREDIR.$postSrc;
+		    }
+			array_push($allActivityurls, U('ActivityDisplay/index?acid='.$entry));
+			array_push($allAciSrcs, $src);
+			array_push($allDescriptions, $desAndSrc['adescrp']);
+		}
+		
+		//封装需要向前端返回的数据
+		$response['acids']			= $allAcids;
+		$response['imagesrcs']		= $allAciSrcs;
+		$response['descriptions']	= $allDescriptions;
+		$response['activityurls']	= $allActivityurls;
+		$response['status']			= 1;
+
+		//ajax向前端返回信息
+		$this->ajaxReturn($response, 'json');
+	}
+
+	/**
+	 *“学校”动态留言的请求
+	 *@param @shcoolid : string 该参数由前端post传过来
+	 *@param @content : string 该参数由前端post传过来
+	 *@param @uid : Int 该参数从session中获取
+	 *经测试，该接口工作正常！
+	 */
+	public function leaveMessage() {
+		//从session中获取uid
+		$uId = session('uid');
+
+		//从post中post中获取content和schoolid
+		$schoolId	= I('post.schoolid');
+		
+		if(!ajaxCheck($schoolId)) {
+			die();
+		}
+		
+		$content	= I('post.content');
+		
+		//实例化所有需要用到的数据库！
+		$allCommentDB		= M('comment');
+		$allSiterelcmntDB	= M('siterelcmnt');
+		
+		//生成要写入到数据库中的数据
+		$data['cmntid']		= null;
+		$data['cmntuid']	= $uId;
+		$data['cmntcontent']= $content;
+		$data['cmntdt']		= date("Y-m-d H:i:s", time());
+		$data['recmntid']	= null;
+		$data['rtcmntid']	= null;
+
+		//将生成的留言插入到数据库中
+		$mid_var3 = $allCommentDB->data($data)->add();
+		if(!queryCheck($mid_var3)) {
+			die();
+		}	
+		//插入完数据库之后，刷新数据库！
+		$allCommentDB = M('comment');
+		
+		//定义数据库查询条件！
+		$criteria['cmntdt'] = array('EQ', $data['cmntdt']);
+		$cmntId = $allCommentDB->where($criteria)->getField('cmntid');
+		if(!ajaxCheck($cmntId)) {
+			die();
+		}
+		if (empty($cmntId)) {
+			$response['status'] = 0;
+			$response['msg'] = "数据库查询失败！";
+			$this->ajaxReturn($response, 'json');
+		}
+
+		//重置data，生成要插入到地点和评论的联系表的数据
+		$data = null;
+		$data['siteid'] = $schoolId;
+		$data['cmntid'] = $cmntId;
+
+		//将生成好的联系表数据插入到联系表中
+		$mid_var4 = $allSiterelcmntDB->data($data)->add();
+		if(!queryCheck($mid_var4)) {
+			die();
+		}
+		
+		//封装需要向前端返回的数据
+		$response['status'] = 1;
+		
+		//ajax向前端返回信息
+		$this->ajaxReturn($response, 'json');
+	}
+
+	/**
+	 *“学校”也动态请求更多活动信息的请求
+	 *@param @shcoolid : string 该参数由前端post传过来
+	 *@param @content : string 该参数由前端post传过来
+	 *@param @uid : Int 该参数从session中获取
+	 *@param @recmntid : Int 该参数由前端post传过来!
+	 *@param @rtcmntid : Int 该参数由前端post传过来！
+	 *经测试，该接口工作正常
+	 */
+	public function comment() {
+		//从session中获取uid
+		$uId = session('uid');
+		
+		//从post中post中获取content，schoolid，recmntid和rtcmntid
+		$schoolId = I('post.schoolid');
+		
+		if(!ajaxCheck($schoolId)) {
+			die();
+		}
+		
+		$content = I('post.content');
+		$toId = I('post.recmntid');
+		$rootId = I('post.rtcmntid');
+		
+		//实例化所有需要用到的数据库！
+		$allCommentDB		= M('comment');
+		$allSiterelcmntDB	= M('siterelcmnt');
+
+		//生成要写入到数据库中的数据
+		$data['cmntid'] = null;
+		$data['cmntuid'] = $uId;
+		$data['cmntcontent'] = $content;
+		$data['cmntdt'] = date("Y-m-d H:i:s", time());
+		$data['recmntid'] = $toId;
+		$data['rtcmntid'] = $rootId;
+		
+		//将生成的留言插入到数据库中
+		$mid_var5 = $allCommentDB->data($data)->add();
+		if(!queryCheck($mid_var5)) {
+			die();
+		}
+		
+		//定义数据库查询条件！
+		$criteria['cmntdt'] = array('EQ', $data['cmntdt']);
+		$cmntId = $allCommentDB->where($criteria)->getField('cmntid');
+		if(!queryCheck($cmntId)) {
+			die();
+		}	
+		//生成要插入到地点和评论的联系表的数据
+		$data = null;
+		$data['siteid'] = $schoolId;
+		$data['cmntid'] = $cmntId;
+		
+		//将生成好的联系表数据插入到联系表中
+		$mid_var6 = $allSiterelcmntDB->data($data)->add();
+		if(!queryCheck($mid_var6)) {
+			die();
+		}
+		
+		//封装需要向前端返回的数据
+		$response['status'] = 1;
+		
+		//ajax向前端返回信息
+		$this->ajaxReturn($response, 'json');
+	}
+	public function getFeedBackBySiteid() {
+		$siteid = I("post.siteid");
+		$feedbacks = M("feedback")->where("relsiteid = '$siteid'")->select();
+		if(!queryCheck($content)) {
+			die();
+		}
+		$data = array();
+		foreach ($feedbacks as $feedback) {
+			$feedback['feedbackurl'] = U('ActivityFeedback/feedbacktable?acid='.$feedback['relaid']);
+			array_push($data, $feedback);
+		}
+		echo json_encode($data);
+	}
+	public function getFeedBackByAid() {
+		$aid = I("post.aid");
+		$content = M("feedback")->where("relaid = '$aid'")->select();
+		if(!queryCheck($content)) {
+			die();
+		}
+		echo json_encode($content);
+	}
+	public function createFeedBack() {
+		$data['relsiteid'] = I('post.relsiteid');
+		$data['relaid'] = I('post.relaid');
+		$data['fdbckuid'] = I('post.fdbckuid');
+		$data['eventdate'] = I('post.eventdate');
+		$data['eventdur'] = I('post.eventdur');
+		$data['eventleaderuid'] = I('post.eventleaderuid');
+		$data['repairstate'] = date('y-m-d h:i:s',time());
+		$data['studentnum'] = I('post.studentnum');
+		$data['gradenum'] = I('post.gradenum');
+		$data['classnum'] = I('post.classnum');
+		$data['studentstate'] = I('post.studentstate');
+		$data['teacherstate'] = I('post.teacherstate');
+		$data['schlibdescrp'] = I('post.schlibdescrp');
+		$data['schotherdescrp'] = I('post.schotherdescrp');
+		$data['shaonianshestate'] = I('post.shaonianshestate');
+		$data['facilitystate'] = I('post.facilitystate');
+		$data['teameval'] = I('post.teameval');
+		$data['teamsuggest'] = I('post.teamsuggest');
+		$mid_var = M("feedback")->data($data)->add();
+		if(!queryCheck($mid_var)) {
+			die();
+		}
+		$text['status'] = 1;
+		echo json_encode($text);
+	}
+
+}

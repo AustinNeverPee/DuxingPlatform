@@ -1,0 +1,149 @@
+/* 总体样式 */
+* {
+	
+}
+
+body {
+	padding-top: 70px;
+	background-color: #FFFFCC;
+}
+/* 总体样式 结束 */
+
+/* 导航栏 开始*/
+.navbar {
+	padding: 0px 50px 0px 130px;
+	background-color: #505050;
+}
+
+.navbar .nav-tabs > li {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.navbar .nav-tabs > li > a:link {
+	color: #FFFFFF;
+}
+
+.navbar .nav-tabs > li > a:visited {
+	color: #FFFFFF;
+}
+
+.navbar .nav-tabs > li > a:hover {
+	color: #505050;
+}
+
+/* 登录 & 注册 按钮 开始 */
+.logIn {
+	margin-top: 10px;
+	margin-right: -5%;
+}
+
+.logIn button {
+	margin-left: 10px;
+}
+/* 登录 & 注册 按钮 结束 */
+
+/* 头像信息 */
+.info {
+	margin-top: 3px;
+	margin-right: -10%;
+}
+
+.info .dropdown {
+	margin: 10px;
+}
+
+.info img {
+	width: 50px;
+	height: 50px;
+}
+/* 头像信息 结束 */
+/* 导航栏 结束*/
+
+/* logo */
+.logo {
+	position: fixed;
+	top: -10px;
+	left: 20px;
+	width: 120px;
+	height: 120px;
+	padding: 0px;
+
+	z-index: 1030;
+}
+
+.logo img {
+	width: 120px;
+	height: 120px;
+}
+/* logo 结束 */
+
+/* 模态框 */
+#btnLogIn {
+	margin-left: 20px;
+}
+
+#forgetPassword {
+	margin-left: 20px;
+}
+
+#imgIdentifyingCode {
+	 width: 80px;
+	 height: 33px;
+}
+/* 模态框 结束 */
+
+/* 左侧悬浮二级菜单按钮 */
+.levelTwo {
+	position: fixed;
+	top: 100px;
+	left: 0.5%;
+}
+
+.levelTwo .btn {
+	background-color: #505050;
+	border-color: #505050;
+}
+
+.levelTwo .btn:hover{
+	background-color: #EEEEEE;
+	border-color: #EEEEEE;
+	color: #505050;
+}
+/* 左侧悬浮二级菜单按钮 结束 */
+
+/* 页面主要内容 开始 */
+.holder {
+	margin-top: -10px;
+	background-color: #FFFFCC;
+}
+
+.holder .jumbotron {
+	background-color: #FFFFCC;
+}
+
+.holder .well {
+	background-color: #FFFFCC;
+}
+
+.holder .well:first-child {
+	border-bottom: none;
+	border-left: none;
+	text-align: center;
+}
+
+.holder .well:last-child {
+	border-right: none;
+	border-bottom: none;
+}
+/* 页面主要内容 结束 */
+
+/* 页脚部分 开始 */
+.footer {
+	text-align: center;
+}
+/* 页脚部分 结束 */
+.well {
+	border-style: none;
+	box-shadow: none;
+}

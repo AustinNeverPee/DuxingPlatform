@@ -1,0 +1,289 @@
+[ 2014-10-05T15:30:39+08:00 ] 127.0.0.1 /welfare/index.php/Home/HomePage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006999s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.026032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.026106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021318s ]
+
+[ 2014-10-05T15:30:39+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2014-10-05T15:30:49+08:00 ] 127.0.0.1 /welfare/index.php/Home/Activity/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Use of undefined constant STYLE_PATH - assumed 'STYLE_PATH' D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2014-10-05T15:30:49+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006824s ]
+
+[ 2014-10-05T15:30:49+08:00 ] 127.0.0.1 /welfare/index.php/Home/Activity/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+SQL: SHOW COLUMNS FROM `province` [ RunTime:0.043355s ]
+SQL: SELECT * FROM `province`  [ RunTime:0.000420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2014-10-05T15:30:51+08:00 ] 127.0.0.1 /welfare/index.php/Home/Activity/getCity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.011342s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.023528s ]
+SQL: SELECT * FROM `city` WHERE ( provinceid = '1' )  [ RunTime:0.031862s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.023877s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.029937s ]
+SQL: SELECT `siteid` FROM `site` WHERE ( provinceid = '1' ) LIMIT 1   [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `targetloc` [ RunTime:0.005377s ]
+SQL: SELECT `aid` FROM `targetloc` WHERE ( siteid = '1' )  [ RunTime:0.000458s ]
+SQL: SELECT * FROM `activity` WHERE ( aid=1 )  [ RunTime:0.008845s ]
+SQL: SELECT * FROM `image` WHERE ( iid=6 ) LIMIT 1   [ RunTime:0.000218s ]
+SQL: SELECT * FROM `activity` WHERE ( aid=2 )  [ RunTime:0.000157s ]
+SQL: SELECT * FROM `image` WHERE ( iid=7 ) LIMIT 1   [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2014-10-05T15:30:52+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityDisplay/index?acid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityDisplayController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2014-10-05T15:30:52+08:00 ] 127.0.0.1 /welfare/index.php/Home/MainNavigation/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2014-10-05T15:30:52+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityDisplay/holder.js/300x150/auto/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003308s ]
+ERR: 非法操作:holder.js
+
+[ 2014-10-05T15:30:55+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityDisplay/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `actfollower` [ RunTime:0.031812s ]
+SQL: SHOW COLUMNS FROM `activitytype` [ RunTime:0.020760s ]
+SQL: SHOW COLUMNS FROM `sponsor` [ RunTime:0.024997s ]
+SQL: SHOW COLUMNS FROM `targetloc` [ RunTime:0.001548s ]
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.001468s ]
+SQL: SHOW COLUMNS FROM `actrelcmnt` [ RunTime:0.050067s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.033175s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.023402s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.003474s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.003584s ]
+SQL: SELECT * FROM `activity` WHERE ( aid=1 ) LIMIT 1   [ RunTime:0.000746s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=6 ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SELECT `siteid` FROM `targetloc` WHERE ( aid=1 )  [ RunTime:0.000326s ]
+SQL: SELECT `sitename` FROM `site` WHERE ( siteid=1 ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SELECT `atypename` FROM `activitytype` WHERE ( atypeid=1 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SELECT `actfollowuid` FROM `actfollower` WHERE ( aid=1 )  [ RunTime:0.000368s ]
+SQL: SELECT * FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000374s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000275s ]
+SQL: SELECT * FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=3 ) LIMIT 1   [ RunTime:0.000275s ]
+SQL: SELECT * FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000320s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=4 ) LIMIT 1   [ RunTime:0.000295s ]
+SQL: SELECT `sponsoruid` FROM `sponsor` WHERE ( aid=1 )  [ RunTime:0.000355s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000307s ]
+SQL: SELECT `cmntid` FROM `actrelcmnt` WHERE ( aid=1 )  [ RunTime:0.000327s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=1 ) LIMIT 1   [ RunTime:0.013170s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=2 ) LIMIT 1   [ RunTime:0.000546s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=3 ) LIMIT 1   [ RunTime:0.000488s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=4 ) LIMIT 1   [ RunTime:0.000539s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=5 ) LIMIT 1   [ RunTime:0.000507s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=6 ) LIMIT 1   [ RunTime:0.000514s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=7 ) LIMIT 1   [ RunTime:0.000507s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=8 ) LIMIT 1   [ RunTime:0.000555s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=9 ) LIMIT 1   [ RunTime:0.000470s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=10 ) LIMIT 1   [ RunTime:0.000505s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=111 ) LIMIT 1   [ RunTime:0.000497s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=112 ) LIMIT 1   [ RunTime:0.000490s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=113 ) LIMIT 1   [ RunTime:0.000480s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=114 ) LIMIT 1   [ RunTime:0.000474s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=115 ) LIMIT 1   [ RunTime:0.000482s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=116 ) LIMIT 1   [ RunTime:0.000520s ]
+SQL: SELECT * FROM `comment` WHERE ( recmntid is null and rtcmntid is null and cmntid=117 ) LIMIT 1   [ RunTime:0.000508s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000535s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000535s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=4 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000523s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000513s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=1 ) LIMIT 1   [ RunTime:0.000479s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000514s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=2 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=7 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000531s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000498s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=8 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000504s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000482s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=9 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000507s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=6 ) LIMIT 1   [ RunTime:0.000494s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=10 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000501s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=3 ) LIMIT 1   [ RunTime:0.000464s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=111 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000493s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000501s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=112 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000577s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000457s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=113 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000492s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000462s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=114 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000486s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=5 ) LIMIT 1   [ RunTime:0.000497s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=115 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000532s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=114 ) LIMIT 1   [ RunTime:0.000471s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=116 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000476s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=114 ) LIMIT 1   [ RunTime:0.000467s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=117 and recmntid is not null and rtcmntid is not null ) LIMIT 1   [ RunTime:0.000487s ]
+SQL: SELECT * FROM `comment` WHERE ( cmntid=114 ) LIMIT 1   [ RunTime:0.000465s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000515s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000423s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000472s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=3 ) LIMIT 1   [ RunTime:0.000439s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000241s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000266s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000246s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000243s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000236s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000240s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000240s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=3 ) LIMIT 1   [ RunTime:0.000242s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000230s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000230s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=4 ) LIMIT 1   [ RunTime:0.000236s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=1 ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT `uname`,`uicon` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000212s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( iid=3 ) LIMIT 1   [ RunTime:0.000195s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000151s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000223s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000255s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000245s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000209s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000212s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000198s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000199s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000162s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=4 ) LIMIT 1   [ RunTime:0.000247s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.000241s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000143s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+SQL: SELECT `uname` FROM `user` WHERE ( uid=5 ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000155s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `uname` FROM `user` WHERE ( uid= ) LIMIT 1  
+
+[ 2014-10-05T15:30:57+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityDisplay/activity_feedback.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+ERR: 非法操作:activity_feedback
+

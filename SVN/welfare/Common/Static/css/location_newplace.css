@@ -1,0 +1,21 @@
+#main-box,#filter-box{
+	min-height: 500px;
+}
+/*头像div*/
+#headImgblock {
+	height: 101px;
+	width: 101px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/*限定头像大小*/
+#headImg{
+  height: 100px;
+  width: 100px;
+}
+
+/*选择文件按钮*/
+#headUpload{
+	margin-top: 20px;
+	width: 150px;
+}

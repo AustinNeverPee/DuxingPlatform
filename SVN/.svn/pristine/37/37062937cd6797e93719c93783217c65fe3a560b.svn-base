@@ -1,0 +1,96 @@
+/**
+ * Author:杨柳
+ * Date:2014-8-30
+ * Function:我的公益相册页
+ * Modified by Austin Yang @ 2014-10-20 00:00 添加全局URL，更改ajax判断返回值机制
+ */
+
+$(document).ready(function(){
+    //全局URL
+    commonURL = "/maitian/welfare/index.php";
+
+	//当前请求页面（全局变量）
+	currentpage = 0;
+                  
+    //初始化
+    getAlbums();
+
+	//点击“更多”按钮，触发ajax请求
+	$("#moreButton").click(function() {
+		getAlbums();
+	});
+});
+
+/**
+ * 获取相册信息
+ * 将信息以幻灯形式展示出来
+ * Ajax发送、接收数据
+ */
+function getAlbums() {
+	//Ajax发送、接收数据
+    $.ajax({
+        //与此php页面沟通
+        url : commonURL + "/Home/PersonalPhotograph/moreAlbum",
+        //发给php的数据有一项，是上面传来的page
+        data: 'currentpage='+currentpage,
+        //如果调用php成功
+        success: function(data, textStatus) {
+            if (data.status == "1") {
+                //根据data创建相应的相册幻灯
+                for (var i = 0; i < data.albumnames.length; i++) {
+                    $('<div class="albumItem well col-md-12"><div class="albumInfo row bannercolor"><h4 class="albumTitle col-md-offset-4 col-md-3"></h4></div><div class="carousel slide" data-ride="carousel"><ol class="carousel-indicators"></ol><div class="carousel-inner" role="listbox"></div><a class="left carousel-control" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a></div><div class="bannercolor-bottom"></div></div>')
+                    .find('h4').html(data.albumnames[i]+'&nbsp;<small class="albumTime">'+data.uploadtimes[i]+'</small>').end()
+                    .find('.carousel').attr('id', 'carousel-album' + i).end()
+                    .find('a.left, a.right').attr('href', '#carousel-album' + i).end()
+                    .appendTo('.albumContainer');
+
+                    //向相册中添加图片
+                    for (var j = 0; j < data.imagesrcs[i].length; j++) {
+                        if (j == 0) {
+                            //将第一个设置成active
+                            $('<li></li>')
+                            .attr('data-slide-to', j)
+                            .attr('data-target', '#carousel-album' + i)
+                            .addClass('active')
+                            .appendTo('.albumItem:last ol');
+
+                            $('<div class="item"><img /></div>')
+                            .addClass('active')
+                            .find('img').attr('src', data.imagesrcs[i][j]).end()
+                            .appendTo('.albumItem:last .carousel-inner');
+                        } else {
+                            $('<li></li>')
+                            .attr('data-target', '#carousel-album' + i)
+                            .attr('data-slide-to', j)
+                            .appendTo('.albumItem:last ol');
+
+                            $('<div class="item"><img /></div>')
+                            .find('img').attr('src', data.imagesrcs[i][j]).end()
+                            .appendTo('.albumItem:last .carousel-inner');
+                        }
+                    };
+                }
+
+                //请求页面+1
+                currentpage++;
+            } else if (data.status == "0") {
+                if (data.msg == "1") {
+                    var username = $.cookie("username");
+                    if (username) {
+                        //清除cookie中存储的用户信息
+                        $.cookie('username', null, {expires: -1, path: '/'});
+                        $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                        $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                        
+                        hidePortrait();
+                    }
+
+                    alert("请重新登录！");
+                    //TO DO!!!
+                } else if (data.msg == "2") {
+                    alert("数据库访问错误");
+                }
+            }
+        }
+    });
+}

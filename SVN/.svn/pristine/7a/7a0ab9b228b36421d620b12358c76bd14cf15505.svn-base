@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>笃行公益平台 - 首页</title>
+
+    <!-- Bootstrap -->
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script src="{$static}/js/index.js" type="text/javascript"></script>
+
+<link href="{$static}/css/homepage.css" rel="stylesheet" type="text/css" media="screen">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div id="slide">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <button data-target="#carousel-example-generic" data-slide-to="0" class="active"></button>
+    <button data-target="#carousel-example-generic" data-slide-to="1"></button>
+    <button data-target="#carousel-example-generic" data-slide-to="2"></button>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img class="imagestyle" src="{$static}/resources/bootstrap.jpg" alt="...">
+      <div class="carousel-caption">
+        <h3>啊S</h3>
+        <p>啊是的哈是你觉得</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="{$static}/resources/bootstrap.jpg" class="imagestyle" alt="...">
+      <div class="carousel-caption">
+        <h3>...</h3>
+        <p>...</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="{$static}/resources/bootstrap.jpg" class="imagestyle" alt="...">
+      <div class="carousel-caption">
+        <h3>...</h3>
+        <p>...</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div id="logo" >
+    <img src="{$static}/resources/logo.png" alt="logo" style="width:100px;" />
+  </div>
+  <a href="http://pro.ss.sysu.edu.cn:8199/maitian/welfare/index.php/Home/Activity/index"><button id="mainbutton1">活动</button></a>
+  <a href="http://pro.ss.sysu.edu.cn:8199/maitian/welfare/index.php/Home/PersonalHomepage/index"><button id="mainbutton2">我的公益</button></a>
+  <a href="http://pro.ss.sysu.edu.cn:8199/maitian/welfare/index.php/Home/LocationIndex/index"><button id="mainbutton3">地点</button></a>
+   
+  <nav id="navfram">
+    <a href="#slide"><button class="navbutton">顶部</button></a>
+    <a href="#activity"><button class="navbutton">热门活动</button></a>
+    <a href="#location"><button class="navbutton">热门地点</button></a>
+    <a href="#volunteer"><button class="navbutton">优秀志愿者</button></a>
+    <a href="#blog"><button class="navbutton">优秀日志</button></a>
+    <a href="#contact"><button class="navbutton">联系我们</button></a>
+  </nav>
+
+  <div id="contents">  
+    <!--<div id="silde"></div>-->
+    <div id="activity">
+      <center><h1><b>热门活动</b></h1></center>
+        <!-- Three columns of text -->
+        <div class="secondaryhead">
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/simple.png">
+            <h2>活动1</h2>
+            <p>简单介绍</p>
+            <p><a class="btn btn-default" href="http://www.bootcss.com/p/stickup/#installation">详细内容 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/onepager.png">
+            <h2>活动2</h2>
+            <p>简单介绍</p>
+            <p><a class="btn btn-default" href="http://www.bootcss.com/p/stickup/#one-pager">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/opensource.png">
+            <h2>活动3</h2>
+            <p>简单介绍</p>
+            <p><a class="btn btn-default" href="http://www.gnu.org/licenses/lgpl.html">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/opensource.png">
+            <h2>活动3</h2>
+            <p>简单介绍</p>
+            <p><a class="btn btn-default" href="http://www.gnu.org/licenses/lgpl.html">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+        <div class="secondaryhead">
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/simple.png">
+            <h2>活动1</h2>
+            <p>简单介绍</p>
+            <p><a class="btn btn-default" href="http://www.bootcss.com/p/stickup/#installation">详细内容 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/onepager.png">
+            <h2>活动2</h2>
+            <p>简单介绍</p>
+            <p><a class="btn btn-default" href="http://www.bootcss.com/p/stickup/#one-pager">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/opensource.png">
+            <h2>活动3</h2>
+            <p>简单介绍</p>
+            <p><a class="btn btn-default" href="http://www.gnu.org/licenses/lgpl.html">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/opensource.png">
+            <h2>活动4</h2>
+            <p>简单介绍</p>
+            <p><a class="btn btn-default" href="http://www.gnu.org/licenses/lgpl.html">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    </div>
+
+	<!--<div id="companys" style="height:20px; background-color:#CCCCCC"></div>-->
+
+    <div id="location" class="diffrentstyle">
+    	<center><h1><b>热门地点</b></h1></center>
+        <!-- Three columns of text -->
+        <div class="secondaryhead">
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/simple.png">
+            <h2>地点1</h2>
+            <p>简单介绍</p>
+            <p><a class="btn btn-default" href="http://www.bootcss.com/p/stickup/#installation">详细内容 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/onepager.png">
+            <h2>地点2</h2>
+            <p>简单介绍</p>
+            <p><a class="btn btn-default" href="http://www.bootcss.com/p/stickup/#one-pager">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/opensource.png">
+            <h2>地点3</h2>
+            <p>简单介绍</p>
+            <p><a class="btn btn-default" href="http://www.gnu.org/licenses/lgpl.html">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/opensource.png">
+            <h2>地点4</h2>
+            <p>简单介绍</p>
+            <p><a class="btn btn-default" href="http://www.gnu.org/licenses/lgpl.html">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+        <div class="secondaryhead">
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/simple.png">
+            <h2>地点1</h2>
+            <p>简单介绍</p>
+            <p><a class="btn btn-default" href="http://www.bootcss.com/p/stickup/#installation">详细内容 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/onepager.png">
+            <h2>地点2</h2>
+            <p>简单介绍</p>
+            <p><a class="btn btn-default" href="http://www.bootcss.com/p/stickup/#one-pager">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/opensource.png">
+            <h2>地点3</h2>
+            <p>简单介绍</p>
+            <p><a class="btn btn-default" href="http://www.gnu.org/licenses/lgpl.html">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/opensource.png">
+            <h2>地点4</h2>
+            <p>简单介绍</p>
+            <p><a class="btn btn-default" href="http://www.gnu.org/licenses/lgpl.html">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    </div>
+    <div id="volunteer">
+    	<center><h1><b>优秀志愿者</b></h1></center>
+        <!-- Three columns of text -->
+        <div class="secondaryhead">
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/simple.png">
+            <h2>人物1</h2>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/onepager.png">
+            <h2>人物2</h2>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/opensource.png">
+            <h2>人物3</h2>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/opensource.png">
+            <h2>人物3</h2>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+        <div class="secondaryhead">
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/simple.png">
+            <h2>人物1</h2>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/onepager.png">
+            <h2>人物2</h2>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/opensource.png">
+            <h2>人物3</h2>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <img src="./stickUp - 一个 jQuery 插件_files/opensource.png">
+            <h2>人物3</h2>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    </div>
+    <div id="blog" class="diffrentstyle">
+    	<center><h1><b>优秀日志</b></h1></center>
+        <!-- Three columns of text -->
+        <div class="secondaryhead">
+          <div class="sconndaryblock">
+            <h2>标题1</h2>
+            <p>日志预览</p>
+            <p><a class="btn btn-default" href="http://www.bootcss.com/p/stickup/#installation">详细内容 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <h2>标题2</h2>
+            <p>日志预览</p>
+            <p><a class="btn btn-default" href="http://www.bootcss.com/p/stickup/#one-pager">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <h2>标题3</h2>
+            <p>日志预览</p>
+            <p><a class="btn btn-default" href="http://www.gnu.org/licenses/lgpl.html">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <h2>标题4</h2>
+            <p>日志预览</p>
+            <p><a class="btn btn-default" href="http://www.gnu.org/licenses/lgpl.html">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+        <div class="secondaryhead">
+          <div class="sconndaryblock">
+            <h2>标题1</h2>
+            <p>日志预览</p>
+            <p><a class="btn btn-default" href="http://www.bootcss.com/p/stickup/#installation">详细内容 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <h2>标题2</h2>
+            <p>日志预览</p>
+            <p><a class="btn btn-default" href="http://www.bootcss.com/p/stickup/#one-pager">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <h2>标题3</h2>
+            <p>日志预览</p>
+            <p><a class="btn btn-default" href="http://www.gnu.org/licenses/lgpl.html">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="sconndaryblock">
+            <h2>标题4</h2>
+            <p>日志预览</p>
+            <p><a class="btn btn-default" href="http://www.gnu.org/licenses/lgpl.html">详细信息 »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    </div>
+    <footer id="contact"><p>Copyleft by WowChan</p></footer>
+  </div>
+
+  </body>
+</html>

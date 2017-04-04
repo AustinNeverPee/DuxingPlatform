@@ -1,0 +1,16 @@
+.list_time {
+	text-align: right;
+	margin-top: 60px;
+}
+
+.fbk {
+	/*border-bottom: 1px solid #DCDCDC;*/
+}
+
+.main-box {
+	border-left: 1px solid #DCDCDC;
+}
+
+.list_table {
+	border-left: 1px solid #DCDCDC;
+}

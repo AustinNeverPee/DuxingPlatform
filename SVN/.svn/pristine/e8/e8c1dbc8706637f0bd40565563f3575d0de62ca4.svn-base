@@ -1,0 +1,166 @@
+/**
+ * Author:黄嘉敏
+ * Date:2014-10-26
+ * Function:日志编辑页
+ */
+
+ function GetQueryString(name) {
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if(r!=null)return  unescape(r[2]); return null;
+}
+
+var blogid;
+var blogtitle;
+var blogcontent;
+var acid;
+var siteids;
+
+
+$(document).ready(function(){
+    //全局URL
+    commonURL = "/maitian/welfare/index.php";
+
+    initate();
+
+    $("#newBlogBtn").click(function(){
+        savaBlog();
+    });
+
+    $("#abortBtn").click(function(){
+        $("#editor").code('');
+        $(".addBlogForm").find("input").val('');
+        $(".addBlogForm").find("option").removeAttr('selected');
+    });
+
+    $("#activity").change(function(){
+        acidChange();
+    });
+    
+});
+
+function initate() {
+    var editBlogid = GetQueryString("editBlogid");
+    // alert(editBlogid);
+    $.ajax({
+        url : commonURL + "/Home/PersonalBlog/editBlog",
+        type : 'post',
+        data : 'editBlogid=' + editBlogid,
+        success : function(json) {
+            var status = json.status;
+            alert(status);
+            if (status == '1') {
+                blogcontent = json.content;
+                lasttime = json.lastmddt;
+                acid = json.acid;
+                siteids = json.siteids;
+                acidlist = json.availactandsites.partactid; // 全部活动id列表
+                acname = json.availactandsites.partactname; // 活动名称
+                siteidlist = json.availactandsites.actrelsite.siteidid; // 完整地点id列表
+                sitename = json.availactandsites.actrelsite.siteidname; // 地点名称
+                
+                alert(json.title);
+                $("#InputTitle").val("blogtitle");
+                UE.getEditor('editor').setContent(blogcontent, true);
+
+                // 暂时只有id没有名字
+                // 下拉框自动默认选中之前的acid
+                for (var i = 0; i < acidlist.length; i++) {
+                    var opt = $("<option/>").text(acname[i]).attr("value", acidlist[i]);
+                    if (acidlist[i] == acid) {
+                    	opt.attr("selected", "selected");
+                    }
+                    $("#activity").append(opt);
+                }
+
+                $("#selectSites").empty();
+
+                // 选择活动地点
+                var k = 0;
+                for (var i = 0; i < siteidlist.length; i++) {
+                	var opt = '<input type="checkbox"'+' name="'+ siteidlist[i] +'">'+sitename[i];
+                	if (siteids[k] == siteidlist[i]) {
+                		opt.attr("checked", "checked");
+                		k++;
+                	}
+                	$("#selectSites").append(opt);
+                }
+
+
+            
+            } else {
+                alert('hehe');
+                alert(json.msg);
+            }
+
+        }
+    });
+}
+
+// 获得siteids
+// 格式：'{"id":["id1","id2"]}'
+var isChecked = false;
+function findCheckbox() {
+	siteids = '{"siteids":[';
+	var first = true;
+	$("input[type=checkbox]").each(function(){
+		if($(this).attr("checked")) {
+			isChecked = true;
+			var tmp = '"' + $(this).attr("name") + '"';
+			if (first){
+				siteids += tmp;
+			} else {
+				siteids += ',';
+				siteids += tmp;
+			}
+		}
+	});
+	siteids += ']}';
+}
+
+function savaBlog() {
+	blogtitle = $('#InputTitle').val();
+	blogcontent = $('#editor').code();
+	acid = $("#activity").val();
+	findCheckbox();
+
+	if (isChecked) {
+    $.ajax({
+        url : "../PersonalBlog/saveBlog",
+        data : "blogid=" + blogid + "&title=" + blogtitle + "&content=" + blogcontent + "&acid" + acid + "&siteids=" + sites,
+        success : function(json) {
+            if(json.status == '0') {
+                alert(json.msg);
+            }
+        }
+    });
+
+    window.location.href="../PersonalBlog/index";
+    } else {
+    	alert("请至少选择一个地点");
+    }
+}
+
+function acidChange(acid) {
+	$.ajax({
+		url : "../PersonalBlog/querySites",
+		data : "acid=" + acid,
+		success : function(json) {
+			if (json.status == '1') {
+				var sitelist2 = json.siteidlist; 
+                var sitename2 = json.sitename; // 没有传！
+
+                $("#selectSites").empty();
+
+                // 活动地点更改
+                var k = 0;
+                for (var i = 0; i < sitelist2.length; i++) {
+                	var opt = '<input type="checkbox"'+' name="'+ sitelist2[i] +'">'+sitename2[i];
+                	$("#selectSites").append(opt);
+                }
+			} else {
+				alert(json.msg);
+			}
+		}
+	});
+}

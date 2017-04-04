@@ -1,0 +1,55 @@
+<extend name="../welfare/Home/View/Tpl/base.html" />
+
+<block name="title">
+  <title>活动展示</title>
+</block>
+
+<block name="css">
+</block>
+
+<block name="menu">
+</block>
+
+<block name="main">
+  <div class="container holder">
+    <div class="jumbotron">
+      <div class="row">
+        <!-- 左侧-->
+        <div class="col-sm-2">
+          <div class="well" id="poster">
+          </div>
+          
+        </div><!-- /左侧-->
+
+        <!-- 右侧-->
+        <div class="col-sm-10" id="main-box" role="main">
+            <div class="historyfbklist">
+              <div class="page-header">
+                <h2>页面标题实例<small>子标题</small></h2>
+              </div>
+              <p>这是一个示例文本。这是一个示例文本。这是一个示例文本。这是一个示例文本。这是一个示例文本</p>
+            </div>;
+
+            <div class="historyfbklist">
+              <div class="page-header">
+                <h2>页面标题实例<small>子标题</small></h2>
+              </div>
+              <p>这是一个示例文本。这是一个示例文本。这是一个示例文本。这是一个示例文本。这是一个示例文本</p>
+            </div>;
+
+            <div class="historyfbklist">
+              <div class="page-header">
+                <h2>页面标题实例<small>子标题</small></h2>
+              </div>
+              <p>这是一个示例文本。这是一个示例文本。这是一个示例文本。这是一个示例文本。这是一个示例文本</p>
+            </div>;
+            
+        </div><!-- /右侧-->
+      </div><!-- /.row -->
+    </div><!-- /.jumbotron -->
+  </div>
+</block>
+    
+<block name="js">
+  <script src="{$static}/js/historyfbk.js"></script>
+</block>

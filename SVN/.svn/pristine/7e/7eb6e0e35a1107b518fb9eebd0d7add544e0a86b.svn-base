@@ -1,0 +1,38 @@
+/**
+ * Author:chen_xl
+ * Date:2014-10-18
+ * Function:地点索引
+ */
+
+.form-control {
+	/*width: 120px;*/
+	/*margin-top: 20px;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#filter-box,#main-box{
+	min-height: 500px;
+}
+
+#main-school{
+	width: 100%;
+	height: 500px;
+}
+
+#main-box a{
+	color: #000000;
+}
+
+#filter-box select{
+	width: 100px;
+}
+
+.infoWindowimg{
+	max-height: 120px;
+	max-width: 100px;
+	float: left;
+}
+p {
+	font-size: 6px;
+}

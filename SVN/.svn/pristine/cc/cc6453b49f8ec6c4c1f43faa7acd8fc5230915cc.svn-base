@@ -1,0 +1,14 @@
+<extend name="./welfare/Home/View/Public/base" />
+
+<block name="title">
+  <title>麦田公益平台主页</title>
+</block>
+
+<block name="main">
+  <div class="container holder">
+    <div class="jumbotron">
+      <!-- 地图 功能未实现 -->
+      <img src="{$static}/resources/map.jpg" width="60%" style="margin-left: 200px" />
+    </div>
+  </div>
+</block>

@@ -1,0 +1,58 @@
+<extend name="../welfare/Home/View/Tpl/base.html" />
+
+<block name="title">
+  <title>个人相册</title>
+</block>
+
+<block name="css">
+  <link href="{$static}/css/pesonal.css" rel="stylesheet" type="text/css" media="screen">
+</block>
+
+<block name="menu">
+  <div class="btn-group-vertical levelTwo">
+    <a href="{$gate}/PersonalHomepage/index" class="btn btn-info" role="button">
+      个人资料
+    </a>
+    <a href="{$gate}/PersonalBlog/index" class="btn btn-info" role="button">
+      日志
+    </a>
+    <a href="{$gate}/PersonalPhotograph/index" class="btn btn-info" role="button">
+      相册
+    </a>
+    <a href="{$gate}/PersonalActivity/index" class="btn btn-info" role="button">
+      活动
+    </a>
+    <a href="{$gate}/PersonalFollow/index" class="btn btn-info" role="button">
+      我关注的
+    </a>
+  </div>
+</block>
+
+<block name="main">
+  <div class="container holder">
+    <div class="jumbotron">
+      <div class="row">
+        <!-- 左侧筛选框 -->
+        <div class="searchBox well col-md-2">
+          <form role="form">
+              <div class="input-group">
+                 <input type="text" class="form-control">
+                 <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></strong></span>
+              </div>
+            </form>
+        </div><!-- /左侧筛选框 -->
+
+        <!-- 右侧-->
+        <div class="showAlbum well col-md-10">
+          <div class="albumContainer row">
+          </div><!-- /.albumContainer -->
+          <button id="moreButton" class="btn btn-primary btn-lg btn-block">更多</button>
+        </div><!-- /右侧-->
+      </div>
+    </div><!-- /.jumbotron -->
+  </div>
+</block>
+    
+<block name="js">
+  <script src="{$static}/js/my_album.js" type="text/javascript"></script>
+</block>

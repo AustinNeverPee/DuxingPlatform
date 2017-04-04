@@ -1,0 +1,445 @@
+/**
+ * Author:chen-xl
+ * Date:2014-10-6
+ * Function:活动反馈页
+ * Modified by Austin Yang @ 2014-10-20 00:00 添加全局URL，更改ajax判断返回值机制
+ */
+
+var acid;
+//记录当前blog页数；
+var blogcount = 0;
+//记录当前photo页数；
+var photocount = 0;
+
+var canAddLog = 1;
+
+var canAddPhoto = 1;
+
+var delay = 1;
+
+$(document).ready(function(){
+    //全局URL
+    commonURL = "/maitian/welfare/index.php";
+
+    $("#divfeedback").empty();
+    $("#divphoto").empty();
+    acid = getParam("acid");
+    srcChange();
+    feedback();
+    moreBlog();
+    moreAlbum();
+   /* initLo();*/
+
+    $("#feedback").click(function(){
+        var url;
+        changeURL(url);
+    });
+    $("#blog").click(function(){
+        var url;
+        changeURL(url);
+    });
+    $("#photo").click(function(){
+        var url;
+        changeURL(url);
+    });
+
+    $("#moreblog").click(function(){
+        if (canAddLog == 1) {
+            moreBlog();
+        };
+    });
+
+    $("#sureCreat").click(function(){
+    	creatNewAl();
+    });
+    //监测到当前处于页面尾时，载入新相册
+    $(window).scroll(function(){
+        if(delay == 1){
+        	delay = 0;
+        	setTimeout(function(){
+    		    if($(document).height()-$(this).scrollTop()-$(this).height()<100 && canAddPhoto == 1)
+                    {
+                        moreAlbum();
+                    }
+                delay = 1;
+    	    },500);
+        }
+    });
+
+    $("#chooseLocation").change(function(){
+        chooseChange();
+    });
+
+    $("#chooseAl").change(function(){
+        chooseChange();
+    });
+    $("#uploadPhoto").hide();
+});
+
+function srcChange(){
+    $("#activityNameHref").attr("href", commonURL + "/Home/ActivityDisplay/index/acid/"+acid);
+    $("#feedbackHref").attr("href", commonURL + "/Home/ActivityFeedback/feedbacktable/acid/"+acid);
+    $("#joinHref").attr("href", commonURL + "/Home/ActivityFeedback/index/acid/"+acid);
+}
+
+// 获取url链接的参数
+ function getParam(name){
+    var locationhref = window.location.href;
+    return locationhref.split("acid/")[1];
+ }
+
+// url没有给出
+// js修改URL
+function changeURL(url) {
+    window.location = url;
+}
+
+//载入地点信息
+
+/**
+ * 文档加载后初始化页面
+ * 填充反馈表
+ */
+function feedback(){
+    $.ajax({
+        url : commonURL + "/Home/ActivityFeedback/initate",
+        data : {"acid":acid},
+        // 这里假设传回来的feedbackContent是json数组
+        success : function(json){
+            if (json.status == "1") {
+                $(json.feedbackcontent).each(function(){
+                    var opt = "<div>" + this + "</div>";
+                    $("#divfeedback").append(opt);
+                });
+            } else if (json.status == "0") {
+                if (json.msg == "1") {
+                    var username = $.cookie("username");
+                    if (username) {
+                        //清除cookie中存储的用户信息
+                        $.cookie('username', null, {expires: -1, path: '/'});
+                        $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                        $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                        
+                        hidePortrait();
+                    }
+
+                    alert("请重新登录！");
+                    //TO DO!!!
+                } else if (json.msg == "2") {
+                    alert("数据库访问错误");
+                }
+            }
+        },
+        error : function(){
+            alert("initate操作失败");
+        }
+    });
+}
+
+/*function initLo(){
+    $("#chooseLocation").html("<option value='-1'>--选择地点--</option>");
+    $("#chooseLocation2").html("<option value='-1'>--选择地点--</option>");
+    $("#chooseAl").html("<option value='-1'>--选择相册--</option>");
+    $.ajax({
+        url : commonURL + "/Home/ActivityFeedback/getLocation",
+        data: {"acid":acid},
+        success: function(data) {
+            var siteid = data.siteid;
+            var sitename = data.sitename;
+
+            if (data.status == "1") {
+                var option = "";
+                for (var i = 0; i < siteid.length; i++) {
+                    option+="<option value='"+siteid[i]+"'>"+sitename[i]+"</option>";
+                };
+                $("#chooseLocation").append(option);
+                $("#chooseLocation2").append(option);
+            } else if (data.status == "0") {
+                if (data.msg == "1") {
+                    var username = $.cookie("username");
+                    if (username) {
+                        //清除cookie中存储的用户信息
+                        $.cookie('username', null, {expires: -1, path: '/'});
+                        $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                        $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                        
+                        hidePortrait();
+                    }
+
+                    alert("请重新登录！");
+                    //TO DO!!!
+                } else if (data.msg == "2") {
+                    alert("数据库访问错误");
+                }
+            }
+        }
+    });
+
+    $.ajax({
+        url : commonURL + "/Home/ActivityFeedback/getAlbum",
+        data: {"acid":acid},
+        success: function(data) {
+            var id = data.albumid;
+            var name = data.albumname;
+
+            if (data.status == "1") {
+                var option = "";
+                for (var i = 0; i < id.length; i++) {
+                    option+="<option value='"+id[i]+"'>"+name[i]+"</option>";
+                };
+                $("#chooseAl").append(option);
+            } else if (data.status == "0") {
+                if (data.msg == "1") {
+                    var username = $.cookie("username");
+                    if (username) {
+                        //清除cookie中存储的用户信息
+                        $.cookie('username', null, {expires: -1, path: '/'});
+                        $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                        $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                        
+                        hidePortrait();
+                    }
+
+                    alert("请重新登录！");
+                    //TO DO!!!
+                } else if (data.msg == "2") {
+                    alert("数据库访问错误");
+                }
+            }
+        }
+    });
+}*/
+
+function moreBlog(){
+    $.ajax({
+        url : commonURL + "/Home/ActivityFeedback/moreBlog",
+        data : {"acid":acid,"currentpage":blogcount},
+        success : function(data) {
+            var title = data.titles;
+            var content = data.contents;
+            var owner = data.owners;
+            var ImageSrc = data.imagesrcs;
+            var uid = data.uids;
+
+            if (data.status == "1") {
+                for (var i = 0; i < data.contents.length; i++) {
+                    //当前日志的数字代号；
+                    var addNumber = (blogcount*10+i).toString();
+                    //如果字数超过350，会有折叠
+                    var cont_2 = data.contents[i].replace(/\n/g,'<br/>');
+                        cont_2 = cont_2.replace(/\s/g,'&nbsp;');
+                    if (data.contents[i].length>350) {
+                        //折叠起来的文字为文章的前三百字
+                        var less = data.contents[i].substr(0,300)+"......";
+                        //载入的代码
+                        less = less.replace(/\n/g,'<br/>');
+                        less = less.replace(/\s/g,'&nbsp;');
+                        var addLog = "";
+                        //时间没有
+                        addLog += "<div class='log well'>"+
+                                    "<div class='logTitle text-center'>"+
+                                      "<h3>" + 
+                                        data.titles[i] +
+                                      "</h3>"+
+                                    "</div>"+
+                                    "<div class='logMain'>"+
+                                      "<div id='less" + addNumber + "'>" +
+                                        less + 
+                                      "</div>"+
+                                      "<div id='more" + addNumber + "'>" + 
+                                        cont_2 + 
+                                      "</div>"+
+                                    "</div>"+
+                                    "<div class='logMore text-center' id='changeLog" + addNumber + "'>"+
+                                      "<span class='caret'></span>"+
+                                    "</div>"+
+                                  "</div>"+
+                                  "<script type='text/javascript'>"+
+                                    "$('#more"+ addNumber +"').toggle();"+
+                                    "$('#changeLog"+ addNumber +"').click(function(){"+
+                                      "$('#less"+addNumber+"').toggle();"+
+                                      "$('#more"+addNumber+"').toggle();"+
+                                    "})"+
+                                  "</script>";
+                        $("#divblog").append(addLog);
+                    }
+                    //字数没有350，不会有折叠
+                    else{
+                        var addLog = "";
+                        addLog+= "<div class='log well'>"+
+                                    "<div class='logTitle text-center'>"+
+                                      "<h3>" + 
+                                        data.titles[i] +
+                                      "</h3>"+
+                                    "</div>"+
+                                    "<div class='logMain'>"+
+                                      "<div id='more" + addNumber + "'>" + 
+                                          cont_2 + 
+                                      "</div>"+
+                                    "</div>"+
+                                    "<div class='text-center'>"+
+                                      "<span class='caret'></span>"+
+                                    "</div>"+
+                                  "</div>";
+                        $("#divblog").append(addLog);
+                    }
+                }
+                blogcount++;
+            } else if (data.status == "0") {
+                canAddLog = 0;
+
+                if (data.msg == "1") {
+                    var username = $.cookie("username");
+                    if (username) {
+                        //清除cookie中存储的用户信息
+                        $.cookie('username', null, {expires: -1, path: '/'});
+                        $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                        $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                        
+                        hidePortrait();
+                    }
+
+                    alert("请重新登录！");
+                    //TO DO!!!
+                } else if (data.msg == "2") {
+                    alert("数据库访问错误");
+                }
+            }
+        },
+        error : function(){
+            alert("moreBlog操作失败");
+        }
+    });
+}
+
+
+
+// 这里不完全拷贝地点页的相册页
+function moreAlbum() {
+    $.ajax({
+        url : commonURL + "/Home/ActivityFeedback/moreAlbum",
+        data : {"currentpage":photocount, "acid":acid},
+        success : function(data){
+            if (data.status == "1") {
+                for (var i = 0; i < data.imagesrcs.length; i++){
+                    var currentbox = (((photocount)*3)+i).toString();
+                    var loadPhoto = "";
+                    //载入第一张照片，为active
+                    var eachPhotoLoad = "<div class = 'item active'> <img src='"+ data.imagesrcs[i][0] +"'></div>";
+                    //载入标签，可以选择相册中的照片 第一张为active
+                    var addLi = "<li data-target='#box" + currentbox + "' data-slide-to = '0' class='active'></li>";
+                    //载入所有照片与标签
+                    for (var j = 1; j < data.imagesrcs[i].length; j++){
+                        eachPhotoLoad+= "<div class = 'item'> <img src='"+ data.imagesrcs[i][j] +"'></div>";
+                        addLi+= "<li data-target='#box'" + currentbox + " data-slide-to = '" + j.toString() + "'></li>";
+                    }
+                    loadPhoto+= "<div class='border-set text-center photoBlock'>"+
+                             "<h3>"+
+                             data.albumnames[i] +
+                             "<small>"+
+                             data.uploadtimes[i]+
+                            "</small>"+
+                            "</h3>"+
+                                "<div id='box" +currentbox +"' class='carousel slide border-set'>"+
+                                "<ol class='carousel-indicators'>"+
+                                addLi+
+                                "</ol>"+
+                                "<div class='carousel-inner'>"+
+                                eachPhotoLoad +
+                                "</div>"+
+                                "<a class='left carousel-control' href='#box"+ currentbox +"' data-slide='prev'>"+
+                              "&lsaquo;"+
+                              "</a>"+
+                              "<a class='right carousel-control' href='#box"+ currentbox +"' data-slide='next'>"+
+                              "&rsaquo;"+
+                              "</a>";+
+                              "</div>"+
+                              "</div>";
+                    $("#divphoto").append(loadPhoto);
+                }
+                photocount++;
+            } else if (data.status == "0") {
+                canAddPhoto = 0;
+
+                if (data.msg == "1") {
+                    var username = $.cookie("username");
+                    if (username) {
+                        //清除cookie中存储的用户信息
+                        $.cookie('username', null, {expires: -1, path: '/'});
+                        $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                        $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                        
+                        hidePortrait();
+                    }
+
+                    alert("请重新登录！");
+                    //TO DO!!!
+                } else if (data.msg == "2") {
+                    alert("数据库访问错误");
+                }
+            }
+        },
+        error : function() {
+            alert("moreAlbum操作失败");
+        }
+    });
+}
+
+function creatNewAl(){
+	if ($("#chooseLocation2").val() == "-1" || $("#InputStreet").val() == "" ||
+		$("#alDescription").val() == "") {
+		alert("请选择正确的地点并填写相册名与描述");
+	} 
+	else{
+		$.ajax({
+			url : commonURL + "/Home/ActivityFeedback/addAlbum",
+			data: {"acid": acid, "siteid": $("#chooseLocation2").val(),
+			       "albumname": $("#InputStreet").val(), "description": $("#alDescription").val()},
+			success: function(data){
+                if (data.status == "1") {
+                    alert("创建成功");
+                    initLo();
+                } else if (data.status == "0") {
+                    if (data.msg == "1") {
+                        var username = $.cookie("username");
+                        if (username) {
+                            //清除cookie中存储的用户信息
+                            $.cookie('username', null, {expires: -1, path: '/'});
+                            $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                            $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                            
+                            hidePortrait();
+                        }
+
+                        alert("请重新登录！");
+                        //TO DO!!!
+                    } else if (data.msg == "2") {
+                        alert("数据库访问错误");
+                    }
+                }
+			}
+		});
+	}
+}
+
+function chooseChange(){
+	if($("#chooseLocation").val() != -1 && $("#chooseAl").val() != -1){
+		$("#uploadPhoto").show();
+		FuploadPhoto();
+	} 
+	else{
+		$("#uploadPhoto").hide();
+	}
+}
+
+function FuploadPhoto(){
+    $('#file_upload').uploadify({
+    	  'formData' :{
+    	  	'acid': acid,
+    	  	'siteid' : $("#chooseLocation").val(),
+    	  	'albumid': $("#chooseAl").val()
+    	  },
+          'swf'      : '/welfare/Common/Static/swf/uploadify.swf',
+          'uploader' : commonURL + '/Home/ActivityFeedback/upload'
+    });
+}

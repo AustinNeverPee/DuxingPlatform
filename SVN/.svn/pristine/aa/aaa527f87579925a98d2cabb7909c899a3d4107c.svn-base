@@ -1,0 +1,55 @@
+h4.title {
+	font-family: "Times New Roman",Georgia,Serif;
+}
+
+div.content {
+	border-bottom-style: solid;
+  border-bottom-color: grey;
+  border-bottom-width: 2px;
+  margin: 10px;
+  padding: 10px;
+}
+
+div.comment {
+	border-top-width: 25px;
+}
+
+.touid{
+	display: none;
+}
+
+.comname{
+	font-size: 15px;
+	font-weight:bold;
+}
+
+.time{
+    padding-left: 15px; 
+    padding-right: 5px;
+	font-size: 13px;
+	color: grey;
+}
+
+#follower {
+    zoom:1;
+    overflow: hidden;
+}
+
+.follow {
+    word-wrap:break-word;
+    word-break:normal;
+    zoom:1;
+    overflow: hidden;
+}
+
+#poster > img {
+  width: 90%;
+}
+
+.information {
+  text-align: left;
+}
+
+.information .infolabel {
+  font-weight: bolder;
+}

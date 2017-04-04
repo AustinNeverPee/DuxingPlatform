@@ -1,0 +1,28 @@
+/**
+ * Author:chen_xl
+ * Date:2014-10-18
+ * Function:日志页面
+ */
+/*避免因为刚开始日志较少时页面空洞，设置最小高度*/
+#main-box,#choose-box{
+  min-height: 500px;
+}
+/*每篇日志之间的间隔*/
+#loadLog .log{
+	margin-bottom: 20px;
+	background-color: #e77919;
+	padding: 5px;
+}
+
+.logTitle{
+	color: #ffffff;
+}
+
+#loadLog .logMain{
+  text-align: left;
+  background-color: #ffffff;
+}
+
+h3{
+	margin-top: 0px;
+}

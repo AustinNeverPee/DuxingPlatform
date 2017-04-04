@@ -1,0 +1,52 @@
+[ 2014-09-30T17:11:34+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.062687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.028395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028657s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.107414s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.116600s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.097412s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmddt`,`blogcontent` FROM `blog` WHERE ( relaid=1 ) LIMIT 0,20   [ RunTime:0.031827s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000443s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000360s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000293s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000312s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000295s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000353s ]
+
+[ 2014-09-30T17:12:14+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001705s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001767s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001653s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmddt`,`blogcontent` FROM `blog` WHERE ( relaid=1 ) LIMIT 0,20   [ RunTime:0.000492s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000119s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000120s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000115s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000120s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000131s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000136s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000131s ]
+
+[ 2014-09-30T17:12:24+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001734s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002269s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001761s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmddt`,`blogcontent` FROM `blog` WHERE ( relaid=1 ) LIMIT 20,20   [ RunTime:0.000502s ]
+

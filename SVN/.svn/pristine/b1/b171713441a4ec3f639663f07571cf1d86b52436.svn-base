@@ -1,0 +1,22 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+header("Content-Type: text/html; charset=utf-8");
+
+class AdminController extends Controller {
+	public function index() {
+		$User = M("user");
+		$data = $User->select();
+		$this->assign("data",$data);
+		//var_dump($data);
+		$this->display();
+	}
+	public function remove() {
+	    $uid = I("post.id");
+		$User = M("user");
+		$text["status"] = 0;
+		if($User->where("uid = '$uid'")->delete())
+			$text["status"] = 1;
+		echo json_encode($text);
+	}
+}

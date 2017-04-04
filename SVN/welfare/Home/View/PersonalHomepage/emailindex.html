@@ -1,0 +1,92 @@
+<extend name="../welfare/Home/View/Tpl/base.html" />
+
+<block name="title">
+  <title>邮箱修改</title>
+</block>
+
+<block name="css">
+  <link href="{$static}/css/datepicker.css" rel="stylesheet" media="screen">
+</block>
+
+<block name="menu">
+  <div class="btn-group-vertical levelTwo">
+    <a href="{$gate}/PersonalHomepage/index" class="btn btn-info" role="button">
+      个人资料
+    </a>
+    <a href="{$gate}/PersonalBlog/index" class="btn btn-info" role="button">
+      日志
+    </a>
+    <a href="{$gate}/PersonalPhotograph/index" class="btn btn-info" role="button">
+      相册
+    </a>
+    <a href="{$gate}/PersonalActivity/index" class="btn btn-info" role="button">
+      活动
+    </a>
+    <a href="{$gate}/PersonalFollow/index" class="btn btn-info" role="button">
+      我关注的
+    </a>
+  </div>
+</block>
+
+<block name="main">
+  <div class="container holder">
+    <div class="jumbotron">
+      <div class="row">
+        <!-- 左侧头像 -->
+        <div class="headInfo well col-md-2">
+          <div class="headShow show">
+            <img />
+            <button id="modifyHeadBtn" class="btn btn-primary">修改头像</button>
+          </div>
+
+          <div class="headModify hide">
+            <form class="form-horizontal formModifyInfo" role="form">
+              <div class="form-group">
+                <div class="col-md-12">
+                  <input type="file"  name="headPhoto">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                  <button type="submit" class="uploadHead btn btn-primary col-md-9">上传头像</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div><!-- /左侧头像 -->
+
+        <!-- 右侧用户详细信息 -->
+        <div class="showInfo well col-md-10">
+          <!-- 修改邮箱 -->
+          <div class="testEmail row">
+            <form class="form-horizontal formTestEmail" role="form">                
+              <div class="form-group">
+                <label for="EmailNew" class="col-md-2 col-md-offset-2 control-label">新邮箱</label>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" id="EmailNew" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword8" class="col-md-2 col-md-offset-2 control-label">登录密码</label>
+                <div class="col-md-6">
+                  <input type="password" class="form-control" id="inputPassword8" placeholder="请输入登录密码">
+                  <span id="tipPassword8"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-offset-3 col-md-9">
+                  <button type="submit" class="testEmailBtn btn btn-primary btn-lg col-md-9">确认修改邮箱</button>
+                </div>
+              </div>
+            </form>
+          </div><!-- /修改邮箱 -->
+        </div><!-- /右侧用户详细信息 -->
+      </div>
+    </div><!-- /.jumbotron -->
+  </div>
+</block>
+    
+<block name="js">
+  <script src="{$static}/js/my_info.js" type="text/javascript"></script>
+  <script src="{$static}/js/bootstrap-datepicker.js"></script>
+</block>

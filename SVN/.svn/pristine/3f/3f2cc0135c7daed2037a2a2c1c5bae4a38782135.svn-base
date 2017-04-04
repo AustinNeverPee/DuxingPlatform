@@ -1,0 +1,107 @@
+<extend name="../welfare/Home/View/Tpl/base.html" />
+
+<block name="title">
+  <title>地点日志</title>
+</block>
+
+<block name="css">
+  <link href="{$static}/css/location_school.css" rel="stylesheet" type="text/css" media="screen">
+</block>
+
+<block name="menu">
+  <div class="btn-group-vertical levelTwo">
+    <a href="location_log.html" class="btn btn-info" id="blogHref" role="button">
+      日志
+    </a>
+    <a href="#" class="btn btn-info" id="reportHref" role="button">
+      历史反馈
+    </a>
+    <a href="location_album.html" class="btn btn-info" id="photoHref" role="button">
+      相册
+    </a>
+    <a href="location_school.html" class="btn btn-info" id="schoolHref" role="button">
+      学校
+    </a>
+  </div>
+</block>
+
+<block name="main">
+  <div class="container holder">
+    <div class="jumbotron">
+      <div class="row">
+            <!--选择头像-->
+        <div class="col-md-2" id="filter-box">
+          <div class="well">
+            <div id="block-img-school">
+              <img src="" id="img-school" class="img-rounded">
+            </div>
+            <div>
+              <button type="button" onclick="clickAttention()" class="btn btn-primary">+关注</button>
+              <button type="button" onclick="creatActivity()" class="btn btn-primary">发起活动</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+            <!--关注的人-->
+              <div class="well" id="attentionPeople">
+                <img src="" class="attention-photo">
+                <div>
+                  <a href="">{关注者姓名}</a>
+                </div>
+                <img src="" class="attention-photo">
+                <div>
+                  <a href="">{关注者姓名}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--主体-->
+        <div class="col-md-10" id="main-box">
+          <div class="text-center">
+            <h2>schoolname<small>上次调查时间</small></h2>
+          </div>
+        <!--学校简介-->
+          <div class="well" id="briefIntroduction">
+            {学校简介}
+          </div>
+
+          <div class="border-bottom-set">
+          <!--海报部分-->
+            <div class="row"  id="posterBox">
+              
+            </div>
+            <!--活动列表“更多”button-->
+            <div id="main-button">
+              <button type="button" onclick="morePoster" class="btn btn-primary">更多</button>
+            </div>
+          </div>
+
+          <div class="well row" id="communicateBox">
+            <h4 class="title">交流区</h4>
+
+            <div id="divcontent">
+
+            </div>
+
+            <form role="form">
+              <div class="form-group">
+                <label for="name">留言</label>
+                <textarea id="valcomment" class="form-control" rows="3"></textarea>
+              </div>
+              <div id="subButton">
+                <button type="button" class="btn btn-primary" id="subcomment">提交</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</block>
+    
+<block name="js">
+  <script src="{$static}/js/location_school.js" type="text/javascript"></script>
+</block>

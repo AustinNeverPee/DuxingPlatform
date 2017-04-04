@@ -1,0 +1,204 @@
+<?php
+/**
+ *作者：杨柳
+ *时间：2015-3-16
+ *修改时间：2015-3-24
+ *所属部分：首页展示
+ *主要包括热门活动、热门日志、热门地点的获取
+*/
+
+namespace Home\Controller;
+use Think\Controller;
+header("Content-Type: text/html; charset=utf-8");
+require_once "functions.php";
+
+class HomePageController extends Controller {
+	public function index() {
+		isUser();
+		/*在调用之前，现行给模板传入参数！渲染模板*/
+		$this->assign('static', C('STATIC_RESOURCE'));
+		$this->assign('gate', C('COMMON_GATE'));
+
+        // Related images
+        $image = M('image');
+
+        // Activities
+        // Post URLs, activity names
+        $hotActivities = M('activity')
+                            ->limit(6)
+                            ->field('aid, apostimg, aname')
+                            ->select();
+        $postImgs = array();
+        $aids = array();
+        foreach ($hotActivities as $ha) {
+            array_push($postImgs, $ha['apostimg']);
+            array_push($aids, $ha['aid']);
+        }
+        $map['iid'] = array('IN', $postImgs);
+        $postUrls = $image->where($map)->getField('imgpath', true);
+        
+        $map['aid'] = array('IN', $aids); 
+
+        $data['activities'] = array();
+        $i = 0;
+        foreach ($hotActivities as $ha) {
+            array_push($data['activities'], array($ha['aid'], $ha['aname'], $postUrls[$i]));
+            $i++;
+        }
+        var_dump($data);
+        return;
+
+        // Blogs
+        // Blog titles & author names
+        $hotBlogs = M('blog')
+                    ->limit(6)
+                    ->field('blogid, blogtitle, bloguid')
+                    ->select();
+        
+        $blogAuthors = array();
+        foreach ($hotBlogs as $hb) {
+            array_push($blogAuthors, $hb['bloguid']);
+        }
+        $map['uid'] = array('IN', $blogAuthors);
+        $userNames = M('user')->where($map)->getField('uname');
+        $data['blogs'] = array();
+        $i = 0;
+        foreach ($hotBlogs as $hb) {
+            array_push($data['blogs'], array($hb['blogid'], $hb['blogtitle'], $hb['bloguid']));
+            $i++;
+        }
+
+
+        // Sites
+        // Site images, site names & complete address
+        $hotSites = M('site')
+                    ->limit(6)
+                    ->field('siteid, sitemainpic, sitename, provinceid, cityid, countyid, townid')
+                    ->select();
+        $provinces = array();
+        $cities = array();
+        $counties = array();
+        $towns = array();
+        $sitePics = array();
+        foreach ($hotSites as $hs) {
+            array_push($provinces, $hs['provinceid']);
+            array_push($cities, $hs['cityid']);
+            array_push($counties, $hs['countyid']);
+            array_push($towns, $hs['townid']);
+            array_push($sitePics, $hs['sitemainpic']);
+        }
+        $condition['provinceid'] = array('IN', $provinces);
+
+        $provinceNames = M('province')->where($condition)->getField('provincename');
+        $condition['cityid'] = array('IN', $cities);
+        $cityNames = M('city')->where($condition)->getField('cityname');
+        $condition['countyid'] = array('IN', $counties);
+        $countyNames = M('county')->where($condition)->getField('countyname');
+        $condition['townid'] = array('IN', $towns);
+        $townNames = M('town')->where($condition)->getField('townname');
+        $condition['iid'] = array('IN', $sitePics);
+        $imgUrls = $image->where($condition)->getField('imgpath');
+
+        $data['sites'] = array();
+        $i = 0;
+        foreach ($hotSites as $hs) {
+            $addr = $provinceNames[$i] . $cityNames[$i] . $countyNames[$i] . $townNames[$i];
+            array_push($data['sites'], array($hs['siteid'], $hs['sitename'], $imgUrls[$i], $addr));
+            $i++;
+        }
+		//$this->display();
+	}
+
+    public function initate() {
+        $image = M('image');
+
+        // Activities
+        // Post URLs, activity names
+        $hotActivities = M('activity')
+                            ->limit(6)
+                            ->field('aid, apostimg, aname')
+                            ->select();
+        $postImgs = array();
+        $aids = array();
+        foreach ($hotActivities as $ha) {
+            array_push($postImgs, $ha['apostimg']);
+            array_push($aids, $ha['aid']);
+        }
+        $map['iid'] = array('IN', $postImgs);
+        $postUrls = $image->where($map)->getField('imgpath', true);
+        
+        $map['aid'] = array('IN', $aids); 
+
+        $data['activities'] = array();
+        $i = 0;
+        foreach ($hotActivities as $ha) {
+            array_push($data['activities'], array($ha['aid'], $ha['aname'], $postUrls[$i]));
+            $i++;
+        }
+
+        // Blogs
+        // Blog titles & author names
+        $hotBlogs = M('blog')
+                    ->limit(6)
+                    ->field('blogid, blogtitle, bloguid')
+                    ->select();
+        
+        $blogAuthors = array();
+        foreach ($hotBlogs as $hb) {
+            array_push($blogAuthors, $hb['bloguid']);
+        }
+        $map['uid'] = array('IN', $blogAuthors);
+        $userNames = M('user')->where($map)->getField('uname');
+        $data['blogs'] = array();
+        $i = 0;
+        foreach ($hotBlogs as $hb) {
+            array_push($data['blogs'], array($hb['blogid'], $hb['blogtitle'], $hb['bloguid']));
+            $i++;
+        }
+
+
+        // Sites
+        // Site images, site names & complete address
+        $hotSites = M('site')
+                    ->limit(6)
+                    ->field('siteid, sitemainpic, sitename, provinceid, cityid, countyid, townid')
+                    ->select();
+        $provinces = array();
+        $cities = array();
+        $counties = array();
+        $towns = array();
+        $sitePics = array();
+        foreach ($hotSites as $hs) {
+            array_push($provinces, $hs['provinceid']);
+            array_push($cities, $hs['cityid']);
+            array_push($counties, $hs['countyid']);
+            array_push($towns, $hs['townid']);
+            array_push($sitePics, $hs['sitemainpic']);
+        }
+        $condition['provinceid'] = array('IN', $provinces);
+
+        $provinceNames = M('province')->where($condition)->getField('provincename');
+        $condition['cityid'] = array('IN', $cities);
+        $cityNames = M('city')->where($condition)->getField('cityname');
+        $condition['countyid'] = array('IN', $counties);
+        $countyNames = M('county')->where($condition)->getField('countyname');
+        $condition['townid'] = array('IN', $towns);
+        $townNames = M('town')->where($condition)->getField('townname');
+        $condition['iid'] = array('IN', $sitePics);
+        $imgUrls = $image->where($condition)->getField('imgpath');
+
+        $data['sites'] = array();
+        $i = 0;
+        foreach ($hotSites as $hs) {
+            $addr = $provinceNames[$i] . $cityNames[$i] . $countyNames[$i] . $townNames[$i];
+            array_push($data['sites'], array($hs['siteid'], $hs['sitename'], $imgUrls[$i], $addr));
+            $i++;
+        }        
+    }
+	/*public function test() {
+		echo U('PersonalHomepage/index?id=1')."<br />";
+		echo C('COMMON_GATE')."<br />";
+		echo C('STATIC_RESOURCE');
+		die("<br />暂停脚本");
+	}*/
+}

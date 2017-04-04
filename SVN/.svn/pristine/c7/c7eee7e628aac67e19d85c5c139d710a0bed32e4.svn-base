@@ -1,0 +1,51 @@
+#main-box,#filter-box{
+	min-height: 500px;
+}
+/*头像div*/
+#headImgblock {
+	height: 101px;
+	width: 101px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/*限定头像大小*/
+#headImg{
+  height: 100px;
+  width: 100px;
+}
+
+/*选择文件按钮*/
+#headUpload{
+	margin-top: 20px;
+	width: 150px;
+}
+
+.activity-new {
+    text-align: left;
+}
+
+#activitytype {
+    width: 30%;
+}
+
+.InputOrganizer {
+    width: 50%;
+}
+
+.InputTime {
+    width: 45%;
+}
+
+select,
+input {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}

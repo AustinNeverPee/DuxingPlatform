@@ -1,0 +1,11 @@
+#favicon {
+	width: 100%;
+}
+
+#blogtitle {
+	text-align: center;
+	margin: auto;
+	width: 80%;
+	border-bottom: 1px solid #DCDCDC;
+	padding: 10px;
+}

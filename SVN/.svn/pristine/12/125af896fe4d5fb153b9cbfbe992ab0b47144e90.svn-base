@@ -1,0 +1,122 @@
+/**
+ * Author:杨柳
+ * Date:2014-8-30
+ * Function:我的公益日志页
+ * Modified by Austin Yang @ 2014-10-20 00:00 添加全局URL，更改ajax判断返回值机制
+ */
+
+$(document).ready(function(){
+    //全局URL
+    commonURL = "/maitian/welfare/index.php";
+
+    //当前请求页面（全局变量）
+    currentpage = 1;
+
+    //初始化
+    getLogs();
+
+    //点击“更多”按钮，触发ajax请求
+    $("#moreButton").click(function() {
+        /*alert(currentpage);*/
+        getLogs();
+    });
+});
+
+/**
+ * 获取日志信息
+ * 将信息以收缩栏形式展示出来
+ * Ajax发送、接收数据
+ */
+function getLogs() {
+    //Ajax发送、接收数据
+    $.ajax({
+        //与此php页面沟通
+        url : commonURL + "/Home/PersonalBlog/moreBlog",
+        //发给php的数据有一项，是上面传来的page
+        data: 'currentpage='+currentpage,
+        //如果调用php成功
+        success: function(data, textStatus) {
+            /*alert(data.status);*/
+            /*alert(data.msg);*/
+
+            if (data.status == "1") {
+                //根据data创建相应的日志收缩栏
+                var blogId = 'collapseOne';
+                for (var i = 0; i < data.contents.length; i++) {
+                    /*$('<div class="logItem well col-md-12"><h2 class="logTitle"></h2><p class="logContent"></p></div>')*/
+                    /*
+                    $(' <div class="logItem panel panel-default col-md-12"><div class="bannercolor"><h2 class="logTitle"></h2></div><div id="'+
+                        blogId+'"class="panel-collapse collapse"><div class="panel-body"><p class="logContent"></p></div></div><div class="bannercolor"><h4><a data-toggle="collapse" data-parent="#accordion" href="#'+
+                        blogId+'">展开</a></h4></div></div>')
+                    */
+                    $(' <div class="logItem panel panel-default col-md-12"><div class="bannercolor"><h2 class="logTitle"></h2></div><div id="'+
+                        blogId+'"class="panel-collapse collapse"><div class="panel-body"><p class="logContent"></p>'+
+                        '<span class="id" style="display:none;">'+data.blogid[i]+'</span><button class="edit btn btn-primary btn-xs sub">编辑</button><button class="del btn btn-primary btn-xs sub">删除</button>'+
+                        '</div></div><div class="bannercolor"><h4><a data-toggle="collapse" data-parent="#accordion" href="#'+
+                        blogId+'">展开</a></h4></div></div>')
+                    .find('h2').html(data.titles[i]).end()
+                    .find('p').html(data.contents[i]).end()
+                    .find('button.edit').click(function(){
+                        var id = $(this).parent().find('.id').text();
+                        // alert(id);
+                        editBlog(id);
+                      }).end()
+                    .find('button.del').click(function(){
+                        var id = $(this).parent().find('.id').text();
+                        delBlog(id);
+                        $(this).parent().remove();
+
+                    }).end()
+                    //.find('span').html('最后修改时间:'+data.dts[i]).end()
+                    .appendTo('.logContainer');
+                    blogId=blogId+'1';
+                }
+
+                //请求页面+1
+                currentpage++;
+            } else if (data.status == "0") {
+                if (data.msg == "1") {
+                    var username = $.cookie("username");
+                    if (username) {
+                        //清除cookie中存储的用户信息
+                        $.cookie('username', null, {expires: -1, path: '/'});
+                        $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                        $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                        
+                        hidePortrait();
+                    }
+
+                    alert("请重新登录！");
+                    //TO DO!!!
+                } else if (data.msg == "2") {
+                    alert("数据库访问错误");
+                }
+            }
+        }
+    });
+}
+
+function editBlog(blogid) {
+    window.location.href="../PersonalBlog/testedit?blogid="+blogid;
+}
+
+// 删除日志
+function delBlog(blogid) {
+    $.ajax({
+        url : "../PersonalBlog/deleteBlog",
+        data : "blogid=" + blogid,
+        success : function(json) {
+            //alert(com);
+            status=json.status;
+            msg = json.msg;
+            if(status == 1){
+                alert("删除成功");
+                $(this).parent().remove();
+            } else {
+                alert("删除失败");
+                alert(msg);
+            }
+        }
+
+    });
+}

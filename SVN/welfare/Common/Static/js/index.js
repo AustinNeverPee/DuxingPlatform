@@ -1,0 +1,420 @@
+/**
+ * Author:杨柳
+ * Date:2014-9-27
+ * Function:主页&登录、注册
+ * Modified by Austin Yang @ 2014-10-20 00:00 添加全局URL，更改ajax判断返回值机制
+ */
+$(document).ready(function() {
+	//全局URL
+	commonURL = "/maitian/welfare/index.php";
+
+    //设置AJAX请求的默认参数选项
+    $.ajaxSetup({
+        //设置请求超时时间（毫秒）
+        timeout: 3000,
+        //禁止触发全局 AJAX 事件
+        global: false,
+        //从php返回的值以JSON方式解释
+        dataType: 'json', 
+        //以post方式与后台沟通
+        type: "post",
+        //如果调用php失败
+        error: function() {
+            alert("ajax访问失败");
+        }
+    });
+
+    //验证登录状态
+    judgeState();
+
+    //前端验证合法性
+    judge();
+
+    //ajax验证验证码
+    judgeIdentifyingCode();
+
+    //更换验证码
+    $("#changeImg").click(function() {
+        changeVerifyCode();
+    });
+
+    //点击登录、注册按钮
+    $("#btnLogIn").mousedown(function() {
+        LogIn();
+    });
+    $("#btnRegister").mousedown(function() {
+        Register();
+    });
+
+    //点击退出按钮
+    $('#logOut').mousedown(function() {
+        LogOut();
+    });
+
+    //关闭浏览器触发
+    // $(window).bind('beforeunload', function() {
+    //     return '浏览器关闭时间监听';
+    //     LogOut();
+
+    //     return window.event.screenX;
+
+    //     var n = window.event.screenX-window.screenLeft;
+    //     var b=n>document.documentElement.scrollWidth-20;
+    //     if(b && window.event.clientY<0||window.event.altKey){
+    //         alert("关闭");
+    //     }else{
+    //         alert("刷新");
+    //     }
+    // });
+});
+
+/**
+ * cookie验证登录状态
+ * 若检测到登陆成功，则更改登录&注册按钮成为用户信息
+ */
+function judgeState() {
+    var username = $.cookie("username");
+    if (username) {
+        showPortrait();
+    } else {
+        hidePortrait();
+    }
+}
+
+/**
+ * 隐藏登录&注册按钮
+ * 显示用户信息
+ */
+function showPortrait() {
+    var username = $.cookie("username");
+    var imagesrc = $.cookie("imagesrc");
+    var newmsgnumber = $.cookie("newmsgnumber");
+
+    $('#username').html(username);
+    $('#newsNum').html(newmsgnumber);
+    $('.headImage img').attr('src', imagesrc);
+
+    $(".logIn").addClass("hidden");
+    $(".info").removeClass("hidden");
+}
+
+/**
+ * 隐藏用户信息
+ * 显示登录&注册按钮
+ */
+function hidePortrait() {
+    $(".logIn").removeClass("hidden");
+    $(".info").addClass("hidden");
+}
+
+/**
+ * 前端验证登陆框和注册框的合法性
+ * 包括填写内容是否为空，再次输入内容是否一致，
+ * 用户名、密码、邮箱格式是否正确
+ */
+function judge() {
+    //登录框前端验证合法性
+    $("#inputUsername1").click(function() {
+        $("#nameTipUsername1").html("");
+    });
+    $("#inputUsername1").blur(function() {
+        //用户名文本框失去焦点触发验证事件
+        //此处验证不能为空
+        if(!$(this).val()) {
+            $("#nameTipUsername1").html("用户名不能为空");
+        }
+    });
+    $("#inputPassword1").click(function() {
+        $("#nameTipPassword1").html("");
+    });
+    $("#inputPassword1").blur(function() {
+        //密码文本框失去焦点触发验证事件
+        //此处验证不能为空
+        if(!$(this).val()) {
+            $("#nameTipPassword1").html("密码不能为空");
+        }
+    });
+
+    //注册框前端合法性验证
+    $("#inputEmail").click(function() {
+        $("#nameTipEmail").html("");
+    });
+    $("#inputEmail").blur(function() {
+        //邮箱文本框失去焦点触发验证事件
+        //此处验证不能为空，且为邮箱格式“xxxxxxx@邮件服务器”
+        if(!$(this).val()) {
+            $("#nameTipEmail").html("邮箱不能为空");
+        } else {
+            var reg = /^[a-z0-9_\-]+(\.[_a-z0-9\-]+)*@([_a-z0-9\-]+\.)+([a-z]{2}|aero|arpa|biz|com|coop|edu|gov|info|int|jobs|mil|museum|name|nato|net|org|pro|travel)$/;
+            if (!reg.test($(this).val())) {
+                $("#nameTipEmail").html("邮箱格式不正确！");
+            }
+        }
+    });
+    $("#inputEmail2").click(function() {
+        $("#nameTipEmail1").html("");
+    });
+    $("#inputEmail2").blur(function() {
+        //邮箱文本框失去焦点触发验证事件
+        //此处验证不能为空，且与上一个输入框的内容一致
+        if(!$(this).val()) {
+            $("#nameTipEmail2").html("邮箱不能为空");
+        } else if ($(this).val() != $("#inputEmail").val()) {
+            $("#nameTipEmail2").html("与上边的邮箱不符");
+        }
+    });
+    $("#inputUsername2").click(function() {
+        $("#nameTipUsername2").html("");
+    });
+    $("#inputUsername2").blur(function() {
+        //用户名文本框失去焦点触发验证事件
+        //此处验证为不为空，且为英文或者中文
+        if(!$(this).val()) {
+            $("#nameTipUsername2").html("用户名不能为空");
+        } else {
+            var reg = /^[a-zA-Z\u4e00-\u9fa5]+$/;
+            if (!reg.test($(this).val())) {
+                $("#nameTipUsername2").html("用户名只能为中文或者英文");
+            }
+        }
+    });
+    $("#inputPassword2").click(function() {
+        $("#nameTipPassword2").html("");
+    });
+    $("#inputPassword2").blur(function() {
+        //密码文本框失去焦点触发验证事件
+        //此处验证不能为空，且为英文和数字，长度在6到20之间
+        if(!$(this).val()) {
+            $("#nameTipPassword2").html("密码不能为空");
+        } else {
+            var reg = /^[a-zA-Z0-9]{6,20}$/;
+            if (!reg.test($(this).val())) {
+                $("#nameTipPassword2").html("密码只能包含大小写字母和数字，且长度在6和20之间！");
+            }
+        }
+    });
+    $("#inputPassword3").click(function() {
+        $("#nameTipPassword3").html("");
+    });
+    $("#inputPassword3").blur(function() {
+        //密码文本框失去焦点触发验证事件
+        //此处验证不能为空，且与上一个输入框的内容一致
+        if(!$(this).val()) {
+            $("#nameTipPassword3").html("密码不能为空");
+        } else if ($(this).val() != $("#inputPassword2").val()) {
+            $("#nameTipPassword3").html("与上边的密码不符");
+        }
+    });
+    $("#checkAgreement").click(function() {
+        //判断是否同意条款
+        //同意后才可继续注册
+        if ($("#checkAgreement").prop("checked") == true) {
+            $("#btnRegister").removeAttr("disabled");
+        } else if ($("#checkAgreement").prop("checked") == false) {
+            $("#btnRegister").attr("disabled", "disabled");
+        }
+    });
+}
+
+/**
+ * 验证输入验证码是否正确
+ * ajax传输数据
+ */
+function judgeIdentifyingCode() {
+    $("#inputIdentifyingCode").click(function() {
+        $("#nameTipIdentifyingCode").html("");
+    });
+    $("#inputIdentifyingCode").blur(function() {
+        //输入验证码文本框失去焦点触发验证事件
+        //此处验证不能为空，且和验证码相符
+        if(!$(this).val()) {
+            $("#nameTipIdentifyingCode").html("验证码输入不能为空");
+        } else {
+            //获取输入的验证信息
+            var verifyCode = $("#inputIdentifyingCode").val();
+
+            //Ajax发送、接收数据
+            $.ajax({
+                //与此php页面沟通
+                url : commonURL + "/Home/MainNavigation/checkVerify",
+                //发给php的数据只有一项，是上边传来的verifyCode
+                data: 'verifycode='+verifyCode,
+                //如果调用php成功
+                success: function(data, textStatus) {
+                    if (data.status == "1") {
+                        //alert("验证码输入正确！");
+                    } else if (data.status == "0") {
+                        if (data.msg == "1") {
+                            var username = $.cookie("username");
+                            if (username) {
+                                //清除cookie中存储的用户信息
+                                $.cookie('username', null, {expires: -1, path: '/'});
+                                $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                                $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                                
+                                hidePortrait();
+                            }
+
+                            alert("请重新登录！");
+                            //TO DO!!!
+		                } else if (data.msg == "2") {
+		                	alert("数据库访问错误");
+		                }
+	                }
+                }
+            });
+        }
+    });
+}
+
+/**
+ * 更换验证码
+ */
+function changeVerifyCode() {
+    $("#imgIdentifyingCode").attr("src", commonURL + "/Home/MainNavigation/verify");
+}
+
+/**
+ * 登录函数
+ * ajax传输数据、判断是否登陆成功
+ */
+function LogIn() {
+    //取登录框中的用户名
+    var username = $("#inputUsername1").val();
+
+    //取登录框中的密码
+    var password = $("#inputPassword1").val();
+
+    //Ajax发送、接收数据
+    $.ajax({
+        //与此php页面沟通
+        url : commonURL + "/Home/MainNavigation/login",
+        //发给php的数据有两项，分别是上面传来的u和p
+        data: {username:username, password:password},
+        //如果调用php成功
+        success: function(data, textStatus) {
+            if (data.status == 1) {
+                $.cookie("username", data.username, {expires: 7, path: '/'});
+                $.cookie("imagesrc", data.imagesrc, { expires: 7, path: '/'});
+                $.cookie("newmsgnumber", data.newmsgnumber, { expires: 7, path: '/'});
+                $.cookie("uid",data.userid,{ expires: 7, path: '/'});
+
+                //登陆成功，刷新页面显示头像信息
+                window.location.reload();
+            } else if (data.status == "0") {
+                if (data.msg == "1") {
+                	var username = $.cookie("username");
+                    if (username) {
+                        //清除cookie中存储的用户信息
+                        $.cookie('username', null, {expires: -1, path: '/'});
+                        $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                        $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                        $.cookie("uid",null,{ expires: -1, path: '/'});
+                        hidePortrait();
+                    }
+
+                    alert("请重新登录！");
+                    //TO DO!!!
+                } else if (data.msg == "2") {
+                	alert("数据库访问错误");
+                } else if (data.msg == "uname") {
+                	alert("用户名不存在");
+                } else if (data.msg == "pword") {
+                	alert("密码错误");
+                }
+            }
+        }
+    }); 
+}
+
+/**
+ * 注册函数
+ * ajax传输数据、判断是否注册成功
+ */
+function Register() {
+    //取注册框中的用户名
+    var username = $("#inputUsername2").val();
+    //取注册框中的密码
+    var password = $("#inputPassword2").val();
+    //取注册框中的邮箱
+    var email = $("#inputEmail").val();
+
+    //Ajax发送、接收数据
+    $.ajax({
+        //与此php页面沟通
+        url : commonURL + "/Home/MainNavigation/register",
+        //发给php的数据有三项，分别是上面传来的u、p和e
+        //data: 'username='+username+'&password='+password+'&email'+email,
+        data : {username: username, password: password, email: email},
+        //如果调用php成功
+        success: function(data, textStatus) {
+        	//alert("ajax访问成功！");
+            if (data.status == "1") {
+                alert("注册成功！请前往邮箱激活邮件以便继续访问网站服务！");
+            } else if (data.status == "0") {
+                if (data.msg == "1") {
+                	var username = $.cookie("username");
+                    if (username) {
+                        //清除cookie中存储的用户信息
+                        $.cookie('username', null, {expires: -1, path: '/'});
+                        $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                        $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                        
+                        hidePortrait();
+                    }
+
+                    alert("请重新登录！");
+                    //TO DO!!!
+                } else if (data.msg == "2") {
+                	alert("数据库访问错误");
+                } else if (data.msg == "uname") {
+                	alert("用户名已存在");
+                } else if (data.msg == "pword") {
+                	alert("邮箱已存在");
+                }
+            }
+        }
+    });
+}
+
+/**
+ * 退出函数
+ * 清除用户登陆成功时保存的cookie
+ */
+function LogOut() {
+    $.ajax({
+        //与此php页面沟通
+        url : commonURL + "/Home/MainNavigation/logout",
+        //如果调用php成功
+        success: function(data, textStatus) {
+            if (data.status == "1") {
+                //清除cookie
+                $.cookie('username', null, {expires: -1, path: '/'});
+                $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                $.cookie("uid", null, { expires: -1, path: '/'});
+
+                //重新刷新页面
+                window.location.reload();
+            } else if (data.status == "0") {
+                if (data.msg == "1") {
+                	var username = $.cookie("username");
+                    if (username) {
+                        //清除cookie中存储的用户信息
+                        $.cookie('username', null, {expires: -1, path: '/'});
+                        $.cookie("imagesrc", null, { expires: -1, path: '/'});
+                        $.cookie("newmsgnumber", null, { expires: -1, path: '/'});
+                        $.cookie("uid", null, { expires: -1, path: '/'});
+                        
+                        hidePortrait();
+                    }
+
+                    alert("请重新登录！");
+                    //TO DO!!!
+                } else if (data.msg == "2") {
+                	alert("数据库访问错误");
+                }
+            }
+        }
+    });
+}

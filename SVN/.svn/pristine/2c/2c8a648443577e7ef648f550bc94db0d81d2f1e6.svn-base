@@ -1,0 +1,476 @@
+[ 2014-09-29T12:01:24+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003331s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.005137s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005942s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.004885s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmdt`,`blogcontent` FROM `blog` WHERE ( relaid=2 ) LIMIT 0, 20   [ RunTime:0.001062s ]
+ERR: 1054:Unknown column 'bloglastmdt' in 'field list'
+ [ SQL语句 ] : SELECT `blogtitle`,`bloguid`,`bloglastmdt`,`blogcontent` FROM `blog` WHERE ( relaid=2 ) LIMIT 0, 20  
+
+[ 2014-09-29T12:01:47+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001493s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001599s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001443s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001276s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmdt`,`blogcontent` FROM `blog` WHERE ( relaid=2 ) LIMIT 0, 20   [ RunTime:0.000235s ]
+ERR: 1054:Unknown column 'bloglastmdt' in 'field list'
+ [ SQL语句 ] : SELECT `blogtitle`,`bloguid`,`bloglastmdt`,`blogcontent` FROM `blog` WHERE ( relaid=2 ) LIMIT 0, 20  
+
+[ 2014-09-29T12:03:30+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001340s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001587s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001564s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001524s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmdt`,`blogcontent` FROM `blog` WHERE ( relaid=2 ) LIMIT 0, 20   [ RunTime:0.000310s ]
+ERR: 1054:Unknown column 'bloglastmdt' in 'field list'
+ [ SQL语句 ] : SELECT `blogtitle`,`bloguid`,`bloglastmdt`,`blogcontent` FROM `blog` WHERE ( relaid=2 ) LIMIT 0, 20  
+
+[ 2014-09-29T12:04:12+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002725s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.003173s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003461s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.003326s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmdt`,`blogcontent` FROM `blog` WHERE ( relaid=2 ) LIMIT 0,20   [ RunTime:0.000626s ]
+ERR: 1054:Unknown column 'bloglastmdt' in 'field list'
+ [ SQL语句 ] : SELECT `blogtitle`,`bloguid`,`bloglastmdt`,`blogcontent` FROM `blog` WHERE ( relaid=2 ) LIMIT 0,20  
+
+[ 2014-09-29T12:04:14+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001456s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001747s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002182s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmdt`,`blogcontent` FROM `blog` WHERE ( relaid=2 ) LIMIT 0,20   [ RunTime:0.000185s ]
+ERR: 1054:Unknown column 'bloglastmdt' in 'field list'
+ [ SQL语句 ] : SELECT `blogtitle`,`bloguid`,`bloglastmdt`,`blogcontent` FROM `blog` WHERE ( relaid=2 ) LIMIT 0,20  
+
+[ 2014-09-29T12:04:39+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001725s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001906s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001266s ]
+SQL: SELECT * FROM `blog` WHERE ( relaid=2 )  [ RunTime:0.000354s ]
+
+[ 2014-09-29T12:04:48+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001547s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001620s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001185s ]
+SQL: SELECT * FROM `blog` WHERE ( relaid=2 )  [ RunTime:0.000318s ]
+
+[ 2014-09-29T12:05:02+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001404s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001431s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001218s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmdt`,`blogcontent` FROM `blog` WHERE ( relaid=2 )  [ RunTime:0.000261s ]
+ERR: 1054:Unknown column 'bloglastmdt' in 'field list'
+ [ SQL语句 ] : SELECT `blogtitle`,`bloguid`,`bloglastmdt`,`blogcontent` FROM `blog` WHERE ( relaid=2 ) 
+
+[ 2014-09-29T12:05:53+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001648s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001537s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001314s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmddt`,`blogcontent` FROM `blog` WHERE ( relaid=2 )  [ RunTime:0.000333s ]
+
+[ 2014-09-29T12:06:04+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001684s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001490s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001254s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmddt`,`blogcontent` FROM `blog` WHERE ( relaid=2 ) LIMIT 0,20   [ RunTime:0.000339s ]
+
+[ 2014-09-29T12:06:06+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001746s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001935s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001604s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmddt`,`blogcontent` FROM `blog` WHERE ( relaid=2 ) LIMIT 0,20   [ RunTime:0.000352s ]
+
+[ 2014-09-29T12:07:05+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002175s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001911s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002182s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001878s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmddt`,`blogcontent` FROM `blog` WHERE ( relaid=2 ) LIMIT 0,20   [ RunTime:0.000520s ]
+NOTIC: [8] Undefined variable: variable D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityFeedbackController.class.php 第 67 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityFeedbackController.class.php 第 67 行.
+
+[ 2014-09-29T12:07:19+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001642s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001600s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001320s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmddt`,`blogcontent` FROM `blog` WHERE ( relaid=2 ) LIMIT 0,20   [ RunTime:0.000353s ]
+NOTIC: [8] Undefined variable: variable D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityFeedbackController.class.php 第 67 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityFeedbackController.class.php 第 67 行.
+
+[ 2014-09-29T12:08:57+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001449s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001729s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001279s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmddt`,`blogcontent` FROM `blog` WHERE ( relaid=2 ) LIMIT 0,20   [ RunTime:0.000318s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000145s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000113s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000086s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000079s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000085s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000130s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000112s ]
+
+[ 2014-09-29T12:12:51+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+NOTIC: [8] Undefined index: currentpage D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityFeedbackController.class.php 第 100 行.
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001936s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001418s ]
+SQL: SELECT * FROM `album` WHERE ( relaid=2 )  [ RunTime:0.000398s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=2 )  [ RunTime:0.000164s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=4 )  [ RunTime:0.000156s ]
+
+[ 2014-09-29T12:17:47+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002218s ]
+NOTIC: [8] Undefined index: currentpage D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityFeedbackController.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001952s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002008s ]
+SQL: SELECT * FROM `album` WHERE ( relaid=2 )  [ RunTime:0.000509s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=2 )  [ RunTime:0.000237s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=4 )  [ RunTime:0.000214s ]
+
+[ 2014-09-29T12:17:51+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+NOTIC: [8] Undefined index: currentpage D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityFeedbackController.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001721s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001777s ]
+SQL: SELECT * FROM `album` WHERE ( relaid=2 )  [ RunTime:0.000472s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=2 )  [ RunTime:0.000195s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=4 )  [ RunTime:0.000194s ]
+
+[ 2014-09-29T12:17:55+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+NOTIC: [8] Undefined index: currentpage D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityFeedbackController.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001669s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001478s ]
+SQL: SELECT * FROM `album` WHERE ( relaid=2 )  [ RunTime:0.000311s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=2 )  [ RunTime:0.000166s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=4 )  [ RunTime:0.000181s ]
+
+[ 2014-09-29T12:19:24+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+NOTIC: [8] Undefined index: currentpage D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityFeedbackController.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001750s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001743s ]
+SQL: SELECT * FROM `album` WHERE ( relaid=2 )  [ RunTime:0.000479s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=2 )  [ RunTime:0.000180s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=4 )  [ RunTime:0.000172s ]
+
+[ 2014-09-29T12:19:31+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+NOTIC: [8] Undefined index: currentpage D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityFeedbackController.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001361s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001299s ]
+SQL: SELECT * FROM `album` WHERE ( relaid=2 )  [ RunTime:0.000369s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=2 )  [ RunTime:0.000155s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=4 )  [ RunTime:0.000183s ]
+
+[ 2014-09-29T12:19:34+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+NOTIC: [8] Undefined index: currentpage D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityFeedbackController.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001692s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001756s ]
+SQL: SELECT * FROM `album` WHERE ( relaid=2 )  [ RunTime:0.000421s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=2 )  [ RunTime:0.000176s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=4 )  [ RunTime:0.000172s ]
+
+[ 2014-09-29T12:19:48+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001381s ]
+NOTIC: [8] Undefined index: currentpage D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityFeedbackController.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001354s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001216s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmddt`,`blogcontent` FROM `blog` WHERE ( relaid= ) LIMIT 0,20   [ RunTime:0.000232s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 0,20' at line 1
+ [ SQL语句 ] : SELECT `blogtitle`,`bloguid`,`bloglastmddt`,`blogcontent` FROM `blog` WHERE ( relaid= ) LIMIT 0,20  
+
+[ 2014-09-29T12:21:26+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+NOTIC: [8] Undefined index: currentpage D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityFeedbackController.class.php 第 102 行.
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.001370s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001313s ]
+SQL: SELECT * FROM `album` WHERE ( relaid=2 )  [ RunTime:0.000348s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=2 )  [ RunTime:0.000133s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=4 )  [ RunTime:0.000135s ]
+
+[ 2014-09-29T12:23:12+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.002288s ]
+NOTIC: [8] Undefined index: currentpage D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityFeedbackController.class.php 第 54 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002412s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002076s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmddt`,`blogcontent` FROM `blog` WHERE ( relaid=2 ) LIMIT 0,20   [ RunTime:0.000519s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000170s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000157s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000131s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000133s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000170s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000143s ]
+
+[ 2014-09-29T13:46:41+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.002134s ]
+SQL: SELECT * FROM `feedback` WHERE ( relaid=2 )  [ RunTime:0.001131s ]
+
+[ 2014-09-29T13:48:46+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001431s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.001619s ]
+SQL: SELECT * FROM `feedback` WHERE ( relaid=2 )  [ RunTime:0.000261s ]
+
+[ 2014-09-29T13:49:13+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.001985s ]
+SQL: SELECT * FROM `feedback` WHERE ( relaid=1 )  [ RunTime:0.000326s ]
+
+[ 2014-09-29T13:52:06+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.001916s ]
+SQL: SELECT * FROM `feedback` WHERE ( relaid=1 )  [ RunTime:0.000549s ]
+
+[ 2014-09-29T15:14:24+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001883s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.001897s ]
+SQL: SELECT * FROM `feedback` WHERE ( relaid=1 )  [ RunTime:0.000199s ]
+
+[ 2014-09-29T15:14:38+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.002015s ]
+SQL: SELECT * FROM `feedback` WHERE ( relaid=1 )  [ RunTime:0.000181s ]
+
+[ 2014-09-29T15:17:02+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.001864s ]
+SQL: SELECT * FROM `feedback` WHERE ( relaid=1 )  [ RunTime:0.000168s ]
+
+[ 2014-09-29T15:17:39+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.002201s ]
+SQL: SELECT * FROM `feedback` WHERE ( relaid=1 )  [ RunTime:0.000284s ]
+
+[ 2014-09-29T15:18:15+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.002311s ]
+SQL: SELECT * FROM `feedback` WHERE ( relaid=1 )  [ RunTime:0.000511s ]
+
+[ 2014-09-29T15:20:29+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/initate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.002180s ]
+SQL: SELECT * FROM `feedback` WHERE ( relaid=1 ) LIMIT 1   [ RunTime:0.000267s ]
+
+[ 2014-09-29T15:26:01+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreBlog
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002506s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.001974s ]
+NOTIC: [8] Undefined index: currentpage D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityFeedbackController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.001951s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.001960s ]
+SQL: SELECT `blogtitle`,`bloguid`,`bloglastmddt`,`blogcontent` FROM `blog` WHERE ( relaid=1 ) LIMIT 0,20   [ RunTime:0.000386s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000202s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000188s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000160s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000166s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000160s ]
+SQL: SELECT `unickname`,`uicon` FROM `user` WHERE ( uid=8 ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SELECT `imgpath` FROM `image` WHERE ( `iid` = 1 ) LIMIT 1   [ RunTime:0.000157s ]
+
+[ 2014-09-29T15:28:12+08:00 ] 127.0.0.1 /welfare/index.php/Home/ActivityFeedback/moreAlbum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+NOTIC: [8] Undefined index: currentpage D:\Program Files (x86)\wamp\www\welfare\Home\Controller\ActivityFeedbackController.class.php 第 100 行.
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.002279s ]
+SQL: SHOW COLUMNS FROM `image` [ RunTime:0.002026s ]
+SQL: SELECT * FROM `album` WHERE ( relaid=1 ) LIMIT 0,3   [ RunTime:0.000408s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=1 )  [ RunTime:0.016881s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=3 )  [ RunTime:0.000230s ]
+SQL: SELECT * FROM `image` WHERE ( albumid=5 )  [ RunTime:0.000182s ]
+

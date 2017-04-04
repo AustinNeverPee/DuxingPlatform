@@ -1,0 +1,38 @@
+.img-wrap {
+  display: block; 
+}
+
+
+
+.img-wrap > img {
+  height: 100px;
+  border:3px solid rgba(45, 28, 28, 0.31);
+  border-radius: 50%;
+}
+
+.img-wrap > img:hover {
+  border:2px solid rgba(13, 34, 250, 0.8);
+}
+
+.followConcernedInfo {
+  background: rgba(206, 226, 86, 0.24);
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.thumbnail > img {
+  height: 100px;
+}
+
+.thumbnail > img:hover {
+  transform: scale(1.5);
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+
+  -webkit-transition: all 1s  ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+
+}

@@ -1,0 +1,24 @@
+/* 页面主要内容 开始 */
+/* 左侧头像 开始 */
+#modifyHeadBtn {
+	margin-top: 20px;
+}
+/* 左侧头像 结束 */
+
+/* 右侧用户详细信息 开始 */
+/* 展示用户信息 开始 */
+.infoContainer {
+	margin: 0% 10% 0% 10%;
+}
+
+.infoContainer > div {
+	margin-bottom: 10px;
+	font-family: "微软雅黑";
+}
+
+.infoContainer button {
+	font-family: "宋体";
+}
+/* 展示用户信息 结束 */
+/* 右侧用户详细信息 结束 */
+/* 页面主要内容 结束 */

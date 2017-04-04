@@ -1,0 +1,56 @@
+/**
+ * Author:chen_xl
+ * Date:2014-10-18
+ * Function:相册
+ * Modified by AminHuang @ 2015-3-22 00:00  更改相册样式
+ */
+
+/*防止页面内容缺乏时样式奇怪*/
+#main-box,#filter-box{
+  min-height: 500px;
+}
+/*一个相册的高度*/
+.photoBlock{
+	height: 300px;
+	background-color: rgba(56, 40, 153, 0.5);;
+	color: #ffffff;
+	width: 45%;
+	margin-top: 50px;
+	margin-left:5px;
+	margin-right: 5px;
+	padding: 5px;
+	border-radius: 10px;
+	float: left; 
+}
+/*每张照片的样式,防止照片过大，突出*/
+.photoBlock img{
+	max-height: 240px;
+	max-width: 320px;
+	min-height: 220px;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+}
+
+.photoBox{
+	background-color: #ffffff;
+}
+
+small {
+	color: #ffffff!important;
+}
+
+#gallery > div > .col-md-2 > a > img {
+  height: 80px;
+}
+
+#gallery > div > .col-md-4 > a > img {
+  height: 150px;
+}
+
+.albuminfo {
+	background-color: rgba(56, 40, 153, 0.5);;
+	color: #ffffff;
+	border-radius: 10px;
+}
